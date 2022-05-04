@@ -9,4 +9,37 @@ body{
 
 html {
   font-family: 'Cairo', sans-serif;
+  font-size: 10px;
+}
+
+.active{
+  border-bottom: 3px solid blue;
+}
+
+
+/* paragraph text */
+
+.small-text {
+  font-size: 1.6rem;
+  line-height: 2;
+  font-weight: 500;
+  color: #00002880;
+}
+
+.sect-header1 {
+  font-weight: 700;
+  font-size: 32px;
+  color: #002880;
+}
+
+.sect-header2 {
+  font-weight: 700;
+  font-size: 30px;
+  color: #ffff;
+  text-align: center;
+}
+
+.set_header {
+  width: 85%;
+  margin: 0 auto;
 }

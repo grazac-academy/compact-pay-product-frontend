@@ -1,0 +1,48 @@
+.section2 {
+    height: 44.4rem;
+    background: #000028;
+}
+
+.header{
+    padding: 3.8rem 0rem 5rem 0rem;
+}
+
+
+
+.card_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .card_container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        
+    }  
+    
+    .section2 {
+        height: 103rem;
+    }
+    
+}
+
+@media screen and (max-width: 576px){
+    .card_container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 68rem;
+    } 
+    
+    .section2 {
+        height: 103rem;
+    }
+   
+    }

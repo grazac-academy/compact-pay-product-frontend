@@ -2,7 +2,6 @@
 // import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 // import Home from './pages/Home/Home';
 
-
 // function App() {
 //   return (
 //   <Router>
@@ -14,23 +13,26 @@
 //   </Router>
 //   );
 // };
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route } from 'react-router-dom';
 // import './App.css';
-import MainLayout from "./layout/MainLayout/mainLayout";
-import Home from "./pages/Home/home";
-
+import MainLayout from './layout/MainLayout/mainLayout';
+import Home from './pages/Home/Home';
+import Header from './components/UI/Header/Header2/header2';
 function App() {
   return (
-    <Routes>
-    <Route
-      path="/"
-      element={
-        <MainLayout>
-          <Home />
-       </MainLayout>
-      }
-    />
- </Routes>
+    <>
+      <Header />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <Home />
+            </MainLayout>
+          }
+        />
+      </Routes>
+    </>
   );
 }
 

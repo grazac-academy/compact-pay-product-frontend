@@ -3,7 +3,7 @@ import iphone from '../../assets/Landing/productMobileImage.png';
 import appstore from '../../assets/Landing/appleStore.png';
 import googleplay from '../../assets/Landing/googlePlayButton.png';
 import { works } from '../../constants/index';
-import Card from '../../components/Card/Card';
+import Card from '../../components/CardItem/CardItem';
 import Footer from '../../components/footer/Footer';
 
 const Home = () => {

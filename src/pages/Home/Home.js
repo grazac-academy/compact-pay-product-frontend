@@ -2,14 +2,13 @@ import React from 'react';
 import Header2 from '../../components/UI/Header/Header2/header2';
 import Hero from '../../components/UI/Hero/hero';
 import classes from './home.module.css';
-import Card from '../../components/UI/Whyuscard/whyuscard';
+import Whyuscard from '../../components/UI/Whyuscard/Whyuscard';
 import { cardCont } from '../../constants';
-
+import Card from '../Card/Card';
 const Home = () => {
   return (
     <>
       <section className={classes.section1}>
-        <Header2 />
         <Hero />
       </section>
 
@@ -19,10 +18,11 @@ const Home = () => {
         </div>
         <div className={classes.card_container}>
           {cardCont.map((item, index) => (
-            <Card {...item} key={index} />
+            <Whyuscard {...item} key={index} />
           ))}
         </div>
       </div>
+      <Card />
     </>
   );
 };

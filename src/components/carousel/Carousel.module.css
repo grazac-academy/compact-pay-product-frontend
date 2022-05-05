@@ -1,0 +1,90 @@
+.carousel {
+
+    background: #ffff;
+
+}
+
+.ratings {
+    display: flex;
+    margin: 0px auto 0px;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.bar {
+    border-left: 5px solid rgb(8, 7, 7);
+    height: 40px;
+    margin: 0px 10px 30px 15px;
+
+}
+
+.stars img {
+    padding-left: 5px;
+
+
+}
+
+.dot {
+    margin-left: 5px;
+}
+
+.star_section {
+    display: flex;
+}
+
+/* .images {
+    display: flex;
+    margin: 0px auto 0px;
+
+
+} */
+
+.textField {
+    display: flex;
+    height: 200px;
+
+}
+
+.textField p {
+    width: 400px;
+    margin: 0px auto 0px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.images img {
+    width: 50%;
+    /* margin-left: 170px; */
+
+}
+
+.images h3 {
+    margin-left: 170px;
+    text-align: left;
+
+    width: 120px;
+    color: #00493C;
+    font-family: 'cairo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.textFielda {
+    display: flex;
+    margin: 0px 650px 0px 600px;
+}
+
+.textFielda p {
+    font-size: 10px;
+    font-family: 'cairo';
+}
+
+
+.slider1 {
+    display: flex;
+    width: 80%;
+    margin: 0px auto 0px;
+
+}

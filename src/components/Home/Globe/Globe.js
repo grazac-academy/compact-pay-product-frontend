@@ -1,9 +1,8 @@
 import React from 'react';
-import classes from './Home.module.css';
-import Logo from '../../assets/Landing/world.png';
-import Carousel from '../../components/carousel/Carousel';
+import classes from './Globe.module.css';
+import Logo from 'assets/Landing/world.png';
 
-function Home() {
+function Globe() {
   return (
     <div className={classes.full5}>
       <div className={classes.container}>
@@ -35,9 +34,8 @@ function Home() {
           </div>
         </div>
       </div>
-      <Carousel />
     </div>
   );
 }
 
-export default Home;
+export default Globe;

@@ -43,5 +43,21 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "settings": {
+    "import/resolver": {
+      "alias": {
+        "map": [
+          [
+            "components",
+            "./components"
+          ],
+          [
+            "assets",
+            "./assets"
+          ]
+        ]
+      }
+    }
   }
 }

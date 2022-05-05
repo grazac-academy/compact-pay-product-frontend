@@ -1,26 +1,17 @@
-import Logo from '../../assets/Landing/stars.svg';
-import Logo1 from '../../assets/Landing/half star.svg';
-import Logo2 from '../../assets/Landing/no star.svg';
-import Logo3 from '../../assets/Landing/smithMorgan.svg';
-import Logo4 from '../../assets/Landing/smithmorgan 5.svg';
-import Logo5 from '../../assets/Landing/smithMorgan2.svg';
-import Logo6 from '../../assets/Landing/smithMorgan3.svg';
-import Logo7 from '../../assets/Landing/smithMorgan4.svg';
-import Logo8 from '../../assets/Landing/germany flag.svg';
-import Logo9 from '../../assets/Landing/nigerMap.svg';
+import Logo from 'assets/Landing/stars.svg';
+import Logo1 from 'assets/Landing/half star.svg';
+import Logo2 from 'assets/Landing/no star.svg';
+import Logo3 from 'assets/Landing/smithMorgan.svg';
+import Logo4 from 'assets/Landing/smithmorgan 5.svg';
+import Logo5 from 'assets/Landing/smithMorgan2.svg';
+import Logo6 from 'assets/Landing/smithMorgan3.svg';
+import Logo7 from 'assets/Landing/smithMorgan4.svg';
+import Logo8 from 'assets/Landing/germany flag.svg';
+import Logo9 from 'assets/Landing/nigerMap.svg';
 import './Carousel.module.css';
 import React, { Component, useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import classes from './Carousel.module.css';
-
-// const settings = {
-//   className: 'center',
-//   centerMode: true,
-//   infinite: true,
-//   centerPadding: '60px',
-//   slidesToShow: 3,
-//   speed: 500,
-// };
 
 const Carousel = () => {
   const [nav, setNav] = useState({

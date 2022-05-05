@@ -1,12 +1,11 @@
-import classes from './Home.module.css';
-import iphone from '../../assets/Landing/productMobileImage.png';
-import appstore from '../../assets/Landing/appleStore.png';
-import googleplay from '../../assets/Landing/googlePlayButton.png';
-import { works } from '../../constants/index';
-import Card from '../../components/CardItem/CardItem';
-import Footer from '../../components/footer/Footer';
+import classes from './Card.module.css';
+import iphone from 'assets/Landing/productMobileImage.png';
+import appstore from 'assets/Landing/appleStore.png';
+import googleplay from 'assets/Landing/googlePlayButton.png';
+import { works } from '../../../constants/index';
+import CardItem from 'components/Home/CardItem/CardItem';
 
-const Home = () => {
+const Card = () => {
   return (
     <div>
       <div className={classes.mobile}>
@@ -37,7 +36,7 @@ const Home = () => {
         </p>
         <div className={classes.work}>
           {works.map((item) => (
-            <Card
+            <CardItem
               key={item.id}
               img={item.img}
               title={item.title}
@@ -46,10 +45,8 @@ const Home = () => {
           ))}
         </div>
       </div>
-
-      <Footer />
     </div>
   );
 };
 
-export default Home;
+export default Card;

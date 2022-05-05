@@ -3,7 +3,10 @@ import Hero from '../../components/UI/Hero/hero';
 import classes from './home.module.css';
 import Whyuscard from '../../components/UI/Whyuscard/Whyuscard';
 import { cardCont } from '../../constants';
-import Card from '../Card/Card';
+import Card from '../../components/Home/Card/Card';
+// import Carousel from '../../components/Home/Globe/Carousel';
+import Globe from '../../components/Home/Globe/Globe';
+import Carousel from '../../components/Home/Carousel/Carousel';
 const Home = () => {
   return (
     <>
@@ -22,6 +25,8 @@ const Home = () => {
         </div>
       </div>
       <Card />
+      <Globe />
+      <Carousel />
     </>
   );
 };

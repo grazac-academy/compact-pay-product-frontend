@@ -5,6 +5,7 @@ import googleplay from '../../assets/Landing/googlePlayButton.png';
 import { works } from "../../constants/index";
 import Card from "../../components/Card/Card";
 import Footer from '../../components/footer/Footer';
+import Converter from '../../layout/Converter/Converter';
 
 
 const Home = () => {
@@ -41,6 +42,9 @@ const Home = () => {
     </div>
     
     <Footer />
+
+    <Converter />
+
     </div>
     
   );

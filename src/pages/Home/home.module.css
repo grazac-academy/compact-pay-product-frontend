@@ -1,10 +1,10 @@
 .section2 {
-    height: 44.4rem;
-    background: #000028;
+    height: 35rem;
+    background: var(--second);
 }
 
 .header {
-    padding: 3.8rem 0rem 5rem 0rem;
+    padding: 3.5rem 0rem 3.5rem 0rem;
 }
 
 
@@ -26,8 +26,15 @@
     }
 
     .section2 {
-        height: 103rem;
+        height: 27rem;
     }
+
+    .sect-header2 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #ffff;
+        text-align: center;
+      }
 
 }
 
@@ -38,11 +45,11 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 68rem;
+        height: 52rem;
     }
 
     .section2 {
-        height: 103rem;
+        height: 73rem;
     }
 
 }

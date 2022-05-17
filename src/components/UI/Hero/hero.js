@@ -8,7 +8,7 @@ const hero = () => {
     <div className={classes.hero_cont}>
       <div className={classes.hero_left}>
         <h1>The Fastest And Reliable Place To Send Money</h1>
-        <p className="small-text">Compactpay is a platform that offers a seamless transaction experience
+        <p className="small-text .small-text2">Compactpay is a platform that offers a seamless transaction experience
         across borders, we put you first: low cost fees, speedy transactions
         locally and internationally.</p>
       </div>

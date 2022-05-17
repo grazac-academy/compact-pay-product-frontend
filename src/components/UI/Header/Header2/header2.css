@@ -5,9 +5,9 @@
 
 .navbar {
   width: 80%;
-  height: 12rem;
+  height: 6rem;
   margin: 0px auto;
-  padding: 2rem 0rem;
+  padding: 20px 0rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,40 +39,41 @@
 
 .navItems {
   list-style: none;
-  font-size: 1.6rem;
+  font-size: 1rem;
   font-weight: 650;
-  color: #000028;
+  color: var(--second);
 }
 
 .navbarbtnLinks {
   width: 40%;
-  height: 12rem;
+  height: 3.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .btnOutlined button {
-  width: 12rem;
-  height: 4.5rem;
-  border: 1px solid #000028;
+  width: 8rem;
+  height: 3rem;
+  border: 1px solid var(--primary);
   border-radius: 8px;
-  background-color: #fff;
-  font-size: 1.6rem;
+  background-color: var(--white);
+  font-size: 1rem;
   font-weight: 650;
   font-family: "Cairo", sans-serif;
+  color: var(--primary);
 }
 
 .btnFilled button {
-  width: 12rem;
-  height: 4.5rem;
+  width: 8rem;
+  height: 3rem;
   border-radius: 8px;
   border: none;
-  background-color: #027efd;
-  font-size: 1.6rem;
+  background-color: var(--primary);
+  font-size: 1rem;
   font-weight: 650;
   font-family: "Cairo", sans-serif;
-  color: #fff;
+  color: var(--white);
 }
 
 /* mobile menu styling */
@@ -81,10 +82,10 @@
   display: none;
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1024px) {
   .navbarbtnLinks {
-    width: 42%;
-    height: 12rem; 
+    width: 52%;
+    height: 4rem; 
   }
 
   .menu-links {
@@ -92,12 +93,12 @@
   }
 
   .btnOutlined button {
-    width: 10rem;
+    width: 8rem;
     height: 3.5rem;
   }
   
   .btnFilled button {
-    width: 10rem;
+    width: 8rem;
     height: 3.5rem;
   }
 }
@@ -107,7 +108,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 12rem;    
+    height: 4rem;    
     padding-top: 1rem;
   }
 
@@ -145,7 +146,7 @@
     left: 0rem;
     top: 8rem;
     width: 100vw;
-    background-color: #224882;
+    background-color: var(--primary);
     border-top: 1px solid grey;
     transition: all 0.3s;
     z-index: 11111;

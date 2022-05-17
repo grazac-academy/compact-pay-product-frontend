@@ -1,0 +1,39 @@
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-style: normal;
+  font-weight: var(--light);
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px 15px;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+.form-group p {
+  color: #AC1D40;
+}
+
+input:focus {
+  border: 2px solid var(--primary);
+}
+
+.form-input:focus {
+  outline: none;
+}

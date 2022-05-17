@@ -13,21 +13,82 @@ import React, { Component, useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import classes from './Carousel.module.css';
 
-const Carousel = () => {
-  const [nav, setNav] = useState({
-    nav1: null,
-    nav2: null,
-  });
 
-  let slider1 = useRef(null);
-  let slider2 = useRef(null);
 
-  useEffect(() => {
-    setNav({
-      nav1: slider1,
-      nav2: slider2,
+// const Carousel = () => {
+//   const [nav, setNav] = useState({
+//     nav1: null,
+//     nav2: null,
+//   });
+
+//   let slider1 = useRef(null);
+//   let slider2 = useRef(null);
+
+//   useEffect(() => {
+//     setNav({
+//       nav1: slider1,
+//       nav2: slider2,
+//     });
+//   }, []);
+
+
+export default class AsNavFor extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      nav1: null,
+      nav2: null,
+      width: ["50%"],
+    };
+  }
+
+  componentDidMount() {
+    this.setState({
+      nav1: this.slider1,
+      nav2: this.slider2,
     });
-  }, []);
+  }
+  render() {
+    var settings = {
+      dots: false,
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 4,
+      autoplay: true,
+      speed: 7000,
+      autoplaySpeed: 7000,
+      centerMode: true,
+      cssEase: "linear",
+      className: "center",
+      centerPadding: "60px",
+
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 4,
+            slidesToScroll: 4,
+            infinite: true,
+            dots: false,
+          }
+        },
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          }
+        }
+      ]
+    };
 
   return (
     <div className={classes.carousel}>
@@ -51,7 +112,20 @@ const Carousel = () => {
           </div>
         </div>
       </div>
+
       <Slider
+          {...settings}
+          className={classes.slider1}
+          asNavFor={this.state.nav1}
+          ref={(slider) => (this.slider1 = slider)}
+          slidesToShow={4}
+          swipeToShow={1}
+          swipeToSlide={true}
+          focusOnSelect={true}
+          centerMode={true}
+          speed={1}
+        >
+      {/* <Slider
         className={classes.slider1}
         slidesToShow={5}
         swipeToShow={1}
@@ -63,7 +137,7 @@ const Carousel = () => {
         ref={(slider) => (slider1 = slider)}
         centerPadding="50px"
         infinite={true}
-      >
+      > */}
         <div className={classes.images}>
           <img src={Logo3} alt="smithMorgan" />
           <h3>Smith Morgan</h3>
@@ -86,45 +160,30 @@ const Carousel = () => {
 
           <h3>Modupe Adelabu</h3>
         </div>
-        <div className={classes.images}>
-          <img src={Logo3} alt="smithMorgan" />
-          <h3>Smith Morgan</h3>
-        </div>
-        <div className={classes.images}>
-          <img src={Logo4} alt="smithMorgan" />
-          <h3>Desire Gold</h3>
-        </div>
-        <div className={classes.images}>
-          <img src={Logo5} alt="smithMorgan" />
-          <h3>Adekunle Awotipe</h3>
-        </div>
-        <div className={classes.images}>
-          <img src={Logo6} alt="smithMorgan" />
-          <h3>Victor Eneh</h3>
-        </div>
-        <div className={classes.images}>
-          <img src={Logo7} alt="smithMorgan" />
-
-          <h3>Modupe Adelabu</h3>
-        </div>
+      
       </Slider>
 
       <Slider
+          className={classes.slider}
+          asNavFor={this.state.nav1}
+          ref={(slider) => (this.slider1 = slider)}
+        >
+      {/* <Slider
         className={classes.slider}
         asNavFor={nav.nav1}
         ref={(slider) => (slider2 = slider)}
         slidesToShow={1}
         swipeToSlide={false}
         focusOnSelect={true}
-      >
+      > */}
         <div className={classes.textField}>
           <div className={classes.textFielda}>
             <img src={Logo8} alt="germany flag" />
             <p className={classes.week}> 1hour ago</p>
           </div>
-          <p>
+          <p className={classes.carotext}>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. V
+            sint. Velit officia consequat duis enim velit mollit.
           </p>
         </div>
         <div className={classes.textField}>
@@ -132,9 +191,9 @@ const Carousel = () => {
             <img src={Logo8} alt="germany flag" />
             <p className={classes.week}> 1 weeek ago</p>
           </div>
-          <p>
+          <p className={classes.carotext}>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit offic
+            sint.  Velit officia consequat duis enim velit mollit.
           </p>
         </div>
         <div className={classes.textField}>
@@ -144,10 +203,9 @@ const Carousel = () => {
             </div>
             <p className={classes.week}> 7days ago</p>
           </div>
-          <p>
+          <p className={classes.carotext}>
             non deserunt ullamco est sit aliqua dolor do amet sint. Velit
-            officia consequat duis enim velit mollit. Exercitation veniam
-            consequat sunt nostrud amet.
+            officia consequat duis enim velit mollit.
           </p>
         </div>
         <div className={classes.textField}>
@@ -155,9 +213,9 @@ const Carousel = () => {
             <img src={Logo9} alt="nigeria flag" />
             <p className={classes.week}> 3days ago</p>
           </div>
-          <p>
+          <p className={classes.carotext}>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia consequat duis enim velit mollit. Exercitati
+            sint. Velit officia consequat duis enim velit mollit.
           </p>
         </div>
         <div className={classes.textField}>
@@ -165,59 +223,16 @@ const Carousel = () => {
             <img src={Logo9} alt="germany flag" />
             <p className={classes.weeek}> 1 weeek ago</p>
           </div>
-          <p>Amet minim mollit non de</p>
+          <p className={classes.carotext}>
+            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+            sint. Velit officia consequat duis enim velit
+             mollit. </p>
         </div>
 
-        <div className={classes.textField}>
-          <div className={classes.textFielda}>
-            <img src={Logo8} alt="germany flag" />
-            <p className={classes.week}> 1hour ago</p>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit officia
-          </p>
-        </div>
-        <div className={classes.textField}>
-          <div className={classes.textFielda}>
-            <img src={Logo8} alt="germany flag" />
-            <p className={classes.week}> 1 weeek ago</p>
-          </div>
-          <p>ostrud amet.</p>
-        </div>
-        <div className={classes.textField}>
-          <div className={classes.textFielda}>
-            <img src={Logo8} alt="germany flag" />
-            <p className={classes.week}> 7days ago</p>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Ve
-          </p>
-        </div>
-        <div className={classes.textField}>
-          <div className={classes.textFielda}>
-            <img src={Logo9} alt="nigeria flag" />
-            <p className={classes.week}> 3days ago</p>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-            sint. Velit off
-          </p>
-        </div>
-        <div className={classes.textField}>
-          <div className={classes.textFielda}>
-            <img src={Logo9} alt="germany flag" />
-            <p className={classes.week}> 1 weeek ago</p>
-          </div>
-          <p>
-            Amet minim mollit non deserunt ullamcoelit mollit. Exercitation
-            veniam consequat sunt nostrud amet.
-          </p>
-        </div>
       </Slider>
     </div>
   );
 };
+}
 
-export default Carousel;
+// export default Carousel;

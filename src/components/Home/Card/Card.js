@@ -43,6 +43,7 @@ const Card = () => {
               content={item.content}
             />
           ))}
+      
         </div>
       </div>
     </div>

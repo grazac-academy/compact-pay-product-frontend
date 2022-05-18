@@ -1,0 +1,171 @@
+
+.mobile{
+    max-width: 80%;
+    margin: 100px auto 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.iphone{
+    width: 40%;
+}
+.iphone img{
+    width: 80%;
+}
+.H2text{
+    display: none;
+}
+.transfer{
+    width: 60%;
+    margin-left: 50px;
+}
+.transfer h2{
+    width: 80%;
+    font-weight: 800;
+    font-size: 2.5rem;
+    line-height: 50px;
+    margin-top: 40px;
+    color: #000028;
+}
+.transfer p{
+    width: 85%;
+    font-size: 1rem;
+    margin-top: 20px;
+    color: rgba(0, 0, 40, 0.5);
+}
+.applications{
+    display: flex;
+    margin-top: 20px;
+}
+.applications img{
+    width: 30%;
+    margin-right: 20px;
+}
+.work{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0px auto;
+}
+
+.how{
+    text-align: center;
+    border: solid white 1px;
+    background-color: white;
+    margin-top: -130px;
+    position: relative;
+    margin-bottom: 80px;
+}
+.how h2{
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #00493C;
+}
+.how p{
+    width: 45%;
+    margin: 10px auto 100px ;
+    color: rgba(0, 0, 40, 0.5);
+}
+
+
+/* media responsive */
+
+@media (max-width: 1200px){
+   .how{
+        margin-top: -70px;
+   }
+   .transfer h2{
+       margin-top: 0px;
+       width: 100%;
+   }
+   .mobile{
+    margin: 50px auto 0px;
+    }
+    .work{
+        width: 90%;
+    }
+}
+
+@media (max-width: 1000px){
+    .transfer p{
+        width: 95%;
+    }
+    .how{
+        margin-top: 0px;
+   }
+   .transfer{
+    margin-left: 0px;
+    }
+}
+@media (max-width: 830px){
+    .work{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+        grid-row-gap: 70px;
+    }
+}
+@media (max-width: 768px){
+    .mobile{
+        display: block;
+    }
+    .iphone{
+        width: 100%;
+    }
+    .iphone img{
+        width: 50%;
+        margin: auto;
+        display: flex;
+        justify-self: center;
+    }
+    .transfer{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 550px){
+    .transfer h2{
+        font-size: 2rem;
+    }
+    .mobile{
+        width: 100%;
+    }
+    .transfer p{
+        width: 100%;
+        font-size: 0.9rem;
+    }
+    .applications{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .applications img{
+        width: 60%;
+        margin-bottom: 20px;
+        margin-right: 0px;
+    }
+    .work{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .how p{
+        width: 70%;
+    }
+}
+@media (max-width: 450px){
+    .transfer h2{
+        display:none;
+    }
+    .H2text{
+        font-size: 1.7rem;
+        line-height: 30px;
+        display: block;
+        font-weight: 800;
+        margin-top: 40px;
+        margin-bottom: 20px;
+        color: #000028;
+    }
+    
+}

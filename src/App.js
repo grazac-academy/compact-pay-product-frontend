@@ -1,12 +1,11 @@
 import { Routes, Route } from "react-router-dom";
-import MainLayout from "./layout/MainLayout/mainLayout";
-import Home from "./pages/Home/Home";
-import Signin from "./pages/Authi/Signin/signin";
-import Signup from "./pages/Authi/Signup/signup";
-import ForgotPassword from "./pages/Authi/ForgotPassword/forgotPassword";
-import CreateAcct from "./pages/Authi/CreateAcct/creatAcct";
-import VerifyMail from "./pages/Authi/VerifyMail/verifyMail";
-
+import MainLayout from "layout/MainLayout/mainLayout";
+import Home from "pages/Home/Home";
+import Signin from "pages/Authi/Signin/signin";
+import Signup from "pages/Authi/Signup/signup";
+import ForgotPassword from "pages/Authi/ForgotPassword/forgotPassword";
+import CreateAcct from "pages/Authi/CreateAcct/creatAcct";
+import VerifyMail from "pages/Authi/VerifyMail/verifyMail";
 
 function App() {
   return (

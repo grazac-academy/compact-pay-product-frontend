@@ -37,3 +37,18 @@ input:focus {
 .form-input:focus {
   outline: none;
 }
+
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: var(--grey);
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--grey);
+}
+
+::placeholder {
+  color: var(--grey);
+}

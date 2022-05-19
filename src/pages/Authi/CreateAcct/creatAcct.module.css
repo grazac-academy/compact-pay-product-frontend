@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 48%;
 }
-.form_contain p {
+.form_cont p {
   color: #AC1D40;
 }
 
@@ -65,23 +65,11 @@ input:focus {
   outline: none;
 }
 
-::-webkit-input-placeholder {
-  /* Edge */
-  color: var(--grey);
-}
-
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: var(--grey);
-}
-
-::placeholder {
-  color: var(--grey);
-}
 
 .Name {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  column-gap: 15px;
+  grid-template-columns: auto auto;
   width: 100%;
 }
 

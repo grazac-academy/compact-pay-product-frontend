@@ -3,13 +3,10 @@ import "./header2.css";
 import { RiMenu2Fill } from "react-icons/ri";
 import { RiCloseLine } from "react-icons/ri";
 import { Link } from "react-router-dom";
-import Logo from "../../../../assets/Landing/Logo.svg";
-import Button from "../../Button/button";
+import Logo from "assets/Landing/Logo.svg";
+import Button from "components/UI/Button/button";
 
 const Navbar = () => {
-
-
-  
   const [showMenu, setShowMenu] = useState(false);
 
   const toggleMenu = () => {

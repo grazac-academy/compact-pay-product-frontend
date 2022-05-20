@@ -1,0 +1,22 @@
+.custom_select {
+    padding: 1rem 1.5rem;
+    width: 100%;
+    margin: 1.5rem 0rem;
+    border-radius: 8px;
+}
+
+
+.new_account2 {
+    text-align: center;
+    margin-top: 2rem ;
+}
+
+.new_account2 span  {
+    color:#DA4167;
+    font-weight: var(--light);
+}
+
+
+.new_account2 a {
+    text-decoration: none;
+}

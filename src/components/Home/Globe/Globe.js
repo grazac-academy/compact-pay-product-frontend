@@ -1,6 +1,6 @@
-import React from 'react';
-import classes from './Globe.module.css';
-import Logo from 'assets/Landing/world.png';
+import React from "react";
+import classes from "./Globe.module.css";
+import Logo from "assets/Landing/world.png";
 
 function Globe() {
   return (

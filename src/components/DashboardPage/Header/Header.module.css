@@ -1,0 +1,40 @@
+.Head{
+    background-color: var(--white);
+}
+
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    height: 4rem;
+}
+.Logo img{
+    width: 80%;
+    align-self: center;
+    display: flex;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar p:first-child{
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--grey);
+    margin-right: 1rem;
+}
+.navbar p:last-child{
+    font-size: 1rem;
+    font-weight: 600;
+    margin-left: 0.5rem;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    margin: 0 1rem;
+}

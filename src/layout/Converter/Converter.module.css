@@ -1,0 +1,88 @@
+.convertbox{
+    border-radius: 16px;
+    border: 1px solid white;
+    width: 90%;
+    margin: 10px;
+    background-color:white;
+    box-shadow: 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+}
+.sendtext{
+    background-color:#00493C;
+    border-radius: 16px 16px 0px 0px;
+    margin-bottom: 15px;
+}
+.convertbox h2{
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px 0px;
+    color: #fff;
+    font-size: 1rem;
+}
+.convertbox button{
+    background-color:#00493C;
+    width: 90%;
+    display: flex;
+    justify-content:center;
+    margin: 40px auto 25px;
+    color: white;
+    font-size: 1.3rem;
+    border: none;
+    border-radius:8px;
+    padding: 15px 10px;
+    font-weight: 600;
+}
+.convertbox p{
+    width: 90%;
+    margin: 0 auto;
+    font-size:0.9rem;
+    color: #00493C;
+}
+.transaction{
+    width: 90%;
+    margin: 10px auto;
+    background-color:rgba(4, 154, 118, 0.25);
+    display: flex;
+    padding: 10px 15px;
+    justify-content: space-between;
+    border-radius:10px;
+}
+.exchange,
+.fee{
+    width: 40%;
+    color: rgba(128, 128, 147, 1);
+}
+.exchange p,
+.fee p{
+    width: 100%;
+    color: #00493C;
+    margin: 10px 0;
+}
+
+             /* media responsive */
+
+ @media (max-width: 1200px){
+    .exchange,
+    .fee{
+        width: 60%;
+    }
+ }
+
+ @media (max-width: 600px){
+    .exchange,
+    .fee{
+        width: 80%;
+    }
+    .exchange p,
+    .fee p{
+        font-size: 0.7rem;
+    }   
+    .transaction h4{
+        font-size: 0.7rem;
+    }
+    .convertbox{
+        width: 100%;
+        margin: 10px auto;
+    }
+
+}
+ 

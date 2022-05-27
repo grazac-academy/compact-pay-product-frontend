@@ -162,7 +162,7 @@
 
 @media (max-width:1237px) {
     .world>img{
-        width:110%;
+        width:100%;
     }
 }
 
@@ -284,6 +284,8 @@
     }
     .world{
         width: 70%;
+        display: flex;
+        flex-direction: row;
         margin:0 auto;
      }
      .section5a{
@@ -301,12 +303,21 @@
         width: 280px;
        
     }
+    .section5a1{
+        margin:auto;
+        width:100%;
+    }
+    .Globe_world>img{
+        width:100%;
+        margin: auto;
+
+    }
 }
 
 @media screen and (max-width:576px) {
      .section5a{
          width: 70%;
-         margin: 0 auto;
+         margin: 0 25px;
      }
      .section5a3{
         width: 250px;

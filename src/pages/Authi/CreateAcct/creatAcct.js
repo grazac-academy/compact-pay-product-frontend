@@ -66,7 +66,7 @@ const CreateAcct = () => {
           <FormGroup
             label="First Name"
             type="text"
-            placeholder="Enter your email address"
+            placeholder="Enter your first name"
             name="firstName"
             onChange={formik.handleChange}
             value={formik.values.firstName}
@@ -77,7 +77,7 @@ const CreateAcct = () => {
           <FormGroup
             label="Last Name"
             type="text"
-            placeholder="Enter your email address"
+            placeholder="Enter your last name"
             name="lastName"
             onChange={formik.handleChange}
             value={formik.values.lastName}

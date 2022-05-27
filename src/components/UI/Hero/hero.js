@@ -1,4 +1,5 @@
 import React from "react";
+import Converter from 'layout/Converter/Converter';
 import classes from "./hero.module.css";
 
 const Hero = () => {
@@ -12,6 +13,7 @@ const Hero = () => {
           locally and internationally.
         </p>
       </div>
+      <div className={classes.hero_right}><Converter /></div>
     </div>
   );
 };

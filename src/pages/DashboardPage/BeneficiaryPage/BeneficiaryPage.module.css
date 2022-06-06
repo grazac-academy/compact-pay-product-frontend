@@ -1,0 +1,335 @@
+.Personal{
+    display:flex;
+    justify-content: space-between;
+}
+.account{
+    width: 50%;
+    padding:1.2rem;
+    background: var(--second);
+    border-radius:10px; 
+    display: flex;
+    position: relative;
+}
+.saved p,
+.New p{
+    font-size:0.7rem;
+    color:#C5C4C4;
+    font-weight: 400;
+}
+.saved h3{
+    font-size:1.1rem;
+    color:white;
+    font-weight: 700;
+}
+
+
+
+.providus p{
+    font-size:0.7rem;
+    color:#C5C4C4;
+    font-weight: 400;
+}
+.providus p:nth-child(2){
+   font-size: 1.4rem;
+   margin-top: 1.2rem;
+}
+.providus p:nth-child(3){
+    font-size: 1rem;
+ }
+.providus h5{
+    color:white;
+    font-weight: 700;
+}
+.providus button{
+    background:white;
+    width: 45%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border:none;
+    margin-top:1.5rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ }
+ .providus button span{
+     margin-left:1rem;
+     font-size:0.6rem;
+     color:#6D6D6D;
+ }
+
+
+
+.New h3{
+    font-size:1.1rem;
+    font-weight: 700;
+    margin-top: 1.7rem;
+}
+.New{
+    width: 48%;
+    padding:1.2rem;
+    background: var(--white);
+    border-radius:10px; 
+}
+.saved button{
+    background:white;
+    width: 45%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border:none;
+    margin-top:1.2rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ }
+ .saved button span{
+     margin-left:1rem;
+     font-size:0.9rem;
+     color:#6D6D6D;
+ }
+ .New button{
+    background:#AC1D40;
+    width: 50%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border:none;
+    margin-top:2.7rem;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+ }
+ .New button span{
+     margin-left:1rem;
+     font-size:0.9rem;
+     color:white;
+ }
+ .New button img{
+    filter:brightness(0) invert(1);
+ }
+ .saved{
+     width: 55%;
+     display: none;
+ }
+ .providus{
+    width: 55%;
+    /* display: none; */
+}
+ .fig{
+     width: 40%;
+     position: absolute;
+     top: 32%;
+     right: 0;
+ }
+ .fig img{
+     width: 100%;
+ }
+.createBen{
+    width: 52%;
+}
+
+.trans{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+.View{
+    border:1px solid rgba(0, 0, 40, 0.25);
+    color: rgba(0, 0, 40, 0.25);
+    padding: 0.2rem 0.8rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50%;
+}
+.View input{
+    font-size:0.9rem;
+    margin-right: 1.5rem;
+    width:100%;
+    background-color: transparent;
+    outline:none;
+    border: none;
+}
+.View input::placeholder{
+    color: rgba(0, 0, 40, 0.25);
+}
+
+.trans h2{
+    color: var(--primary);
+    font-weight:700;
+}
+.leftview{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 30%;
+}
+
+.filterselect{
+    border:1px solid rgba(0, 0, 40, 0.25);
+    color: rgba(0, 0, 40, 0.25);
+    padding: 0.2rem 0.2rem;
+    border-radius: 0.5rem;
+}
+.filterselect select{
+    color: rgba(0, 0, 40, 0.25);
+    padding: 0.2rem 0.8rem;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.list{
+    padding: 1rem;
+    background: var(--white);
+    border-radius:10px;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.list th{
+    text-align:left;
+
+}
+.list td{
+    text-align: left;
+}
+.list
+th:nth-of-type(5){
+  text-align:center;
+}
+
+.list
+td:nth-of-type(5){
+  text-align:center;
+}
+
+.prev{
+    transform:rotate(180deg);
+    background:#AC1D40;
+    border-radius: 0.5rem;
+    font-size:30px;
+    color: white;
+}
+.next{
+    background:#AC1D40;
+    border-radius: 0.5rem;
+    font-size:30px;
+    color: white;
+}
+
+.page{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    justify-content: flex-end;
+
+}
+
+.num{
+    background:white;
+    border-radius: 0.5rem;
+    border: 1px solid #E7E7E7;
+    padding: 0.1rem 0.6rem;
+    font-size: 0.85rem;
+}
+
+.transaction{
+    display: none;
+}
+
+.NoBeneficiary{
+    width: 50%;
+    margin: 5rem auto;
+    text-align: center;
+    /* display: none; */
+}
+.NoBeneficiary p{
+    font-size: 0.7rem;
+}
+.NoBeneficiary button{
+    background:#AC1D40;
+    width: 30%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border:none;
+    margin:1.5rem 0 1.5rem;
+ }
+ .NoBeneficiary button span{
+     margin-left:1rem;
+     font-size:0.9rem;
+     color:white;
+ }
+ .NoBeneficiary button img{
+    filter:brightness(0) invert(1);
+ }
+
+
+ /* Modals */
+
+ .Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+    overflow: scroll;
+  }
+  
+  .Overlay {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .ModalAdd {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .OverlayAdd {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .ModalChange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+    overflow-y: scroll;
+  }
+  
+  .OverlayChange {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }

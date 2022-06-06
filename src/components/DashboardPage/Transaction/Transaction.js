@@ -1,19 +1,22 @@
 import classes from './Transaction.module.css';
 import rightarrow from 'assets/Dashboard/Arrow - Right.svg';
-import greaterthan from 'assets/Dashboard/greater_than.svg';
+// import greaterthan from 'assets/Dashboard/greater_than.svg';
 import Pagination from 'components/UI/Pagination/Pagination';
 import { MdNavigateNext } from 'react-icons/md';
+import { TransactionTable } from "../../../constants/TransactionTable";
+
 
 
 const Transaction = () => {
+
     return (
         <div>
             <div className={classes.trans}>    
                 <h2>Transaction History</h2>
                 <div className={classes.View}>
                      <span>View All</span>
-                     <img src={rightarrow} alt="" />
-                </div>
+                      <img src={rightarrow} alt="icon" />
+                </div> 
             </div>
         <table className={classes.transaction}>
             <thead>
@@ -27,8 +30,26 @@ const Transaction = () => {
                     <th>Action</th>
                 </tr>
             </thead>  
-            <tbody>
-                <tr>
+
+            {TransactionTable.map((item, index) => {
+                    return(
+                        <tbody key={index}>
+                            <tr>
+                            <td >{item.text1}</td>
+                            <td>{item.text2}</td>
+                            <td>{item.text3}</td>
+                            <td>{item.text4}</td>
+                            <td>{item.text5}</td>
+                            <td className={classes[item.css]}><p>{item.text6}</p></td>
+                            <td><img src={item.image} alt="" /></td>
+                            </tr>
+                        </tbody> 
+                    )
+                })}
+
+
+            
+                {/* <tr>
                     <td>100006758983</td>
                     <td>10 May 2022, 8:45PM</td>
                     <td>₦ 2,400</td>
@@ -99,8 +120,8 @@ const Transaction = () => {
                     <td>Fund Transfer</td>
                     <td className={classes.pend}><p>Pending</p></td>
                     <td><img src={greaterthan} alt="" /></td>
-                </tr>
-            </tbody> 
+                </tr> */}
+        
         </table>
             <div className={classes.page} >
                 <Pagination ><MdNavigateNext className={classes.prev}/></Pagination>

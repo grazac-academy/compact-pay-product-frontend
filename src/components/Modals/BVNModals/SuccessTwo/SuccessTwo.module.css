@@ -1,0 +1,34 @@
+.Success button{
+    width: 50%;
+    margin: 35px auto;
+    background-color: var(--second);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem;
+    border: 1px solid var(--second);
+    display: flex;
+    justify-content: center;
+
+}
+.Success {
+    text-align: center;
+    margin-top: 5rem;
+}
+.Success_img{
+    width: 50%;
+    margin: 10px auto;
+}
+
+.Success p{
+    width: 58%;
+    color: #C5C4C4;
+    font-size: 0.8rem;
+    margin: 10px auto;
+}
+
+.Success a{
+    text-decoration: none;
+}

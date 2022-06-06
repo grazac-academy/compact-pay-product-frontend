@@ -1,0 +1,78 @@
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+    overflow-y: scroll;
+  }
+  
+  .Overlay {
+    position: fixed;
+    z-index: 115;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .Verification{
+    background-color: var(--second);
+    text-align: center;
+    padding: 1.2rem;
+    color: white;
+    position: relative;
+}
+.Verification img{
+    position: absolute;
+    top: 45%;
+    left: 2%;
+}
+
+.Verification p{
+    font-size: 0.8rem;
+    color: #808093;
+}
+
+.PhoneNum h4{
+    color: #00493C;
+}
+
+.PhoneNum input{
+    width: 100%;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 1.2rem 0.8rem;
+    outline: none;
+    border: 1px solid #C5C4C4;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.PhoneNum input::placeholder{
+    color: #5E5E5E;
+}
+
+.phone{
+    width: 70%;
+    margin: 20px auto;
+}
+
+.phone button{
+    width: 90%;
+    margin: 55px auto 35px;
+    background-color: var(--second);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem;
+    border: 1px solid var(--second);
+    display: flex;
+    justify-content: center;
+}

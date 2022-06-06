@@ -1,0 +1,74 @@
+.welcome{
+    width: 60%;
+    margin: 0 auto ;
+    padding-bottom: 10px;
+}
+.welcomeimg{
+    width: 70%;
+    margin: 5px auto;
+}
+.welcomeimg img{
+    width: 100%;
+}
+.welcome h2{
+    text-align: center;
+}
+.welcome p{
+    color: #C5C4C4;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.welcome button{
+    width: 90%;
+    margin: 50px auto;
+    background-color: var(--second);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem;
+    border: 1px solid var(--second);
+    display: flex;
+    justify-content: center;
+
+}
+
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .Overlay {
+    position: fixed;
+    z-index: 111;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  
+.Modal button{
+    width: 65%;
+    margin: 35px auto;
+    background-color: var(--second);
+    color: white;
+    font-size: 1.2rem;
+    font-weight: 700;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0.7rem;
+    border: 1px solid var(--second);
+    display: flex;
+    justify-content: center;
+
+}

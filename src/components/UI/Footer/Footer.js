@@ -1,10 +1,10 @@
-import compactLogo from 'assets/Landing/Logo.svg';
-import facebook from 'assets/Landing/facebook.svg';
-import twitter from 'assets/Landing/twitter.svg';
-import instagram from 'assets/Landing/instagram.svg';
-import youtube from 'assets/Landing/youtube.svg';
-import linkedin from 'assets/Landing/linkedin.svg';
-import classes from './Footer.module.css';
+import compactLogo from "assets/Landing/Logo.svg";
+import facebook from "assets/Landing/facebook.svg";
+import twitter from "assets/Landing/twitter.svg";
+import instagram from "assets/Landing/instagram.svg";
+import youtube from "assets/Landing/youtube.svg";
+import linkedin from "assets/Landing/linkedin.svg";
+import classes from "./Footer.module.css";
 
 const Footer = () => {
   return (

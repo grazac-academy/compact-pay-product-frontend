@@ -1,0 +1,15 @@
+.dashboard{
+    background-color: #EFF5F4;
+    min-height: 100vh;
+}
+
+.dashboard_contain{
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.dashInfo{
+    width: 80%;
+    margin: 1rem auto 0;
+}

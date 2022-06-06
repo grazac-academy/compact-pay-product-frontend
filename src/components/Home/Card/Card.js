@@ -1,9 +1,9 @@
-import classes from './Card.module.css';
-import iphone from 'assets/Landing/productMobileImage.png';
-import appstore from 'assets/Landing/appleStore.png';
-import googleplay from 'assets/Landing/googlePlayButton.png';
-import { works } from '../../../constants/index';
-import CardItem from 'components/Home/CardItem/CardItem';
+import classes from "./Card.module.css";
+import iphone from "assets/Landing/productMobileImage2.svg";
+import appstore from "assets/Landing/appleStore.png";
+import googleplay from "assets/Landing/googlePlayButton.png";
+import { works } from "constants/index";
+import CardItem from "components/Home/CardItem/CardItem";
 
 const Card = () => {
   return (

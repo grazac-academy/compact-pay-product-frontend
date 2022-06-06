@@ -1,0 +1,95 @@
+form Button {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  color: var(--white);
+  background: var(--second);
+  border-radius: 8px;
+  font-weight: var(--bold);
+  font-size: 1.1rem;
+}
+
+.forgot_sect {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.check input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  font-size: 1rem;
+}
+
+.forgot span {
+  color: #da4167;
+  font-weight: var(--light);
+}
+
+.forgot a {
+  text-decoration: none;
+}
+
+.new_account {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.new_account span {
+  color: #da4167;
+  font-weight: var(--light);
+}
+
+.new_account a {
+  text-decoration: none;
+}
+
+.password {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+
+.password input {
+  width: 100%;
+}
+
+.btn {
+  position: absolute;
+  width: 10%;
+  right: 10px;
+  top: 25%;
+  height: 100%;
+  background: none;
+  color: var(--black);
+}
+
+.form_contain {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form_contain:not(:last-child) {
+  margin-bottom: 20px;
+}
+.form_input {
+  padding: 15px 15px;
+  font-size: 16px;
+  background: #ffffff;
+  border: 1px solid var(--grey);
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .forgot_sect {
+    margin-bottom: 1.5rem;
+  }
+
+  .new_account {
+    text-align: center;
+    margin-top: 0.8rem;
+  }
+}

@@ -20,17 +20,17 @@
 }
 .transfer h2{
     width: 80%;
-    font-weight: 800;
-    font-size: 2.5rem;
+    font-weight: var(--bold);
+    font-size: 30px;
     line-height: 50px;
     margin-top: 40px;
-    color: #000028;
+    color: var(--text);
 }
 .transfer p{
     width: 85%;
     font-size: 1rem;
     margin-top: 20px;
-    color: rgba(0, 0, 40, 0.5);
+    color: var(--grey);
 }
 .applications{
     display: flex;
@@ -43,8 +43,13 @@
 .work{
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin: 0px auto;
+    width: 85%;
+    margin: 10rem auto 0px auto;
+}
+
+.work_container {
+    width: 100%;
+    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
 }
 
 .how{
@@ -56,15 +61,15 @@
     margin-bottom: 80px;
 }
 .how h2{
-    margin-top: 100px;
+    margin-top: 60px;
     font-size: 2rem;
-    font-weight: 800;
-    color: #00493C;
+    font-weight: var(--bold);
+    color: var(--second);
 }
 .how p{
     width: 45%;
-    margin: 10px auto 100px ;
-    color: rgba(0, 0, 40, 0.5);
+    margin: 10px auto 50px auto;
+    color: var(--grey);
 }
 
 
@@ -108,6 +113,7 @@
 @media (max-width: 768px){
     .mobile{
         display: block;
+        text-align: center;
     }
     .iphone{
         width: 100%;
@@ -121,6 +127,9 @@
     .transfer{
         width: 100%;
         margin-top: 30px;
+    }
+    .applications{
+        justify-content: center;
     }
 }
 
@@ -151,9 +160,12 @@
         grid-template-columns: repeat(1, 1fr);
     }
     .how p{
-        width: 70%;
+            width: 70%;
+            margin: 10px auto 27px auto;
+            color: var(--grey);
+        }
     }
-}
+
 @media (max-width: 450px){
     .transfer h2{
         display:none;
@@ -165,7 +177,7 @@
         font-weight: 800;
         margin-top: 40px;
         margin-bottom: 20px;
-        color: #000028;
+        color: var(--text);
     }
     
 }

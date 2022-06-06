@@ -12,10 +12,9 @@
 .container>h4{
     padding:56px 0px 70px 0px;
     font-family: "cairo";
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 30px;
+    font-weight: 700;
     line-height: 75px;
-    letter-spacing: 0em;
     text-align: center;
      
 
@@ -57,7 +56,8 @@
     font-size: 32px;
     line-height: 50px;
     margin-left: 22px;
-
+    color: #00493C;
+    
 }
 .section5a3>p{
     font-family: 'Cairo';
@@ -95,7 +95,8 @@
     font-size: 32px;
     line-height: 50px;
     margin-left: 22px;
-
+    color: #00493C;
+    
 }
 .section5a31>p{
     font-family: 'Cairo';
@@ -133,6 +134,8 @@
     font-size: 32px;
     line-height: 50px;
     margin-left: 22px;
+    color: #00493C;
+    
    
 
 }
@@ -147,16 +150,19 @@
 }
 .world{
    width: 50%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
 }
 .world>img{
-    width:95%;
+    width:auto;
     
 }
 
 
 @media (max-width:1237px) {
     .world>img{
-        width:110%;
+        width:100%;
     }
 }
 
@@ -261,9 +267,83 @@
         width:50% ;
     }
     
-    .world>img{
+    .Globe_world>img{
         width:110%;
         margin-right: 10px;
-        margin-top: 30px;
+        margin-top: -30px;
     }
+}
+
+@media (max-width:700px) {
+    .section5{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .container{
+        height: auto;
+    }
+    .world{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        margin:0 auto;
+     }
+     .section5a{
+         width: 70%;
+         margin: 0 auto;
+     }
+     .section5a3{
+        width: 280px;
+       
+    }.section5a31{
+        width: 280px;
+       
+    }
+    .section5a32{
+        width: 280px;
+       
+    }
+    .section5a1{
+        margin:auto;
+        width:100%;
+    }
+    .Globe_world>img{
+        width:100%;
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:576px) {
+     .section5a{
+         width: 70%;
+         margin: 0 25px;
+     }
+     .section5a3{
+        width: 250px;
+    }
+    .container h4{
+        line-height: 40px;
+        font-size: 23px;
+        margin-bottom:10px;
+
+    }
+    .section5a1{
+        margin:auto;
+        width: 100%;
+    }
+    .section5a31{
+        width: 250px;
+       
+    }
+    .section5a32{
+        width: 250px;
+       
+    }
+
+    }
+
+.world img{
+    margin-bottom:20px;
+    margin-top:-35px;
 }

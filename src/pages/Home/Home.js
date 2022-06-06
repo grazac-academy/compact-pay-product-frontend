@@ -1,12 +1,10 @@
-import Header2 from '../../components/UI/Header/Header2/header2';
-import Hero from '../../components/UI/Hero/hero';
+import Hero from 'components/UI/Hero/hero';
 import classes from './home.module.css';
-import Whyuscard from '../../components/UI/Whyuscard/Whyuscard';
-import { cardCont } from '../../constants';
-import Card from '../../components/Home/Card/Card';
-// import Carousel from '../../components/Home/Globe/Carousel';
-import Globe from '../../components/Home/Globe/Globe';
-import Carousel from '../../components/Home/Carousel/Carousel';
+import Whyuscard from 'components/UI/Whyuscard/whyuscard';
+import { cardCont } from 'constants';
+import Card from 'components/Home/Card/Card';
+import Globe from 'components/Home/Globe/Globe';
+import Carousel from 'components/Home/Carousel/Carousel';
 const Home = () => {
   return (
     <>

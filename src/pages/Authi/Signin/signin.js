@@ -5,14 +5,46 @@ import style from "./signin.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
+import { login } from "services/auth";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const navigate = useNavigate();
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
   };
+  const handleChange = (e) => {
+    setData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
 
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(data);
+    try {
+      setLoading(true);
+      const response = await login(data);
+      localStorage.setItem("id", response.data._id);
+      console.log(response.data);
+      navigate("/modal");
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      toast.error(error.response.data.message);
+    }
+  };
   return (
     <AuthLayout
       title1="Send Money Seamlessly!"
@@ -24,8 +56,9 @@ const Signin = () => {
           label="Email Address"
           type="text"
           placeholder="Enter your email address"
-          name="FullName"
+          name="email"
           required={true}
+          onChange={(e) => handleChange(e)}
         />
 
         <div className={style.form_contain}>
@@ -38,6 +71,7 @@ const Signin = () => {
               placeholder="Create a password"
               name="password"
               required={true}
+              onChange={(e) => handleChange(e)}
             />
             <div className={style.btn} onClick={toggleBtn}>
               {showPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
@@ -58,12 +92,14 @@ const Signin = () => {
             </p>
           </div>
         </div>
-        <Button type="submit">Log in</Button>
+        <Button type="submit" onClick={handleSubmit}>
+          Log in
+        </Button>
 
         <div className={style.new_account}>
           <p>
             New to Compactpay?{" "}
-            <Link to="/signup">
+            <Link to="/register">
               {" "}
               <span>Create Account</span>
             </Link>

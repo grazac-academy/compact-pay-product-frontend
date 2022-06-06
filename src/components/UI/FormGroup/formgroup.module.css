@@ -1,14 +1,13 @@
-.form-group {
+.form_group {
   display: flex;
   flex-direction: column;
 }
 
-.form-group:not(:last-child) {
+.form_group:not(:last-child) {
   margin-bottom: 20px;
 }
 
-.form-label {
-  font-style: normal;
+.form_label {
   font-weight: var(--light);
   font-size: 15px;
   line-height: 28px;
@@ -16,17 +15,16 @@
   margin-bottom: 8px;
 }
 
-.form-input {
+.form_input {
   width: 100%;
   padding: 15px 15px;
   font-size: 16px;
   background: #ffffff;
   border: 1px solid var(--grey);
-  box-sizing: border-box;
   border-radius: 8px;
 }
 
-.form-group p {
+.form_group p {
   color: #AC1D40;
 }
 
@@ -34,21 +32,29 @@ input:focus {
   border: 2px solid var(--primary);
 }
 
-.form-input:focus {
+.form_input:focus {
   outline: none;
 }
 
+.error {
+  border: 1px solid #AC1D40 !important;
+}
 
-::-webkit-input-placeholder {
-  /* Edge */
+input::-webkit-input-placeholder {
+  /* Edge and chrome */
   color: var(--grey);
 }
 
-:-ms-input-placeholder {
+input:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: var(--grey);
 }
 
-::placeholder {
+input:-moz-input-placeholder {
+  /* Mozilla firefox */
+  color: var(--grey);
+}
+
+input::placeholder {
   color: var(--grey);
 }

@@ -20,13 +20,12 @@ const Navbar = () => {
       </div>
       <menu className="menu-links">
         <div
-          className="nav-links"
-          id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
+          className="nav-links" id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
         >
           <Link to="/" className="navItems">
             Home
           </Link>
-          <Link to="/about_us" className="navItems">
+          <Link to="/modal" className="navItems">
             About Us
           </Link>
           <Link to="/our_services" className="navItems">
@@ -37,7 +36,7 @@ const Navbar = () => {
             <Link to="/signin" className="btnOutlined">
               <Button>Sign in</Button>
             </Link>
-            <Link to="/signup" className="btnFilled">
+            <Link to="/register" className="btnFilled">
               <Button>Register</Button>
             </Link>
           </div>

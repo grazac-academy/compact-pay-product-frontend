@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 .grid {
@@ -30,4 +31,80 @@
   }
 
 
+=======
+.form_cont {
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+  }
+  
+  .form_cont:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .form_input {
+    padding: 20px 15px;
+    font-size: 16px;
+    background: #ffffff;
+    border: 1px solid var(--grey);
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  
+  input:focus {
+    border: 2px solid var(--primary);
+  }
+  
+  .form_input:focus {
+    outline: none;
+  }
+
+  ::-webkit-input-placeholder { /* Edge */
+    color: var(--grey);
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: var(--grey);
+  }
+  
+  ::placeholder {
+    color: var(--grey);
+  }
+  
+.Name {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.forgot_sect {
+  margin-bottom: 2rem ;
+}
+
+.forgot span  {
+    color:#DA4167;
+    font-weight: var(--light);
+}
+
+.forgot a {
+    text-decoration: none;
+}
+
+
+.new_account {
+  text-align: center;
+  margin-top: 1.5rem ;
+}
+
+.new_account span  {
+  color:#DA4167;
+  font-weight: var(--light);
+}
+
+
+.new_account a {
+  text-decoration: none;
+>>>>>>> main
 }

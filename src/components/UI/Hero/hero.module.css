@@ -1,13 +1,18 @@
 .hero_cont {
     width: 80%;
+<<<<<<< HEAD
     height: 33rem;
     margin: 0 auto;
+=======
+    min-height: 33rem;
+    margin: 1.5rem auto;
+>>>>>>> main
     display: flex;
     justify-content: space-between;
 }
 
 .hero_left {
-    width: 50%;
+    width: 45%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,14 +32,35 @@
 }
 
 
+@media screen and (max-width: 1050px) {
+    .hero_cont {
+        display: block;
+    }
+    .hero_left {
+        width: 80%;
+        margin: auto;
+    }
+    .hero_right {
+        width: 80%;
+        margin: 2.5rem auto;
+    }
+    
+}
+
 
 @media screen and (max-width: 768px) {
 
     .hero_cont {
         width: 80%;
+<<<<<<< HEAD
         height: 24rem;
         margin: 0 auto 24px auto;
         display: flex;
+=======
+        min-height: 24rem;
+        margin: 0 auto 24px auto;
+        display: block;
+>>>>>>> main
         justify-content: space-between;
     }
      
@@ -57,13 +83,20 @@
 @media screen and (max-width: 576px) {
     .hero_cont {
         width: 80%;
+<<<<<<< HEAD
         height: 45rem;
+=======
+        min-height: 45rem;
+>>>>>>> main
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .hero_left {
+        width: 100%;
+    }
+    .hero_right {
         width: 100%;
     }
 

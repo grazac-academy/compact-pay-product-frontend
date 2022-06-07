@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import styles from "./formgroup.module.css";
 import { useState } from "react";
 
@@ -17,6 +18,16 @@ const FormGroup = ({ label, isValid, errorMessage, onChange, ...props }) => {
         {...props}
       />
       {!valid && <p>{errorMessage}</p>}
+=======
+import "./formgroup.css";
+
+const FormGroup = ({ label, errorMessage, ...props }) => {
+  return (
+    <div className="form-group">
+      <label className="form-label">{label}</label>
+      <input {...props} className="form-input" />
+      <p>{errorMessage}</p>
+>>>>>>> main
     </div>
   );
 };

@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import compactLogo from "assets/Landing/Logo.svg";
+=======
+import compactLogo from "assets/Landing/Logowhite.svg";
+>>>>>>> main
 import facebook from "assets/Landing/facebook.svg";
 import twitter from "assets/Landing/twitter.svg";
 import instagram from "assets/Landing/instagram.svg";

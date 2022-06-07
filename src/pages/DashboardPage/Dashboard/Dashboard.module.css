@@ -1,0 +1,147 @@
+.dashboard{
+    background-color: #EFF5F4;
+    min-height: 100vh;
+}
+
+.dashboard_contain{
+    display: flex;
+    min-height: 100vh;
+}
+.dashInfo{
+    width: 100%;
+    margin: 1rem auto 1.5rem;
+}
+.wallet{
+    display:flex;
+    justify-content: space-between;
+}
+.wallet_contain{
+    width: 48%;
+    padding:0.6rem;
+    background: var(--white);
+    border-radius:10px; 
+}
+.graph{
+    width: 50%;
+    padding:0.6rem;
+    background: var(--white);
+    border-radius:10px; 
+}
+.Money{
+    display:grid;
+    grid-template-columns: 1.8fr 1fr;
+    margin: 0.5rem 0;
+    gap:15px;
+}
+.Naira{
+    background: var(--second);
+    border-radius:16px; 
+    padding: 1rem;
+}
+.Naira p{
+    font-size:0.9rem;
+    color:#F9F9F9;
+    font-weight: 500;
+}
+.Send p{
+    font-size:0.55rem;
+    color:#DBDBDB;
+    font-weight: 400;
+}
+.Send h3{
+    font-size:1.2rem;
+    color:white;
+    font-weight: 700;
+}
+.Naira h5{
+    font-size:0.9rem;
+    color:rgba(249, 249, 249, 0.7);
+    margin: 1.5rem 0 0;
+}
+.Naira h2{
+    font-size:1.7rem;
+    color:white;
+    margin: 0 0;
+    font-weight:400;
+}
+.Naira button{
+   background:white;
+   width: 50%;
+   padding: 0.8rem;
+   border-radius: 8px;
+   border:none;
+   margin-top:1.2rem;
+   display:flex;
+   align-items:center;
+   justify-content:center;
+}
+.Naira button span{
+    margin-left:1rem;
+    font-size:0.9rem;
+    color:#6D6D6D;
+}
+.Send{
+    background: #AC1D40;
+    border-radius:16px; 
+    padding: 1rem 0 1rem 0.7rem;
+}
+.MdNavigateNext{
+    background: white;
+    font-size:30px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    margin: 0.5rem 0 0;
+}
+.Transaction{
+    width:100%;
+    background: var(--white);
+    border-radius:10px;
+    padding:1rem;
+    margin-top: 1rem;
+}
+
+
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .Overlay {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.ModalFund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .OverlayFund {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  

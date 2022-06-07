@@ -1,6 +1,10 @@
 
 .CardItem{
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 32%;
+>>>>>>> main
     display: flex;
     flex-direction: column;
     align-items: center;

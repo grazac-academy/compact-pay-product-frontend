@@ -20,12 +20,21 @@ const Navbar = () => {
       </div>
       <menu className="menu-links">
         <div
+<<<<<<< HEAD
           className="nav-links" id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
+=======
+          className="nav-links"
+          id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
+>>>>>>> main
         >
           <Link to="/" className="navItems">
             Home
           </Link>
+<<<<<<< HEAD
           <Link to="/modal" className="navItems">
+=======
+          <Link to="/about_us" className="navItems">
+>>>>>>> main
             About Us
           </Link>
           <Link to="/our_services" className="navItems">
@@ -36,7 +45,11 @@ const Navbar = () => {
             <Link to="/signin" className="btnOutlined">
               <Button>Sign in</Button>
             </Link>
+<<<<<<< HEAD
             <Link to="/register" className="btnFilled">
+=======
+            <Link to="/signup" className="btnFilled">
+>>>>>>> main
               <Button>Register</Button>
             </Link>
           </div>

@@ -1,5 +1,9 @@
 import classes from "./Card.module.css";
+<<<<<<< HEAD
 import iphone from "assets/Landing/productMobileImage.png";
+=======
+import iphone from "assets/Landing/productMobileImage2.svg";
+>>>>>>> main
 import appstore from "assets/Landing/appleStore.png";
 import googleplay from "assets/Landing/googlePlayButton.png";
 import { works } from "constants/index";

@@ -44,7 +44,11 @@
 .work{
     display: flex;
     justify-content: space-between;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 85%;
+>>>>>>> main
     margin: 10rem auto 0px auto;
 }
 
@@ -65,7 +69,11 @@
     margin-top: 60px;
     font-size: 2rem;
     font-weight: var(--bold);
+<<<<<<< HEAD
     color: var(--text);
+=======
+    color: var(--second);
+>>>>>>> main
 }
 .how p{
     width: 45%;
@@ -128,6 +136,9 @@
     .transfer{
         width: 100%;
         margin-top: 30px;
+    }
+    .applications{
+        justify-content: center;
     }
 }
 

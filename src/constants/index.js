@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import Createaccount from "assets/Landing/creatAccount.svg";
+=======
+import createaccount from "assets/Landing/creatAccount.svg";
+>>>>>>> main
 import verifyAccount from "assets/Landing/verifyAccount.svg";
 import sendMoney from "assets/Landing/sendMoney.svg";
 
@@ -6,13 +10,25 @@ import Image1 from "assets/Landing/swift.svg";
 import Image2 from "assets/Landing/secure.svg";
 import Image3 from "assets/Landing/money.svg";
 
+<<<<<<< HEAD
 import { checkMail, checkPassword } from "utils/regex";
+=======
+import dashboardicon from "assets/Dashboard/Dashboardicon.svg";
+import transactionicon from "assets/Dashboard/transaction_icon.svg";
+import beneficiaryicon from "assets/Dashboard/beneficiary_icon.svg";
+import profileicon from "assets/Dashboard/profile_icon.svg";
+
+>>>>>>> main
 
 // How it works
 export const works = [
   {
     id: 1,
+<<<<<<< HEAD
     img: Createaccount,
+=======
+    img: createaccount,
+>>>>>>> main
     title: "Create Account",
     content:
       "Simple and secure control of your organization's financial and legal transactions. Send customized invoices and contracts",
@@ -54,6 +70,7 @@ export const cardCont = [
   },
 ];
 
+<<<<<<< HEAD
 export const inputArr = [
   {
     label: "First Name",
@@ -100,3 +117,33 @@ export const inputArr = [
 
 
 
+=======
+// Sidebar
+
+export const sideNavbar = [
+  {
+    id: 1,
+    image: dashboardicon,
+    title: "Dashboard",
+    link: "./home",
+  },
+  {
+    id: 2,
+    image: transactionicon,
+    title: "Transactions",
+    link: "./transaction",
+  },
+  {
+    id: 3,
+    image: beneficiaryicon,
+    title: "Beneficiaries",
+    link: "./beneficiary",
+  },
+  {
+    id: 4,
+    image: profileicon,
+    title: "Profile",
+    link: "./profile",
+  }
+]
+>>>>>>> main

@@ -1,5 +1,67 @@
+<<<<<<< HEAD
 
 .full5{
+=======
+.section2 {
+    height: 35rem;
+    background: var(--second);
+}
+
+.header {
+    padding: 3.5rem 0rem 3.5rem 0rem;
+}
+
+
+
+.card_container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 768px) {
+    .card_container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .section2 {
+        height: 27rem;
+    }
+
+    .sect-header2 {
+        font-weight: 700;
+        font-size: 25px;
+        color: #ffff;
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .card_container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 52rem;
+    }
+
+    .section2 {
+        height: 73rem;
+    }
+
+}
+
+
+
+.full5 {
+>>>>>>> main
     background-color: #FAFAFA;
 }
 .container{

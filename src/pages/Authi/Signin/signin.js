@@ -5,6 +5,7 @@ import style from "./signin.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
+<<<<<<< HEAD
 import { login } from "services/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
@@ -19,10 +20,25 @@ const Signin = () => {
   const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
+=======
+import {useNavigate} from 'react-router-dom';
+
+const Signin = () => {
+  const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    navigate('/dashboard/home')
+};
+
+
+>>>>>>> main
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
   };
+<<<<<<< HEAD
   const handleChange = (e) => {
     setData((prevState) => ({
       ...prevState,
@@ -45,12 +61,16 @@ const Signin = () => {
       toast.error(error.response.data.message);
     }
   };
+=======
+
+>>>>>>> main
   return (
     <AuthLayout
       title1="Send Money Seamlessly!"
       title2="Welcome Back"
       info="Enter your details to login to your account."
     >
+<<<<<<< HEAD
       <form>
         <FormGroup
           label="Email Address"
@@ -59,6 +79,15 @@ const Signin = () => {
           name="email"
           required={true}
           onChange={(e) => handleChange(e)}
+=======
+      <form onSubmit={handleSubmit}> 
+        <FormGroup
+          label="Email Address"
+          type="email"
+          placeholder="Enter your email address"
+          name="FullName"
+          required={true}
+>>>>>>> main
         />
 
         <div className={style.form_contain}>
@@ -71,7 +100,10 @@ const Signin = () => {
               placeholder="Create a password"
               name="password"
               required={true}
+<<<<<<< HEAD
               onChange={(e) => handleChange(e)}
+=======
+>>>>>>> main
             />
             <div className={style.btn} onClick={toggleBtn}>
               {showPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
@@ -92,22 +124,42 @@ const Signin = () => {
             </p>
           </div>
         </div>
+<<<<<<< HEAD
         <Button type="submit" onClick={handleSubmit}>
           Log in
         </Button>
+=======
+
+        <Button type="submit" >Log in</Button>
+        {/* onClick={()=>setModalIsOpen(true)} */}
+        </form> 
+    
+>>>>>>> main
 
         <div className={style.new_account}>
           <p>
             New to Compactpay?{" "}
+<<<<<<< HEAD
             <Link to="/register">
+=======
+            <Link to="/signup">
+>>>>>>> main
               {" "}
               <span>Create Account</span>
             </Link>
           </p>
         </div>
+<<<<<<< HEAD
       </form>
+=======
+
+>>>>>>> main
     </AuthLayout>
   );
 };
 
+<<<<<<< HEAD
 export default Signin;
+=======
+export default Signin; 
+>>>>>>> main

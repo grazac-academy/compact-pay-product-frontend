@@ -1,0 +1,80 @@
+.TransDetails{
+    display: flex;
+    justify-content: space-between;
+}
+.Funding{
+    background-color: var(--second);
+    text-align: center;
+    padding: 0.9rem 0.9rem 2.5rem;
+    color: white;
+    position: relative;
+}
+.doublearrow{
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 75%;
+    margin: auto auto;
+    width: 100px;
+    height: 100px;
+}
+
+.Funding p{
+    font-size: 0.8rem;
+    margin-bottom: 2rem;
+}
+.Funding h1{
+    font-size: 2.2rem;
+}
+.close{
+    display: flex;
+    justify-content: flex-end;
+}
+.FundP2P h4{
+    color: var(--second);
+    font-size: 1.2rem;
+    margin-top: 50px;
+    text-align: center;
+}
+.FundP2P p{
+    font-size: 0.9rem;
+    text-align: center;
+}
+.Funddetails{
+    width: 95%;
+    margin: 20px auto 50px;
+    padding: 1rem;
+    background-color:  #FFF3F6;
+}
+.Funddetails p{
+    color: #808093;
+    font-size: 0.8rem;
+}
+.Funddetails h4{
+    color: #252525;
+    font-weight: 600;
+    margin-bottom: 10px;
+    font-size: 0.8rem;
+}
+.Funddetails h6{
+    font-size: 0.8rem;
+}
+.TransDetails{
+    margin-bottom: 15px;
+}
+
+.success h5{
+    display: flex;
+    justify-content: center;
+    background-color: #EFFFF2;
+    text-align: center;
+    color: #0A9328;
+    border-radius: 5px;
+    font-size: 0.7rem;
+    width: 70%;
+}
+.success{
+    justify-content: flex-end;
+    display: flex;
+}
+

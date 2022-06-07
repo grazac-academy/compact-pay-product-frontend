@@ -1,0 +1,116 @@
+.rect {
+    background-color: var(--second);
+    border-radius: 16px;
+    height: 8rem;
+    width: 100%;
+    position: relative;
+}
+
+.half{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.big{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.circle{
+    border-radius: 50%;
+    border: 1px solid #C4C4C4;
+    background-color: #C4C4C4;
+    width: 8rem;
+    height: 8rem;
+    position: relative;
+}
+.edit{
+    position: absolute;
+    right: 0;
+    bottom:15%;
+}
+.profileinfo{
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.profile{
+    background-color: white;
+    border-radius: 10px;
+    padding-bottom: 30px;
+}
+.info {
+    margin-left: 30px;
+}
+
+.info p:nth-child(3){
+    background-color: #FFF8F4;
+    padding: 0.7rem;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    color: #6D6D6D;
+}
+.info p{
+    font-size: 1rem;
+    color:#969BA0;
+}
+
+.details{
+    width: 93%;
+    margin: 20px auto;
+}
+.details h5{
+    color:rgba(128, 128, 147, 1);
+}
+.details p{
+    color: var(--second);
+}
+.details_sub{
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+}
+.address{
+    width: 93%;
+    margin: 20px auto;
+}
+.address h5{
+    color:rgba(128, 128, 147, 1);
+}
+.address p{
+    color: var(--second);
+}
+.address_sub{
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+}
+.address_road{
+    width: 50%;
+}
+.address_date{
+    width: 55%; 
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.nga{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.profilebottom{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.profilepassword{
+    background-color: white;
+    padding: 2rem 2rem;
+    border-radius: 5px;
+    width: 49%;
+}

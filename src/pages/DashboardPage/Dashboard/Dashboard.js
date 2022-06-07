@@ -5,8 +5,31 @@ import { MdNavigateNext } from 'react-icons/md';
 import DashboardChart from 'components/DashboardPage/DashboardChart/DashboardChart';
 import Transaction from 'components/DashboardPage/Transaction/Transaction';
 import Button from 'components/UI/Button/button';
+import { useState, useEffect } from "react";
+import WelcomeModal from 'components/Modals/BVNModals/WelcomeModal/WelcomeModal';
+import FundWallet from 'components/Modals/FundModal/FundWallet';
+import Modal from 'react-modal';
+
+
+
+Modal.setAppElement('#root');
 
 const Dashboard = () => {
+
+    const [modalIsOpen, setModalIsOpen] = useState(false);
+    const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
+
+    const handleClick = () => setModalFundIsOpen(false);
+
+
+
+    useEffect(() => {
+        if (Dashboard) {
+          setModalIsOpen(true)
+        }
+      }, []);
+
+
     return (
         // <DashboardLayout>
             <div className={classes.dashInfo}>
@@ -18,7 +41,7 @@ const Dashboard = () => {
                                 <p>Naira Wallet</p>
                                 <h5>Wallet Balance</h5>
                                 <h2>₦ 100,390,000</h2>
-                                <Button >
+                                <Button  onClick={()=> setModalFundIsOpen(true)} >
                                     <img src={addfund} alt=""/>
                                     <span>Fund Wallet</span>
                                 </Button>
@@ -38,6 +61,21 @@ const Dashboard = () => {
                 <div className={classes.Transaction}>
                     <Transaction />
                 </div>
+
+                <Modal isOpen={modalIsOpen} onRequestClose={()=> {setModalIsOpen(false)}} 
+              className={classes.Modal}
+           overlayClassName={classes.Overlay}>
+          <WelcomeModal />
+          </Modal>
+
+          <Modal isOpen={modalFundIsOpen} onRequestClose={()=> {setModalFundIsOpen(false)}} 
+              className={classes.ModalFund}
+           overlayClassName={classes.OverlayFund}>
+          <FundWallet onClick={handleClick}/> 
+          </Modal>
+
+          
+
             </div>
         // </DashboardLayout>
     );

@@ -83,7 +83,7 @@
 .Send{
     background: #AC1D40;
     border-radius:16px; 
-    padding: 1rem 0 1rem 1rem;
+    padding: 1rem 0 1rem 0.7rem;
 }
 .MdNavigateNext{
     background: white;
@@ -99,3 +99,49 @@
     padding:1rem;
     margin-top: 1rem;
 }
+
+
+.Modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .Overlay {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+.ModalFund {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    margin: auto auto;
+    background-color: white;
+    height: 80%;
+  }
+  
+  .OverlayFund {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  

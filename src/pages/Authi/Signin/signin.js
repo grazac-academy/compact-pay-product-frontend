@@ -5,9 +5,18 @@ import style from "./signin.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
+import {useNavigate} from 'react-router-dom';
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
+
+  const navigate = useNavigate();
+  const handleSubmit = (evt) => {
+    evt.preventDefault();
+    navigate('/dashboard/home')
+};
+
+
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
@@ -19,10 +28,10 @@ const Signin = () => {
       title2="Welcome Back"
       info="Enter your details to login to your account."
     >
-      <form>
+      <form onSubmit={handleSubmit}> 
         <FormGroup
           label="Email Address"
-          type="text"
+          type="email"
           placeholder="Enter your email address"
           name="FullName"
           required={true}
@@ -58,7 +67,11 @@ const Signin = () => {
             </p>
           </div>
         </div>
-        <Button type="submit">Log in</Button>
+
+        <Button type="submit" >Log in</Button>
+        {/* onClick={()=>setModalIsOpen(true)} */}
+        </form> 
+    
 
         <div className={style.new_account}>
           <p>
@@ -69,9 +82,9 @@ const Signin = () => {
             </Link>
           </p>
         </div>
-      </form>
+
     </AuthLayout>
   );
 };
 
-export default Signin;
+export default Signin; 

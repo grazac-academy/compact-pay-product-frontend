@@ -1,8 +1,8 @@
 import './button.css';
 
-const Button = ({ children, type, isLoading }) => {
+const Button = ({ children, type, isLoading, onClick }) => {
   return (
-    <button className={'button'} type={type}>
+    <button className={'button'} type={type} onClick={onClick}>
       {isLoading ? 'Loading...' : children}
     </button>
   );

@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import {CreateAccount} from "services/auth";
+import {useNavigate} from 'react-router-dom';
 
 const CreateAcct = () => {
   const formik = useFormik({
@@ -41,8 +42,11 @@ const CreateAcct = () => {
 
 
   });
+
+  const navigate = useNavigate();
   const handleSubmit = async (e) =>{
     e.preventDefault();
+    navigate('/dashboard/home')
     const response = await CreateAccount
     console.log("dare");
     try{

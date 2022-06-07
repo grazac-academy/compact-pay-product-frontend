@@ -4,7 +4,7 @@ import addfund from 'assets/Dashboard/addfund.svg';
 import NoBeneficiary from 'assets/Dashboard/NoBeneficiary.svg';
 import Edit from 'assets/Dashboard/Edit.svg';
 import beneficiary_fig from 'assets/Dashboard/beneficiary_fig.svg';
-import search from "assets/Dashboard/search.svg";
+import search from "assets/Dashboard/Search.svg";
 import Pagination from 'components/UI/Pagination/Pagination';
 import { MdNavigateNext } from 'react-icons/md';
 import { BeneficiaryTable } from "../../../constants/TransactionTable";

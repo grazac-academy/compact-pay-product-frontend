@@ -284,11 +284,8 @@
     }
     .world{
         width: 70%;
-<<<<<<< HEAD
-=======
         display: flex;
         flex-direction: row;
->>>>>>> main
         margin:0 auto;
      }
      .section5a{
@@ -306,8 +303,6 @@
         width: 280px;
        
     }
-<<<<<<< HEAD
-=======
     .section5a1{
         margin:auto;
         width:100%;
@@ -317,17 +312,12 @@
         margin: auto;
 
     }
->>>>>>> main
 }
 
 @media screen and (max-width:576px) {
      .section5a{
          width: 70%;
-<<<<<<< HEAD
-         margin: 0 auto;
-=======
          margin: 0 25px;
->>>>>>> main
      }
      .section5a3{
         width: 250px;

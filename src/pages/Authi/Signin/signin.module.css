@@ -74,10 +74,6 @@ form Button {
 .form_contain:not(:last-child) {
   margin-bottom: 20px;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 .form_input {
   padding: 15px 15px;
   font-size: 16px;
@@ -87,14 +83,11 @@ form Button {
   border-radius: 8px;
 }
 
-<<<<<<< HEAD
-=======
 form button a{
   text-decoration: none;
 }
 
 
->>>>>>> main
 @media screen and (max-width: 768px) {
   .forgot_sect {
     margin-bottom: 1.5rem;
@@ -104,8 +97,4 @@ form button a{
     text-align: center;
     margin-top: 0.8rem;
   }
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main

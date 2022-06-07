@@ -2,7 +2,6 @@ import AuthLayout from "../../../layout/Auth/Auth";
 import Button from "components/UI/Button/button";
 import style from "../VerifyMail/verifyMail.module.css";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
 import { useState } from "react";
 import { verify } from "services/auth";
 import { useNavigate } from "react-router-dom";
@@ -56,10 +55,6 @@ const VerifyMail = () => {
     }
   };
 
-=======
-
-const VerifyMail = () => {
->>>>>>> main
   return (
     <AuthLayout
       title1="Lets help you make borderless Payment!"
@@ -67,7 +62,6 @@ const VerifyMail = () => {
       info="Almost there! We sent an email to users@gmail.com containing your OTP. Kindly enter 6-digit OTP here"
     >
       <form>
-<<<<<<< HEAD
       <div className={`${style.grid}`}>
           {arr.map((item, index) => (
             <input
@@ -85,63 +79,6 @@ const VerifyMail = () => {
               }
             />
           ))}
-=======
-        <div className={style.Name}>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
-          <div className={style.form_cont}>
-            <input
-              className={style.form_input}
-              label="Email Address"
-              type="text"
-              name="FullName"
-              required={true}
-            />
-          </div>
->>>>>>> main
         </div>
 
         <div className={style.forgot_sect}>
@@ -158,11 +95,7 @@ const VerifyMail = () => {
             </p>
           </div>
         </div>
-<<<<<<< HEAD
         <Button type="submit" onClick={handleSubmit}>Verify</Button>
-=======
-        <Button type="submit">Verify</Button>
->>>>>>> main
 
         <div className={style.new_account}>
           <p>

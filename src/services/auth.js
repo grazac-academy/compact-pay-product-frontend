@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import axios from "axios";
 import { baseLink } from "../axios/base";
 
@@ -27,19 +26,4 @@ export const verify = async (id, otp) => {
     data: { otp: otp },
   });
   return response;
-=======
-import axios from 'axios';
-import {baseLink} from '../axios/base';
-
-
-export const CreateAccount = async (data) => {
-    const response = await axios({
-        method: 'post',
-        url: `${baseLink}/auth/register`,
-        headers: { },
-        data : data,
-    });
-    return response;
-   
->>>>>>> main
 };

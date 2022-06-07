@@ -3,10 +3,7 @@
   flex-direction: column;
   width: 48%;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> main
 .form_cont p {
   color: #AC1D40;
 }
@@ -43,7 +40,6 @@
   border-radius: 8px;
 }
 
-<<<<<<< HEAD
 .phoneNumber>div {
   border: 1px solid var(--grey);
   border-radius: 8px;
@@ -70,8 +66,6 @@
 
 
 
-=======
->>>>>>> main
 .password {
   display: flex;
   position: relative;
@@ -90,10 +84,6 @@
   background: none;
   color: var(--black);
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> main
 input:focus {
   border: 2px solid var(--primary);
 }
@@ -135,8 +125,4 @@ input:focus {
 
 .new_account a {
   text-decoration: none;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> main

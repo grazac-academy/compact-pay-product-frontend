@@ -1,12 +1,7 @@
 .hero_cont {
     width: 80%;
-<<<<<<< HEAD
-    height: 33rem;
-    margin: 0 auto;
-=======
     min-height: 33rem;
     margin: 1.5rem auto;
->>>>>>> main
     display: flex;
     justify-content: space-between;
 }
@@ -52,15 +47,9 @@
 
     .hero_cont {
         width: 80%;
-<<<<<<< HEAD
-        height: 24rem;
-        margin: 0 auto 24px auto;
-        display: flex;
-=======
         min-height: 24rem;
         margin: 0 auto 24px auto;
         display: block;
->>>>>>> main
         justify-content: space-between;
     }
      
@@ -83,11 +72,7 @@
 @media screen and (max-width: 576px) {
     .hero_cont {
         width: 80%;
-<<<<<<< HEAD
-        height: 45rem;
-=======
         min-height: 45rem;
->>>>>>> main
         display: flex;
         flex-direction: column;
         align-items: center;

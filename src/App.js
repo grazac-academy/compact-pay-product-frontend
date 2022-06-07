@@ -36,12 +36,10 @@ function App() {
         />
 
         <Route path="/signin" element={<Signin />} />
-<<<<<<< HEAD
         <Route path="/register" element={<Register />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/verifyMail" element={<VerifyMail />} />
         <Route path="/modal" element={<Modal />} />
-=======
         <Route path="/signup" element={<Signup />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
         <Route path="/createAcct" element={<CreateAcct />} />
@@ -52,7 +50,6 @@ function App() {
           <Route path="beneficiary" element={<BeneficiaryPage />}/>
           <Route path="profile" element={<Profile />}/>
         </Route>
->>>>>>> main
       </Routes>
     </>
   );

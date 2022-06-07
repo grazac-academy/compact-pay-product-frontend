@@ -37,7 +37,7 @@ const Navbar = () => {
             <Link to="/signin" className="btnOutlined">
               <Button>Sign in</Button>
             </Link>
-            <Link to="/signup" className="btnFilled">
+            <Link to="/register" className="btnFilled">
               <Button>Register</Button>
             </Link>
           </div>

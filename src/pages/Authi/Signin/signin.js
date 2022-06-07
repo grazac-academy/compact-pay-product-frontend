@@ -5,21 +5,45 @@ import style from "./signin.module.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
-import {useNavigate} from 'react-router-dom';
+import { login } from "services/auth";
+import { useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
+  const [data, setData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const [loading, setLoading] = useState(false);
 
   const navigate = useNavigate();
-  const handleSubmit = (evt) => {
-    evt.preventDefault();
-    navigate('/dashboard/home')
-};
-
-
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
+  };
+  const handleChange = (e) => {
+    setData((prevState) => ({
+      ...prevState,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    console.log(data);
+    try {
+      setLoading(true);
+      const response = await login(data);
+      localStorage.setItem("id", response.data._id);
+      console.log(response.data);
+      navigate("/modal");
+    } catch (error) {
+      setLoading(false);
+      console.log(error);
+      toast.error(error.response.data.message);
+    }
   };
 
   return (
@@ -28,13 +52,14 @@ const Signin = () => {
       title2="Welcome Back"
       info="Enter your details to login to your account."
     >
-      <form onSubmit={handleSubmit}> 
+      <form>
         <FormGroup
           label="Email Address"
-          type="email"
+          type="text"
           placeholder="Enter your email address"
-          name="FullName"
+          name="email"
           required={true}
+          onChange={(e) => handleChange(e)}
         />
 
         <div className={style.form_contain}>
@@ -47,6 +72,7 @@ const Signin = () => {
               placeholder="Create a password"
               name="password"
               required={true}
+              onChange={(e) => handleChange(e)}
             />
             <div className={style.btn} onClick={toggleBtn}>
               {showPassword ? <AiOutlineEye /> : <AiOutlineEyeInvisible />}
@@ -67,24 +93,23 @@ const Signin = () => {
             </p>
           </div>
         </div>
-
-        <Button type="submit" >Log in</Button>
-        {/* onClick={()=>setModalIsOpen(true)} */}
-        </form> 
-    
+        <Button type="submit" onClick={handleSubmit}>
+          Log in
+        </Button>
 
         <div className={style.new_account}>
           <p>
             New to Compactpay?{" "}
-            <Link to="/signup">
+            <Link to="/register">
               {" "}
               <span>Create Account</span>
             </Link>
           </p>
         </div>
+      </form>
 
     </AuthLayout>
   );
 };
 
-export default Signin; 
+export default Signin;

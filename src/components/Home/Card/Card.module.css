@@ -35,6 +35,7 @@
 .applications{
     display: flex;
     margin-top: 20px;
+    justify-content: center;
 }
 .applications img{
     width: 30%;
@@ -119,7 +120,7 @@
         width: 100%;
     }
     .iphone img{
-        width: 50%;
+        width: 25%;
         margin: auto;
         display: flex;
         justify-self: center;
@@ -136,7 +137,7 @@
 @media (max-width: 550px){
     .transfer h2{
         font-size: 2rem;
-    }
+    }/./
     .mobile{
         width: 100%;
     }

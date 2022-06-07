@@ -8,12 +8,9 @@
     -ms-user-select: none;
     user-select: none;
     background-image: none;
-<<<<<<< HEAD
 }
 
 .button:disabled {
     background: var(--grey);
     cursor: not-allowed;
-=======
->>>>>>> main
 }

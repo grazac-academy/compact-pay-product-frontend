@@ -15,6 +15,9 @@
     text-align: center;
    
 } 
+.next{
+    margin:1.7rem auto 0;
+}
 .Rdetails h2{
     color:var(--white);
     margin-top: 0.9rem;
@@ -51,12 +54,7 @@ label{
     color: rgba(0, 73, 60, 1);
   
 }
-/* input{
-    border-radius: 5px;
-    border:1px solid #C5C4C4;
-    width: 100%;
-   
-} */
+
 
 
 .select{

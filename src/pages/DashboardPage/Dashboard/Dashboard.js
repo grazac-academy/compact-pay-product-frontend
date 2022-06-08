@@ -54,12 +54,10 @@ const Dashboard = ( ) => {
               <h3>Send Money</h3>
               <p>Access seamless crossborder payment</p>
 
-              <button
-                onClick={() => setModalSendIsOpen(true)}
-                className={classes.MdNavigateNext}
-              >
-                <MdNavigateNext />
-              </button>
+              
+                <MdNavigateNext onClick={() => setModalSendIsOpen(true)}
+                className={classes.MdNavigateNext} />
+             
           </div>
           </div>
         </div>

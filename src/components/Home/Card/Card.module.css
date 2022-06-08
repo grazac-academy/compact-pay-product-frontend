@@ -35,7 +35,6 @@
 .applications{
     display: flex;
     margin-top: 20px;
-    justify-content: center;
 }
 .applications img{
     width: 30%;

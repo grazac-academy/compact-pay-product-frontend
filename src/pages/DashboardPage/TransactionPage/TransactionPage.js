@@ -73,7 +73,8 @@ const TransactionPage = () => {
                         </tbody> 
                     )
                 })}
-    
+        
+
        
     </table>
 

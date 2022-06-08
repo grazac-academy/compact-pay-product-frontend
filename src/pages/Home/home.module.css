@@ -1,8 +1,7 @@
-.section2 {
+.section2{
     height: 35rem;
     background: var(--second);
 }
-
 .header {
     padding: 3.5rem 0rem 3.5rem 0rem;
 }

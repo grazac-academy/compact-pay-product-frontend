@@ -5,26 +5,36 @@ import { MdNavigateNext } from "react-icons/md";
 import DashboardChart from "components/DashboardPage/DashboardChart/DashboardChart";
 import Transaction from "components/DashboardPage/Transaction/Transaction";
 import Button from "components/UI/Button/button";
+import SendMoney from "components/Modal/SendMoney/SendMoney";
+import Modal from "react-modal";
 import { useState, useEffect } from "react";
 import WelcomeModal from "components/Modals/BVNModals/WelcomeModal/WelcomeModal";
 import FundWallet from "components/Modals/FundModal/FundWallet";
-import Modal from "react-modal";
 
 Modal.setAppElement("#root");
 
-const Dashboard = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
+const Dashboard = ( ) => {
+  
+   const [modalSendIsOpen, setModalSendIsOpen] = useState(false);
 
-  const handleClick = () => setModalFundIsOpen(false);
+   const [modalIsOpen, setModalIsOpen] = useState(false);
+   const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
+ 
+   const handleClick = () => setModalFundIsOpen(false);
+   const handleSendClick = () => modalSendIsOpen(false);
+ 
+   useEffect(() => {
+     if (Dashboard) {
+       setModalIsOpen(true);
+     }
+   }, []);
 
-  useEffect(() => {
-    if (Dashboard) {
-      setModalIsOpen(true);
-    }
-  }, []);
+  
+
 
   return (
+
+    
     <div className={classes.dashInfo}>
       <div className={classes.wallet}>
         <div className={classes.wallet_contain}>
@@ -34,7 +44,7 @@ const Dashboard = () => {
               <p>Naira Wallet</p>
               <h5>Wallet Balance</h5>
               <h2>₦ 100,390,000</h2>
-              <Button onClick={() => setModalFundIsOpen(true)}>
+              <Button  onClick={() => setModalFundIsOpen(true)}>
                 <img src={addfund} alt="" />
                 <span>Fund Wallet</span>
               </Button>
@@ -43,8 +53,12 @@ const Dashboard = () => {
               <img src={sendmoney} alt="" />
               <h3>Send Money</h3>
               <p>Access seamless crossborder payment</p>
-              <MdNavigateNext className={classes.MdNavigateNext} />
-            </div>
+
+              
+                <MdNavigateNext onClick={() => setModalSendIsOpen(true)}
+                className={classes.MdNavigateNext} />
+             
+          </div>
           </div>
         </div>
         <div className={classes.graph}>
@@ -55,6 +69,8 @@ const Dashboard = () => {
         <Transaction />
       </div>
 
+      
+    
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => {
@@ -76,6 +92,16 @@ const Dashboard = () => {
       >
         <FundWallet onClick={handleClick} />
       </Modal>
+
+        <Modal
+           isOpen={modalSendIsOpen}
+            className={classes.ModalSend}
+             overlayClassName={classes.OverlaySend}
+             >
+              <SendMoney onClick={handleSendClick} />
+         </Modal>
+
+
     </div>
   );
 };

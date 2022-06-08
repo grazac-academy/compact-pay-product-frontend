@@ -1,0 +1,153 @@
+
+.SendMoney{
+    background-color:var(--white);
+    width: 100%;
+     border-radius:5px;
+    
+    
+}
+.spread{
+    background-color: rgba(0, 73, 60, 1);
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+   align-items: center;
+   border-radius:5px 5px 0px 0px
+}
+.money{
+    margin:5px auto 0px;
+    border-radius: 5px ;
+    text-align: center;
+   
+} 
+.money h2{
+    color:var(--white);
+    margin-top: 0.9rem;
+}
+.money p{
+    color: rgba(128, 128, 147, 1);
+    font-size: 0.8rem;
+    margin-bottom: 00.7rem;
+
+
+}
+.icon{
+    margin-right:0.9rem ;
+}
+.modalButtons{
+  
+   margin: 2rem 10rem;
+   
+}
+.modalB{
+    margin-bottom: 1.3rem;
+    background: var(--white);
+    border:none;
+    display:flex;
+    padding:1rem ;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    gap: 0.9rem;
+   
+}
+.save h5 {
+   color:rgba(0, 73, 60, 1);
+}
+.save p {
+    color : rgba(128, 128, 147, 1);
+    font-size: 0.7rem;
+
+}
+.h1{
+    font-size:20rem;
+}
+
+.OverlayN{
+     background-color:rgba(0, 0, 0, 0.1 );
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: +311111111111111111111111111111111111111111111111111111;
+}
+.ModalN{
+    background-color:var(--white);
+    height: 88%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto auto;
+    border-radius:5px;
+   overflow: scroll;
+   
+}
+.OverlayS{
+     background-color:rgba(0, 0, 0, 0.1 );
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: +411111111111111111111111111111111111111111111111111111;
+}
+.ModalS{
+    background-color:var(--white);
+    height: 88%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto auto;
+    border-radius:5px;
+    overflow:scroll;
+   
+   
+}
+.OverlayC{
+     background-color:rgba(0, 0, 0, 0.1 ); 
+    position: fixed;
+    top: 0;left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: +511111111111111111111111111111111111111111111111111111;
+}
+.ModalC{
+    background-color:var(--white);
+    height: 88%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto auto;
+    border-radius:5px;
+    overflow:scroll;
+   
+}
+.OverlayP{
+     background-color:rgba(0, 0, 0, 0.1 );  
+     position:fixed ;
+    top: 0;left: 0;
+    right: 0;
+    bottom: 0;
+    z-index:  +611111111111111111111111111111111111111111111111111111;
+}
+.ModalP{
+    background-color:var(--white);
+    height: 80%;
+    position: absolute;
+    width: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right:0;
+    margin: auto auto;
+    border-radius:5px;
+   overflow:scroll;
+   
+}

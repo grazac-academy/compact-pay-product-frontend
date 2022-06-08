@@ -31,7 +31,8 @@ const Dashboard = () => {
 
 
     return (
-        // <DashboardLayout>
+
+        
             <div className={classes.dashInfo}>
                 <div className={classes.wallet}>
                     <div className={classes.wallet_contain}>
@@ -77,7 +78,6 @@ const Dashboard = () => {
           
 
             </div>
-        // </DashboardLayout>
     );
 }
 

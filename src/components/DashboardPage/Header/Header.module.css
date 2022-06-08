@@ -3,7 +3,7 @@
 }
 
 
-header{
+.Head header{
     display: flex;
     justify-content: space-between;
     width: 95%;
@@ -38,3 +38,11 @@ header{
     align-items: center;
     margin: 0 1rem;
 }
+
+ /* media responsive */
+
+/* @media (max-width: 850px){
+    .foot{
+        width: 80%;
+    }
+ } */

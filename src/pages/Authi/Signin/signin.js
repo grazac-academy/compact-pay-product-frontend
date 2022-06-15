@@ -17,8 +17,16 @@ const Signin = () => {
   });
 
   const [loading, setLoading] = useState(false);
-
+  
   const navigate = useNavigate();
+
+//   const navigate = useNavigate();
+//   const handleSubmit = (evt) => {
+//     evt.preventDefault();
+//     navigate('/dashboard/home')
+// };
+
+
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
@@ -52,10 +60,10 @@ const Signin = () => {
       title2="Welcome Back"
       info="Enter your details to login to your account."
     >
-      <form>
+      <form onSubmit={handleSubmit}> 
         <FormGroup
           label="Email Address"
-          type="text"
+          type="email"
           placeholder="Enter your email address"
           name="email"
           required={true}
@@ -112,4 +120,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signin; 

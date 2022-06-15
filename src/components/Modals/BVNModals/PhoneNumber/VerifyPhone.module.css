@@ -26,6 +26,8 @@
     margin: auto auto;
     background-color: white;
     height: 80%;
+    overflow: scroll;
+    overflow-x: hidden;
   }
   
   .Overlay {
@@ -81,3 +83,14 @@
     margin-bottom: 20px;
     margin-top: 10px;
 }
+
+@media (max-width: 768px){
+    .Modal {
+        width: 80%;
+        height: 90%;
+      }
+      .verify{
+        width: 80%;
+    }
+   
+  }

@@ -66,7 +66,7 @@
 }
 .Naira button{
    background:white;
-   width: 50%;
+   width: 55%;
    padding: 0.8rem;
    border-radius: 8px;
    border:none;
@@ -85,6 +85,9 @@
     border-radius:16px; 
     padding: 1rem 0 1rem 0.7rem;
 }
+.miniSend{
+    display: none;
+}
 .MdNavigateNext{
     background: white;
     font-size:30px;
@@ -99,6 +102,7 @@
     border-radius:10px;
     padding:1rem;
     margin-top: 1rem;
+    overflow-x: auto;
 }
 .ModalSend{
     background-color:var(--white);
@@ -168,5 +172,87 @@
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+
+  @media (max-width: 1000px) {
+    .wallet{
+        display: block;
+    }
+
+    .wallet_contain{
+        width: 95%;
+        margin: 0 auto;
+    }    
+    .graph{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    .Transaction{
+        width:95%;
+        margin: 1rem auto 0;
+    }
+  }
+
+  @media (max-width: 768px){
+    .wallet_contain{
+        width: 100%;
+    }  
+    .graph{
+        width: 100%;
+    }
+    .Transaction{
+        width:100%;
+    }
+    .Modal {
+        height: 90%;
+        width: 80%;
+      }
+      .ModalFund {
+        width: 80%;
+        height: 90%;
+        overflow-x: hidden;
+        overflow: scroll;
+      }
+  }
+    
+  @media (max-width: 566px){
+    .wallet_contain{
+        display: block;
+    } 
+        .Send{
+            display: none;
+        }
+        .Money{
+            display: block;
+            position: relative;
+        }
+        .miniSend{
+            display: flex;
+            padding: 0.5rem;
+            width: 44%;
+            background-color: #AC1D40;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            position: absolute;
+            right: 7%;
+            bottom: 7%;
+            color: white;
+            border-radius: 5px;
+            font-weight: 400;
+        }
+        .Naira button{
+            width: 47%;
+        }
+        .miniSend img{
+            width: 15%;
+            margin-right: 10px;
+        }
+        .graph{
+            width: 100%;
+            height: auto;
+        }
+      
   }
   

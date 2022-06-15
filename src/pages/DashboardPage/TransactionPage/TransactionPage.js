@@ -1,7 +1,7 @@
 import classes from "./TransactionPage.module.css";
 import Pagination from 'components/UI/Pagination/Pagination';
 import { MdNavigateNext } from 'react-icons/md';
-import search from "assets/Dashboard/Search.svg";
+import search from "assets/Dashboard/search_dash.svg";
 import Modal from 'react-modal';
 import { useState} from "react";
 import TransactModals from "components/Modals/TransactModals/TransactModals";

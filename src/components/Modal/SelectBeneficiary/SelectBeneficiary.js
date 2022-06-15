@@ -4,7 +4,7 @@ import UBA from "assets/Dashboard/Uba logo.svg";
 import GTB from "assets/Dashboard/gtb logo.svg";
 import Wema from "assets/Dashboard/wemalogo.svg";
 import greaterthan from "assets/Dashboard/greaterthan.svg";
-import search from "assets/Dashboard/Search.svg";
+import search from "assets/Dashboard/search.svg";
 import Modal from "react-modal";
 import React, { useState } from "react";
 import ConfirmTransaction from "../../Modal/ConfirmTransaction/ConfirmTransaction";

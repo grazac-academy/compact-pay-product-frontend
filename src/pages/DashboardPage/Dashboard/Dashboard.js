@@ -21,7 +21,7 @@ const Dashboard = ( ) => {
    const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
  
    const handleClick = () => setModalFundIsOpen(false);
-   const handleSendClick = () => modalSendIsOpen(false);
+   const handleSendClick = () => setModalSendIsOpen(false);
  
    useEffect(() => {
      if (Dashboard) {
@@ -50,7 +50,7 @@ const Dashboard = ( ) => {
                 <span>Fund Wallet</span>
               </Button>
       
-              <div className={classes.miniSend}>
+              <div onClick={() => setModalSendIsOpen(true)} className={classes.miniSend} >
               <img src={sendmoney} alt="" />
               <p>Send Money</p>
               </div>

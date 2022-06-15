@@ -1,0 +1,143 @@
+.NewBeneficiarial{
+    width:100%;
+}
+.SMN{
+    background-color: rgba(0, 73, 60, 1);
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+   align-items: center;
+   border-radius:5px 5px 0px 0px
+}
+.Smoney{
+    margin:5px auto 0px;
+    border-radius: 5px ;
+    text-align: center;
+   
+} 
+.Smoney h2{
+    color:var(--white);
+    margin-top: 0.9rem;
+}
+.Smoney p{
+    color: rgba(128, 128, 147, 1);
+    font-size: 0.8rem;
+    margin-bottom: 00.7rem;
+
+
+}
+.leftarrow{
+    margin-left:0.9rem ;
+}
+.form{
+     width: 60%;
+   
+    margin:2rem auto;
+    
+   
+}
+.button{
+    margin:0 25% 5%;
+    width: 49%;
+    background-color:  rgba(0, 73, 60, 1); ;
+    height: 3rem;
+    text-align: center;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+   font-size: 1.3rem;
+
+}
+label{
+    font-size:0.9rem;
+    color: rgba(0, 73, 60, 1);
+}
+.Amount input{
+    border-radius: 5px;
+    border:1px solid #C5C4C4;
+    width: 100%;
+    padding:1rem 0.3rem;
+}
+.narration{
+    border-radius: 5px;
+    border:1px solid #C5C4C4;
+    width: 100%;
+    padding:2.5rem 0.3rem;
+}
+.receiver{
+    border-radius: 5px;
+    border:1px solid #C5C4C4;
+    width: 100%;
+    background-color: #EEEEEE;
+    margin-bottom: 0.1rem;
+    padding:1rem 0.3rem;
+  
+}
+.selected{
+    border-radius: 5px;
+    border:1px solid #C5C4C4;
+    width: 100%;
+    color:rgba(197, 196, 196, 1);
+    background:white;
+    padding:1rem 0.3rem;
+   
+    
+}
+.selected option{
+    background-color: #ffff;
+
+}
+
+.amount p{
+    display: flex;
+    flex-direction: flex-end;
+    font-size:0.5rem;
+    color: #F07695;
+    background-color:  rgba(255, 239, 239, 1);
+    margin-left: 1.5rem;
+}
+.amount h4{
+    margin-left: 0.4rem;
+}
+.amount{
+    margin-left:16rem;
+   margin-top: 0.2rem;
+}
+.exchange{
+    background-color: #FFE7EF;
+    border: 1px dotted #AC1D40;
+    padding:1.5rem 0.3rem;
+    width: 100%;
+   
+}
+.exchange::placeholder{
+    padding-top: 10rem;
+    font-size: 0.5rem;
+}
+.OverlayP{
+    background-color:rgba(0, 0, 0, 0.1 );  
+      position: fixed;
+      top: 0;left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: +911111111111111111111111111111111111111111111111111111;
+   }
+   .ModalP{
+      background-color:var(--white);
+      height: 88%;
+      position: absolute;
+      width: 50%;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right:0;
+      margin: auto auto;
+      border-radius:5px;
+      overflow: scroll;
+      overflow-y: hidden;
+      
+     
+   } 
+   .formG{
+       margin:0.4rem 0;
+   }

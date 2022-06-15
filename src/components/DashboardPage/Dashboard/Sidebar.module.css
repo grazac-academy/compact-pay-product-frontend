@@ -20,7 +20,7 @@
 }
 .sidebar{
     height: 100vh;
-    width: 18%;
+    width: 17vw;
     background-color: var(--white);
     position: relative;
 }
@@ -57,7 +57,7 @@
     border-radius: 16px;
     width: 95%;
     margin-left: 20px;
-    padding-left: 40px;
+    padding-left: 20px;
    
 }
 .active::before{
@@ -80,4 +80,74 @@
 
 a{
     text-decoration: none;
+}
+
+.ham, .bar{
+    display: none;
+}
+.ham img{
+    width: 100%;
+}
+
+
+ /* media responsive */
+ @media (max-width: 1000px){
+    .sidebar{
+        width: 22vw;
+    }
+ }
+
+
+ @media (max-width: 768px){
+    .ham{
+        display: block ;
+        position: absolute;
+        top: 4.5%;
+        left: 3%;
+        z-index: 33333;
+        width: 5%;
+        cursor: pointer;
+        /* background-color: red; */
+    }
+    .sidemenu .hideBar{
+        display: flex;
+        justify-content: center;
+        margin: 1rem auto;
+        color: var(--second);
+        font-size: 30px;
+    }
+
+    .sidebar{
+        display: block;
+        left: -1000px;
+        width: 0;
+    }
+    .sidemenu{
+        display: block;
+        position: fixed; 
+        top: 5%;
+        left: 1%;
+        width: 35vw;
+        backdrop-filter: blur(20px);
+        margin:auto;
+        height: 80vh;
+        text-align: center;
+        background-color :var(--white);
+        border-radius: 20px;
+        transition: 0.85s ease-in-out;
+        box-shadow: rgba(4, 154, 118, 0.7) 1px 1px 2px 4px ;
+        z-index: 945;
+    }
+
+ }
+ @media (max-width: 550px){
+     .sidemenu{
+         width: 50vw;
+     }
+ }
+
+ @media (max-width: 350px){
+    .sidemenu{
+        width: 60vw;
+    }
 }

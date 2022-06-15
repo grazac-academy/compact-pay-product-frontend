@@ -6,6 +6,7 @@ table {
     padding: 1rem;
     background: var(--white);
     border-radius:10px;
+    overflow-x: auto;
 }
 th,
 td{
@@ -224,3 +225,41 @@ tr:last-child{
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+
+  @media (max-width: 1000px) {
+    .transpage{
+       width: 95%;
+       margin: 0 auto;
+    }
+    .leftview{
+        width: 45%;
+    }
+  }
+  @media (max-width: 768px){
+    .transpage{
+        width:100%;
+    }
+    .trans h2{
+        font-size: 1.2rem;
+    }
+    
+    .leftview{
+        display: block;
+        width: 35%;
+    }
+    .View{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .filterselect{
+        display: none;
+    }
+    .num{
+        display: none;
+    }
+    
+  }
+    
+      
+  

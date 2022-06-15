@@ -45,6 +45,8 @@ const TransactionPage = () => {
 
             </div>
         </div>
+
+        
     <table className={classes.transaction}>
         <thead>
             <tr>

@@ -129,3 +129,51 @@ tr:last-child{
     border: none;
     background-color: transparent;
 }
+
+
+@media (max-width: 1000px) {
+    table{
+        font-size: 0.8rem;
+    }
+    
+}
+
+
+@media (max-width: 566px) {
+    .View{
+        display:none;
+    }
+    td:nth-of-type(1),
+    td:nth-of-type(4),
+    td:nth-of-type(7){
+    display:none;
+    }
+    th:nth-of-type(1),
+    th:nth-of-type(4),
+    th:nth-of-type(7){
+    display:none; }
+
+    table{
+        font-size: 0.7rem;
+    }
+    
+    .pend p{
+        font-size:0.7rem;
+        width:100%;
+        margin:0 auto;
+    }
+    .success p{
+        font-size:0.7rem;
+        width:100%;
+        margin:0 auto;
+    }
+
+    .fail p{
+        font-size:0.7rem;
+        width:100%;
+        margin:0 auto;
+    }
+    .num{
+        display: none;
+    }
+}

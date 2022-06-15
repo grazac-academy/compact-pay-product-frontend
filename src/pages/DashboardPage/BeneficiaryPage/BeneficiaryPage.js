@@ -31,7 +31,7 @@ const BeneficiaryPage = () => {
     const handleChangeClick = () => setModalChangeIsOpen(false);
 
   return (
-    <div>
+    <div className={classes.BenPage}>
         <div className={classes.Personal}>
                     <div className={classes.account}>
                                                     <div className={classes.providus}>

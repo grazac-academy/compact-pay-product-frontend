@@ -13,7 +13,7 @@ export const createAccount = async (data) => {
 export const login = async (data) => {
   const response = await axios({
     method: "post",
-    url: `${baseLink}/auth/login/user`,
+    url: `${baseLink}/auth/login`,
     data: data,
   });
   return response;

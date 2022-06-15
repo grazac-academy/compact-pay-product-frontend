@@ -126,3 +126,29 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.1);
   }
+
+  @media (max-width: 768px){
+    .Modal {
+        width: 80%;
+        height: 90%;
+      }
+
+
+  }
+
+  @media (max-width: 566px){
+
+    .labelselect{
+        display: block;
+    }
+    .labelselect select{
+        width: 70%;
+        margin: 0.5rem auto;
+        display: flex;
+        justify-content: center;
+    }
+    .file{
+        width: 60%;
+    }
+    
+  }

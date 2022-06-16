@@ -3,6 +3,7 @@ import classes from "./FailedTransaction.module.css";
 import failed from "assets/Dashboard/failedx.svg";
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import  egg from "assets/Dashboard/egg.svg";
+import { Link } from "react-router-dom";
 
 
 const FailedTransaction = ({ onClick }) => {
@@ -71,7 +72,9 @@ const FailedTransaction = ({ onClick }) => {
       
       
       <div className={classes.buttonF}>
+        <Link to="/dashboard">
         <button className={classes.button}>Okay</button>
+        </Link>
       </div>
     </div>
   )

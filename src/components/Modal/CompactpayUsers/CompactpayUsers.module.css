@@ -118,20 +118,20 @@ label{
 }
 @media (max-width: 1024px) {
     .amount{
-        width: 43%; 
+        width: 45%; 
        
      }
 }
 @media (max-width: 990px) {
     .amount{
-        width: 46%; 
+        width: 48%; 
        
      }
 }
 
 @media (max-width: 768px) {
     .amount{
-        width: 48%; 
+        width: 50%; 
        
      }
      .Smoney h2{
@@ -141,15 +141,23 @@ label{
 }
 @media (max-width: 425px) {
     .amount{
-        width: 51%; 
+        width: 52%; 
        
      }
 }
 @media(max-width:568px) {
     .ModalP{
-        height:50%;
-       
+        height: 80%;
+     width: 80%;
        
        
      }
+}
+@media (max-width: 375px) {
+    .amount{
+        width: 56%; 
+        
+    }
+    
+   
 }

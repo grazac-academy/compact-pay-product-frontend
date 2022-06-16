@@ -144,34 +144,42 @@ label{
    }
    @media (max-width: 1024px) {
     .amount{
-        width: 47%; 
+        width: 49%; 
        
      }
 }
 @media (max-width: 990px) {
     .amount{
-        width: 50%; 
+        width: 52%; 
        
      }
 }
 
 @media (max-width: 768px) {
     .amount{
-        width: 52%; 
+        width: 54%; 
        
      }
 }
 @media (max-width: 425px) {
     .amount{
-        width: 55%; 
+        width: 52%; 
        
      }
 }
 @media(max-width:568px) {
     .ModalP{
-        height:50%;
-       
+        height: 80%;
+     width: 80%;
        
        
      }
+}
+@media (max-width: 375px) {
+    .amount{
+        width: 55%; 
+        
+    }
+    
+   
 }

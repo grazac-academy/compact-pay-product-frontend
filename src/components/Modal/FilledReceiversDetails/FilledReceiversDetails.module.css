@@ -130,8 +130,8 @@ label{
 }
 @media(max-width:568px) {
     .ModalP{
-        height:50%;
-       
+        height: 80%;
+     width: 80%;
        
        
      }

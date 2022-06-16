@@ -198,7 +198,12 @@
 }     
 @media (max-width: 375px){
     .thankyou {
-      top: 27%;
+      top: 36%;
     } 
-    
+    .TransactionType {
+        width: 80%;
+        
+      
+      
+   }
 }   

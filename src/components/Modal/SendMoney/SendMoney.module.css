@@ -182,23 +182,27 @@
     
      .ModalN{  
          
-         height: 50%;
+        height: 80%;
+     width: 80%;
         
      }
     
      .ModalS{  
          
-        height: 50%;
+        height: 80%;
+     width: 80%;
        
     }
     .ModalC{  
          
-        height: 50%;
+        height: 80%;
+     width: 80%;
        
     }
     .ModalP{  
          
-        height: 50%;
+        height: 80%;
+     width: 80%;
        
     }
 }

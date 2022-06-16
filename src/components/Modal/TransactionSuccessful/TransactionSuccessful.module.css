@@ -216,8 +216,8 @@
 @media (max-width: 568px){
     .ModalP{
         
-        height: 50%;
-        
+        height: 80%;
+     width: 80%;
        
      } 
 }     
@@ -245,7 +245,13 @@
 }     
 @media (max-width: 375px){
     .thankyou {
-      top: 27%;
+      top: 36%;
     } 
-    
+    .TransactionType {
+        width: 80%;
+       
+    }
+    .ttext{
+        width: 50%;
+    }
 }   

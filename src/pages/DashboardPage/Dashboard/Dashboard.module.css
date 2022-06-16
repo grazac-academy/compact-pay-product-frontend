@@ -219,10 +219,8 @@
     
   @media (max-width: 642px) {
     .ModalSend{
-     height: 50%;
-    }
-    .Modal{
-     height: 50%;
+     height: 80%;
+     width: 80%;
     }
   }
 

@@ -90,7 +90,7 @@ const SendMoney =({onClick})=> {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={PersonalAccount} alt=""  />
+                        <img src={PersonalAccount} alt=""/>
                       </div>
                       <div className={classes.save}>
                         <h5>Personal Account</h5>

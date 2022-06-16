@@ -3,13 +3,13 @@
 }
 
 
-header{
+.Head header{
     display: flex;
     justify-content: space-between;
     width: 95%;
     margin: 0 auto;
     align-items: center;
-    height: 4rem;
+    min-height: 4rem;
 }
 .Logo img{
     width: 80%;
@@ -20,6 +20,14 @@ header{
 .navbar{
     display: flex;
     align-items: center;
+}
+.date{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar h2{
+    display: none;
 }
 
 .navbar p:first-child{
@@ -38,3 +46,62 @@ header{
     align-items: center;
     margin: 0 1rem;
 }
+
+ /* media responsive */
+
+@media (max-width: 768px){
+    .Head header{
+        display: block;
+        min-height: 6rem;
+        width: 100%;
+    }
+    .logoContainer{
+        background-color: var(--second);
+    }
+    .Logo{
+        margin: 0 auto;
+        padding: 1.2rem;
+        width: 35%;
+        background-color: var(--second);
+    }
+    .Logo img{
+        width: 100%;
+        align-self: center;  
+        display: flex;
+        filter: brightness(0) invert(1) ;
+    }
+    .profile{
+        display: none;
+    }
+    .navbarContainer{
+        background: #EFF5F4;
+    }
+    .navbar{
+        width: 95%;
+        margin: 0rem auto;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar h2{
+        display: block;
+    }
+
+ }
+
+ @media (max-width: 576px){
+    .navbar p:first-child{
+        font-size: 0.8rem;
+    }        
+    .Logo{
+        width: 45%;
+    }
+    .navbar{
+        width: 100%;
+        padding: 1rem 0.5rem;
+    }
+    .navbar h2{
+        font-size: 1.2rem;
+    }
+
+ }

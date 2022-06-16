@@ -80,14 +80,16 @@ label{
     font-size:0.5rem;
     color: #F07695;
     background-color:  rgba(255, 239, 239, 1);
+    margin-left: 1.5rem;
   
 }
-.amount h4{
-    margin-left: 0.4rem;
-}
-.amount{
-    margin-left:16rem;
-  
+
+.amount{ 
+     width: 41%;
+    display: flex;
+    position: absolute;
+    top: 21;
+    right: 0;
    margin-top: 0.2rem;
 }
 .formF{

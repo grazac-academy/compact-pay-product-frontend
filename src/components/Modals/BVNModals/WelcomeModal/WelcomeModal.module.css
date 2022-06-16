@@ -72,3 +72,14 @@
     justify-content: center;
 
 }
+
+
+@media (max-width: 768px){
+    .Modal {
+        width: 80%;
+        height: 90%;
+      }
+      .welcome{
+        width: 70%;
+    }
+  }

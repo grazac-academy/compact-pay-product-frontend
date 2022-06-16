@@ -44,10 +44,16 @@ const Dashboard = ( ) => {
               <p>Naira Wallet</p>
               <h5>Wallet Balance</h5>
               <h2>₦ 100,390,000</h2>
-              <Button  onClick={() => setModalFundIsOpen(true)}>
+
+              <Button onClick={() => setModalFundIsOpen(true)}>
                 <img src={addfund} alt="" />
                 <span>Fund Wallet</span>
               </Button>
+      
+              <div onClick={() => setModalSendIsOpen(true)} className={classes.miniSend} >
+              <img src={sendmoney} alt="" />
+              <p>Send Money</p>
+              </div>
             </div>
             <div className={classes.Send}>
               <img src={sendmoney} alt="" />

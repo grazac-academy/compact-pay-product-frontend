@@ -55,3 +55,27 @@
     justify-content: center;
 
 }
+
+
+@media (max-width: 768px){
+    .bank{
+        width: 85%;
+        margin: 15px auto;
+    }
+  }
+
+  @media (max-width: 566px){
+    .bank_acc span{
+        margin-left: 5px;
+    }
+    .bank_acc{
+        width: 65%;
+    }
+  }
+
+  
+  @media (max-width: 375px){
+    .bank_acc{
+        width: 75%;
+    }
+  }

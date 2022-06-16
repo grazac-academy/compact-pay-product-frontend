@@ -3,7 +3,7 @@ import classes from "./ToBeneficiary.module.css";
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import Modal from "react-modal";
 import React, {useState} from 'react'
-import SelectBeneficiary from "../../Modal/SelectBeneficiary/SelectBeneficiary"
+import SelectBeneficiary from "components/Modal/SelectBeneficiary/SelectBeneficiary"
 
 const ToBeneficiary = ({onClick}) => {
 

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./CompactpayUsers.module.css";
 import Modal from "react-modal";
-import ToCompactpayUsers from "../../Modal/ToCompactpayUsers/ToCompactpayUsers"
+import ToCompactpayUsers from "components/Modal/ToCompactpayUsers/ToCompactpayUsers"
 
 const CompactpayUsers = ({onClick}) => {
     const [isOpenCompactpayUsers, setIsOpenCompactpayUsers] = useState(false);

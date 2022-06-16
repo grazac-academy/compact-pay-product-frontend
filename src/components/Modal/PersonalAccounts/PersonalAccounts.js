@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./PersonalAccounts.module.css";
 import Modal from "react-modal";
-import ToPersonalAccount from "../../Modal/ToPersonalAccount/ToPersonalAccount"
+import ToPersonalAccount from "components/Modal/ToPersonalAccount/ToPersonalAccount"
 import Wema from "assets/Dashboard/wemalogo.svg";
 
 const PersonalAccounts = ({onClick}) => {

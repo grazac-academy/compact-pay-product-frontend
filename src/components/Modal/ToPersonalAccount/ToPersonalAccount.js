@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./ToPersonalAccount.module.css";
 import Modal from "react-modal";
-import CompactpayConfirmT from "../../Modal/CompactpayConfiirmT/CompactpayUserConfirmT"
+import CompactpayConfirmT from "components/Modal/CompactpayConfiirmT/CompactpayUserConfirmT"
 import Wema from "assets/Dashboard/wemalogo.svg";
 
 const  ToPersonalAccount = ({onClick}) => {

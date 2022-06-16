@@ -7,7 +7,7 @@ import greaterthan from "assets/Dashboard/greaterthan.svg";
 import search from "assets/Dashboard/search.svg";
 import Modal from "react-modal";
 import React, { useState } from "react";
-import ConfirmTransaction from "../../Modal/ConfirmTransaction/ConfirmTransaction";
+import ConfirmTransaction from "components/Modal/ConfirmTransaction/ConfirmTransaction";
 
 const SelectBeneficiary = ({ onClick }) => {
   const [isOpenSelectBeneficiary, setIsOpenSelectBeneficiary] = useState(false);

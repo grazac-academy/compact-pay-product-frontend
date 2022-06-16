@@ -2,7 +2,7 @@ import classes from "./Confirmtransaction.module.css";
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import Modal from "react-modal";
 import React, { useState } from "react";
-import TransactionSuccessful from "../../Modal/TransactionSuccessful/TransactionSuccessful";
+import TransactionSuccessful from "components/Modal/TransactionSuccessful/TransactionSuccessful";
 
 
 const ConfirmTransaction = ({ onClick }) => {

@@ -91,8 +91,6 @@ label{
     font-size:0.5rem;
     color: #F07695;
     background-color:  rgba(255, 239, 239, 1);
-    /* width:35%;
-    justify-content:flex-start; */
     margin-bottom: 20px;
    
 }
@@ -100,18 +98,21 @@ label{
     margin-left: 0.4rem;
 }
 .amount{
-    margin-left:16rem;
-   /* width: 100%; */
-   margin-top: 0.2rem;
-}
-
+    width: 37%; 
+    display: flex;
+   position: absolute;
+   top: 21;
+   right: 0;
+   margin-top:0.2rem;
+ }
+ 
 .OverlayP{
     background-color:rgba(0, 0, 0, 0.1 );
    position: fixed;
    top: 0;left: 0;
    right: 0;
    bottom: 0;
-   z-index: +711111111111111111111111111111111111111111111111111111;
+   z-index: +7111;
 }
 .ModalP{
    background-color:var(--white);
@@ -125,9 +126,51 @@ label{
    margin: auto auto;
    border-radius:5px;
    overflow: scroll;
+   overflow-x: hidden;
   
   
 }
 .formE{
     margin:2rem 0;
+}
+@media (max-width: 1024px) {
+    .amount{
+        width: 41%; 
+       
+     }
+}
+@media (max-width: 990px) {
+    .amount{
+        width: 45%; 
+       
+     }
+}
+
+@media (max-width: 768px) {
+    .amount{
+        width: 49%; 
+       
+     }
+}
+@media (max-width: 568px) {
+      
+    .ModalP{
+        height: 80%;
+     width: 80%;
+     }
+}
+@media (max-width: 425px) {
+    .amount{
+        width: 54%; 
+        
+    }
+    
+}
+@media (max-width: 375px) {
+    .amount{
+        width: 56%; 
+        
+    }
+    
+   
 }

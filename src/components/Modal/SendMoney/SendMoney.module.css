@@ -68,7 +68,7 @@
     top: 0;left: 0;
     right: 0;
     bottom: 0;
-    z-index: +311111111111111111111111111111111111111111111111111111;
+    z-index: +3111;
 }
 .ModalN{
     background-color:var(--white);
@@ -90,7 +90,7 @@
     top: 0;left: 0;
     right: 0;
     bottom: 0;
-    z-index: +411111111111111111111111111111111111111111111111111111;
+    z-index: +3111;
 }
 .ModalS{
     background-color:var(--white);
@@ -113,7 +113,7 @@
     top: 0;left: 0;
     right: 0;
     bottom: 0;
-    z-index: +511111111111111111111111111111111111111111111111111111;
+    z-index: +3111;
 }
 .ModalC{
     background-color:var(--white);
@@ -135,7 +135,7 @@
     top: 0;left: 0;
     right: 0;
     bottom: 0;
-    z-index:  +611111111111111111111111111111111111111111111111111111;
+    z-index:  +6111;
 }
 .ModalP{
     background-color:var(--white);
@@ -150,4 +150,59 @@
     border-radius:5px;
    overflow:scroll;
    
+}
+@media (max-width: 1024px){
+   
+    .modalButtons{
+  
+        margin: 2rem 5rem ;
+        
+     }
+    
+
+}
+@media (max-width: 768px){
+    .modalButtons{
+  
+        margin: 2rem 3rem ;
+        
+     }
+   
+}
+@media (max-width: 642px){
+    .modalButtons{
+  
+        margin: 2rem 2rem ;
+        
+     }
+    
+   
+}
+@media (max-width: 568px){
+    
+     .ModalN{  
+         
+        height: 80%;
+     width: 80%;
+        
+     }
+    
+     .ModalS{  
+         
+        height: 80%;
+     width: 80%;
+       
+    }
+    .ModalC{  
+         
+        height: 80%;
+     width: 80%;
+       
+    }
+    .ModalP{  
+         
+        height: 80%;
+     width: 80%;
+       
+    }
 }

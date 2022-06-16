@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./ToPersonalAccount.module.css";
 import Modal from "react-modal";
-import CompactpayConfirmT from "../../Modal/CompactpayConfiirmT/CompactpayUserConfirmT"
+import CompactpayConfirmT from "components/Modal/CompactpayConfiirmT/CompactpayUserConfirmT"
 import Wema from "assets/Dashboard/wemalogo.svg";
 
 const  ToPersonalAccount = ({onClick}) => {
@@ -16,7 +16,7 @@ const  ToPersonalAccount = ({onClick}) => {
         <img src={Leftarrow} alt="leftarrow"  onClick={onClick} />
       </div>
       <div  className={classes.Smoney}>
-        <h2>Send Money to Personal Accountr</h2>
+        <h2>Send Money to Personal Account</h2>
         <p>send money to your prefered beneficiary</p>
       </div>
     </div>

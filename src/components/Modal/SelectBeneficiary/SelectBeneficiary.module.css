@@ -57,19 +57,6 @@ label{
 
 
 
-.select{
-    border-radius: 5px;
-    border:1px solid #C5C4C4;
-    width: 100%;
-    color:rgba(197, 196, 196, 1);
-    background:white;
-    padding:0.7rem;
-    
-}
-option{
-    background-color: #ffff;
-
-}
 
 .amount p{
     display: flex;
@@ -126,7 +113,7 @@ option{
       top: 0;left: 0;
       right: 0;
       bottom: 0;
-      z-index: +921111111111111111111111111111111111111111111111111111;
+      z-index: +9311;
    }
    .ModalP{
       background-color:var(--white);
@@ -140,6 +127,7 @@ option{
       margin: auto auto;
       border-radius:5px;
       overflow: scroll;
+      overflow-x: hidden;
      
    } 
 
@@ -162,3 +150,12 @@ option{
     color: #252525;
 
    }
+   @media(max-width:568px) {
+    .ModalP{
+        height: 80%;
+        width: 80%;
+       
+       
+       
+     }
+}

@@ -115,7 +115,7 @@
     right:0;
     margin: auto auto;
     border-radius:5px;
-   
+    overflow: scroll;
    
    
    
@@ -126,7 +126,7 @@
     top: 0;left: 0;
     right: 0;
     bottom: 0;
-    z-index:  99999999999999999999999999999999999999;
+    z-index:  999;
  }
 
 
@@ -175,6 +175,7 @@
   }
   
 
+
   @media (max-width: 1000px) {
     .wallet{
         display: block;
@@ -216,6 +217,13 @@
       }
   }
     
+  @media (max-width: 642px) {
+    .ModalSend{
+     height: 80%;
+     width: 80%;
+    }
+  }
+
   @media (max-width: 566px){
     .wallet_contain{
         display: block;

@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./SaveBeneficiaries.module.css";
 import Modal from "react-modal";
-import  ToBeneficiary from "../../Modal/ToBeneficiary/ToBeneficiary";
+import  ToBeneficiary from "components/Modal/ToBeneficiary/ToBeneficiary";
 
 const SaveBeneficiary = ({onClick}) => {
   const [isOpenSaveBeneficiary, setIsOpenSaveBeneficiary] = useState(false);

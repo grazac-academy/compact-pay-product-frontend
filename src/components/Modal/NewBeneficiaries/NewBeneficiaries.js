@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./NewBeneficiaries.module.css";
 import Modal from "react-modal";
-import  FilledNewBeneficiaries from "../../Modal/FilledNewBeneficiaries/FilledNewBeneficiaries";
+import  FilledNewBeneficiaries from "components/Modal/FilledNewBeneficiaries/FilledNewBeneficiaries";
 
 const NewBeneficiaries = ({onClick}) => {
   

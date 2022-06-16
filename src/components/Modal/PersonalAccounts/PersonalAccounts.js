@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import classes from "./PersonalAccounts.module.css";
 import Modal from "react-modal";
-import ToPersonalAccount from "../../Modal/ToPersonalAccount/ToPersonalAccount"
+import ToPersonalAccount from "components/Modal/ToPersonalAccount/ToPersonalAccount"
 import Wema from "assets/Dashboard/wemalogo.svg";
 
 const PersonalAccounts = ({onClick}) => {
@@ -16,7 +16,7 @@ const PersonalAccounts = ({onClick}) => {
         <img src={Leftarrow} alt="leftarrow"  onClick={onClick} />
       </div>
       <div  className={classes.Smoney}>
-        <h2>Send Money to Personal Accountr</h2>
+        <h2>Send Money to Personal Account</h2>
         <p>send money to your prefered beneficiary</p>
       </div>
     </div>

@@ -7,13 +7,13 @@ import SaveBeneficiary from "assets/Dashboard/save beneficiary.svg";
 import CompactpayUser from "assets/Dashboard/compactpay user.svg";
 import PersonalAccount from "assets/Dashboard/personal user.svg";
 import classes from "./SendMoney.module.css";
-import CompactpayUsers from "../../Modal/CompactpayUsers/CompactpayUsers";
-import NewBeneficiaries from "../../Modal/NewBeneficiaries/NewBeneficiaries";
-import SaveBeneficiaries from "../../Modal/SaveBeneficiaries/SaveBeneficiaries";
-import PersonalAccounts from "../../Modal/PersonalAccounts/PersonalAccounts";
+import CompactpayUsers from "components/Modal/CompactpayUsers/CompactpayUsers";
+import NewBeneficiaries from "components/Modal/NewBeneficiaries/NewBeneficiaries";
+import SaveBeneficiaries from "components/Modal/SaveBeneficiaries/SaveBeneficiaries";
+import PersonalAccounts from "components/Modal/PersonalAccounts/PersonalAccounts";
 
 
-const SendMoney = ({onClick}) => {
+const SendMoney =({onClick})=> {
 
      const [isOpenSendMoney, setIsOpenSendMoney] = useState(false);
     const [isOpenSaveBeneficiary, setIsOpenSaveBeneficiary] = useState(false);
@@ -39,7 +39,7 @@ const SendMoney = ({onClick}) => {
                       <img
                         src={icon}
                         alt="icon"
-                        onClick={onClick}
+                       onClick={onClick}
                       />
                     </div>
                   </div>
@@ -90,7 +90,7 @@ const SendMoney = ({onClick}) => {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={PersonalAccount} alt="" />
+                        <img src={PersonalAccount} alt=""/>
                       </div>
                       <div className={classes.save}>
                         <h5>Personal Account</h5>

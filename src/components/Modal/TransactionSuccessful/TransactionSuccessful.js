@@ -3,7 +3,7 @@ import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import success from "assets/Dashboard/thnks.svg";
 import Modal from "react-modal";
 import React, { useState } from "react";
-import FailedTransaction from "../../Modal/FailedTransaction/FailedTransaction";
+import FailedTransaction from "components/Modal/FailedTransaction/FailedTransaction";
 import  egg from "assets/Dashboard/egg.svg";
 import Toggle from "assets/Dashboard/Toggle.svg";
 
@@ -83,7 +83,7 @@ const TransactionSuccessful = ({ onClick }) => {
       <div className={classes.buttonF}>
         <button onClick={() => setIsOpenTransactionSuccessful(true)} className={classes.button}>Okay</button>
         <Modal
-          isOpen={isOpenTransactionSuccessful}
+          isOpen={isOpenTransactionSuccessful} 
           className={classes.ModalP}
           overlayClassName={classes.OverlayP}
         >

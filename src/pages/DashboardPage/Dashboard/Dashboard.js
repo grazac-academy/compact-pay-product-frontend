@@ -21,7 +21,7 @@ const Dashboard = ( ) => {
    const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
  
    const handleClick = () => setModalFundIsOpen(false);
-   const handleSendClick = () => modalSendIsOpen(false);
+   const handleSendClick = () => setModalSendIsOpen(false);
  
    useEffect(() => {
      if (Dashboard) {

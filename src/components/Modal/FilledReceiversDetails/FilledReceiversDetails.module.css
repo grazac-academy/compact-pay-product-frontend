@@ -107,7 +107,7 @@ label{
    top: 0;left: 0;
    right: 0;
    bottom: 0;
-   z-index: +931111111111111111111111111111111111111111111111111111;
+   z-index: +9311;
 }
 .ModalP{
    background-color:var(--white);
@@ -121,7 +121,16 @@ label{
    margin: auto auto;
    border-radius:5px;
    overflow:scroll;
+   overflow-x: hidden;
    
   
   
+}
+@media(max-width:568px) {
+    .ModalP{
+        height:50%;
+       
+       
+       
+     }
 }

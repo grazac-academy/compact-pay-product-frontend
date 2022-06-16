@@ -109,7 +109,7 @@
 }
 .pathgood p{
     color: #808093;
-
+    width: 100%;
 }
 
 .thankyou {
@@ -134,7 +134,7 @@
       top: 0;left: 0;
       right: 0;
       bottom: 0;
-      z-index: +942111111111111111111111111111111111111111111111111111;
+      z-index: +9421;
    }
    .ModalP{
       background-color:var(--white);
@@ -152,10 +152,10 @@
      
    } 
 
-   .thank img{
+    .thank img{
     right: 95%;
     top: 35%;
-    position: absolute;
+    position: absolute; 
 }
 
 .eggRight{
@@ -163,3 +163,89 @@
     top: 35%;
     position: absolute;
 }
+@media (max-width: 1024px){
+    .thankyou {
+        left: 32%;
+       
+      } 
+}
+@media (max-width: 968px){
+    .thankyou {
+        left: 30%;
+       
+      } 
+      .ttext h4{
+        font-size:12px;
+      }
+      .ttext {
+        margin: 1rem 0 0 7rem;
+      }
+}
+@media (max-width: 900px){
+    .thankyou {
+        left: 27%;
+       
+      } 
+     
+      .ttext {
+        margin: 1rem 0 0 6rem;
+      }
+}
+@media (max-width: 660px){
+    .thankyou img {
+        width: 35%;
+       
+      } 
+     
+      .thankyou {
+        left: 32%;
+        top: 28%;
+      } 
+}
+@media (max-width: 584px){
+    .ttext {
+        margin: 1rem 0 0 5rem;
+      }
+      .thankyou {
+        left: 32%;
+        top: 26%;
+      } 
+      .ttext h4{
+        font-size:10px;
+}   }
+@media (max-width: 568px){
+    .ModalP{
+        
+        height: 50%;
+        
+       
+     } 
+}     
+@media (max-width: 516px){
+      .thankyou {
+        top: 24%;
+      } 
+      
+} 
+@media (max-width: 458px){
+    .thankyou {
+      top: 22%;
+    } 
+    
+}     
+@media (max-width: 426px){
+    .thankyou {
+      top: 29%;
+      
+    } 
+    .TransactionType {
+        margin:7rem auto 1rem;
+      
+   }
+}     
+@media (max-width: 375px){
+    .thankyou {
+      top: 27%;
+    } 
+    
+}   

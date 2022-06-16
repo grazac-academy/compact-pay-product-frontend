@@ -128,7 +128,7 @@
       top: 0;left: 0;
       right: 0;
       bottom: 0;
-      z-index: +941111111111111111111111111111111111111111111111111111;
+      z-index: +9411;
    }
    .ModalP{
       background-color:var(--white);
@@ -145,3 +145,34 @@
       overflow-x: hidden;
      
    } 
+   @media (max-width: 1024px){
+    
+    .ttext{
+        width: 40%;
+        
+    }
+
+   }
+   @media (max-width: 980px){
+    
+    .ttext{
+        width: 50%;
+        
+    }
+
+   }
+   @media (max-width: 598px){
+    
+    .ttext{
+        width: 55%;
+        
+    }
+
+   }
+   @media (max-width:568px){
+    .ModalP{
+       
+        height: 50%;
+        
+     } 
+   }

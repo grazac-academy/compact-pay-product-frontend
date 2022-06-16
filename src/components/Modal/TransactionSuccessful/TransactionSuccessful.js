@@ -83,7 +83,7 @@ const TransactionSuccessful = ({ onClick }) => {
       <div className={classes.buttonF}>
         <button onClick={() => setIsOpenTransactionSuccessful(true)} className={classes.button}>Okay</button>
         <Modal
-          isOpen={isOpenTransactionSuccessful}
+          isOpen={isOpenTransactionSuccessful} 
           className={classes.ModalP}
           overlayClassName={classes.OverlayP}
         >

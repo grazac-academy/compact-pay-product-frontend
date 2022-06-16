@@ -82,13 +82,15 @@ label{
     margin-bottom: 20px;
    
 }
-.amount h4{
-    margin-left: 0.4rem;
-}
+
 .amount{
-    margin-left:16rem;
-   margin-top: 0.2rem;
-}
+    width: 37%; 
+    display: flex;
+   position: absolute;
+   top: 21;
+   right: 0;
+   margin-top:0.2rem;
+ }
 .search{
     border-radius: 5px;
     width: 100%;
@@ -122,7 +124,7 @@ label{
    top: 0;left: 0;
    right: 0;
    bottom: 0;
-   z-index: +711111111111111111111111111111111111111111111111111111;
+   z-index: +7221;
 }
 .ModalP{
    background-color:var(--white);
@@ -142,4 +144,38 @@ label{
 }
 .formE{
     margin:2rem 0;
+}
+@media (max-width: 1024px) {
+    .amount{
+        width: 41%; 
+       
+     }
+}
+@media (max-width: 990px) {
+    .amount{
+        width: 45%; 
+       
+     }
+}
+
+@media (max-width: 768px) {
+    .amount{
+        width: 47%; 
+       
+     }
+}
+@media (max-width: 568px) {
+      
+    .ModalP{
+        height:50%;
+       
+     }
+}
+@media (max-width: 425px) {
+    .amount{
+        width: 50%; 
+        
+    }
+    
+   
 }

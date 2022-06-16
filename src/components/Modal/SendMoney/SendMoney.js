@@ -13,7 +13,7 @@ import SaveBeneficiaries from "../../Modal/SaveBeneficiaries/SaveBeneficiaries";
 import PersonalAccounts from "../../Modal/PersonalAccounts/PersonalAccounts";
 
 
-const SendMoney = ({onClick}) => {
+const SendMoney =({onClick})=> {
 
      const [isOpenSendMoney, setIsOpenSendMoney] = useState(false);
     const [isOpenSaveBeneficiary, setIsOpenSaveBeneficiary] = useState(false);
@@ -39,7 +39,7 @@ const SendMoney = ({onClick}) => {
                       <img
                         src={icon}
                         alt="icon"
-                        onClick={onClick}
+                       onClick={onClick}
                       />
                     </div>
                   </div>
@@ -49,7 +49,7 @@ const SendMoney = ({onClick}) => {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={NewBeneficiary} alt="" onClick={onClick} />
+                        <img src={NewBeneficiary} alt=""  />
                       </div>
                       <div className={classes.save}>
                         <span>
@@ -64,7 +64,7 @@ const SendMoney = ({onClick}) => {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={SaveBeneficiary} alt="" onClick={onClick} />
+                        <img src={SaveBeneficiary} alt="" />
                       </div>
                       <div className={classes.save}>
                         <h5>Save Beneficiary</h5>
@@ -77,7 +77,7 @@ const SendMoney = ({onClick}) => {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={CompactpayUser} alt="" onClick={onClick} />
+                        <img src={CompactpayUser} alt=""  />
                       </div>
                       <div className={classes.save}>
                         <h5>Compactpay User</h5>
@@ -90,7 +90,7 @@ const SendMoney = ({onClick}) => {
                       className={classes.modalB}
                     >
                       <div>
-                        <img src={PersonalAccount} alt=""  onClick={onClick}/>
+                        <img src={PersonalAccount} alt=""  />
                       </div>
                       <div className={classes.save}>
                         <h5>Personal Account</h5>

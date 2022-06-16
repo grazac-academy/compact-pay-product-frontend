@@ -16,7 +16,7 @@ const PersonalAccounts = ({onClick}) => {
         <img src={Leftarrow} alt="leftarrow"  onClick={onClick} />
       </div>
       <div  className={classes.Smoney}>
-        <h2>Send Money to Personal Accountr</h2>
+        <h2>Send Money to Personal Account</h2>
         <p>send money to your prefered beneficiary</p>
       </div>
     </div>

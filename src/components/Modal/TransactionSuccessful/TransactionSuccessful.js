@@ -5,12 +5,14 @@ import Modal from "react-modal";
 import React, { useState } from "react";
 import FailedTransaction from "components/Modal/FailedTransaction/FailedTransaction";
 import  egg from "assets/Dashboard/egg.svg";
-import Toggle from "assets/Dashboard/Toggle.svg";
+// import Toggle from "assets/Dashboard/Toggle.svg";
+import Toggle from "components/Toggle/Toggle";
 
 
 const TransactionSuccessful = ({ onClick }) => {
 
     const [isOpenTransactionSuccessful, setIsOpenTransactionSuccessful] = useState(false);
+    const [ toggled, setToggled] = useState(false);
 
     const handleClick = () => setIsOpenTransactionSuccessful (false);
   
@@ -77,7 +79,10 @@ const TransactionSuccessful = ({ onClick }) => {
       </div>
     </div>
      
-     <div className={classes.ttext}><h4>Save as beneficiary</h4> <img src={Toggle} alt="toggle" /></div>
+     <div className={classes.ttext}>  
+     <h4> { toggled ? "Saved Beneficiary"  : "Unsaved Beneficiary"}  </h4>
+     <Toggle onChange={(event)=> setToggled(event.target.checked)} />
+     </div>
       
       
       <div className={classes.buttonF}>

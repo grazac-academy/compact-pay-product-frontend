@@ -90,10 +90,11 @@
    width: 40%;
    margin: 1rem 0 0 9rem;
    display:flex;
+   align-items: center;
 
 }
-.ttext img{
-    padding-left: 1rem;
+.ttext h4{
+  width: 57%;
 }
 
 

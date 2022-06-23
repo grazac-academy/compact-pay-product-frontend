@@ -9,7 +9,9 @@ const CompactpayConfirmT = ({ onClick }) => {
   const [isOpenCompactpayConfirmT, setIsOpenCompactpayConfirmT] = useState(false);
 
   const handleClick = () => setIsOpenCompactpayConfirmT (false);
+  
 
+  
 
   return (
     <div className={classes.ReceiversDetails}>
@@ -57,15 +59,16 @@ const CompactpayConfirmT = ({ onClick }) => {
       </div>
       <div  className={classes.transactionpin } >
       <div className={classes.ttext }><p>Enter Transaction PIN</p></div>
-      <div maxLength={1} className={classes.Pin }>
-          <input></input>
-          <input></input>
-          <input ></input>
-          <input ></input>
-          <input ></input>
-          <input ></input>
+      <div  className={classes.Pin }>
+      <input  maxLength="1"></input>
+          <input  maxLength="1"></input>
+          <input maxLength="1" ></input>
+          <input  maxLength="1"></input>
+          <input maxLength="1" ></input>
+          <input  maxLength="1"></input>
       </div>
-      </div>
+      </div> 
+      
       <div className={classes.buttonF}>
         <button onClick={() => setIsOpenCompactpayConfirmT(true)} className={classes.button}>Proceed</button>
         <Modal

@@ -8,10 +8,7 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { login } from "services/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-<<<<<<< HEAD
 import Loading from "components/UI/Loading/loading";
-=======
->>>>>>> main
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -19,26 +16,10 @@ const Signin = () => {
     email: "",
     password: "",
   });
-<<<<<<< HEAD
-
-  const [loading, setLoading] = useState(false);
-=======
->>>>>>> main
 
   const [loading, setLoading] = useState(false);
   
   const navigate = useNavigate();
-<<<<<<< HEAD
-=======
-
-//   const navigate = useNavigate();
-//   const handleSubmit = (evt) => {
-//     evt.preventDefault();
-//     navigate('/dashboard/home')
-// };
-
-
->>>>>>> main
 
   const toggleBtn = () => {
     setShowPassword(!showPassword);
@@ -52,7 +33,6 @@ const Signin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-<<<<<<< HEAD
     try {
       setLoading(true);
       const response = await login(data);
@@ -60,15 +40,6 @@ const Signin = () => {
       toast.success(response.data.dataInfo.message);
       console.log(response);
       navigate("/dashboard/home");
-=======
-    console.log(data);
-    try {
-      setLoading(true);
-      const response = await login(data);
-      localStorage.setItem("id", response.data._id);
-      console.log(response.data);
-      navigate("/modal");
->>>>>>> main
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -124,24 +95,14 @@ const Signin = () => {
           </div>
         </div>
         <Button type="submit" onClick={handleSubmit}>
-<<<<<<< HEAD
 
           {loading ? <Loading/> : "Log in"}
-=======
-          Log in
->>>>>>> main
         </Button>
 
         <div className={style.new_account}>
           <p>
-<<<<<<< HEAD
             New to Compactpay?
             <Link to="/register">
-=======
-            New to Compactpay?{" "}
-            <Link to="/register">
-              {" "}
->>>>>>> main
               <span>Create Account</span>
             </Link>
           </p>

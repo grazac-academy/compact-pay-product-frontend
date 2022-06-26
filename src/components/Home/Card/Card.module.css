@@ -119,9 +119,6 @@
 
   .transfer {
     margin-left: 0px;
-<<<<<<< HEAD
-  }
-=======
     }
 }
 @media (max-width: 830px){
@@ -153,7 +150,6 @@
     .applications{
         justify-content: center;
     }
->>>>>>> main
 }
 
 @media (max-width: 830px) {

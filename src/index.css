@@ -6,10 +6,12 @@
 
 body {
   overflow-x: hidden;
+  max-width: 1450px;
+  margin: auto;
 }
 
 html {
-  font-family: 'Cairo', sans-serif;
+  font-family: "Cairo", sans-serif;
   font-size: 16px;
 }
 
@@ -17,17 +19,15 @@ html {
   border-bottom: 3px solid blue;
 }
 
-
 :root {
-  --primary: #049A76;
-  --second: #00493C;
+  --primary: #049a76;
+  --second: #00493c;
   --text: #252525;
   --white: #fff;
   --grey: #8795a1;
   --bold: 800;
   --light: 700;
 }
-
 
 /* paragraph text */
 
@@ -37,7 +37,6 @@ html {
   font-weight: 500;
   color: #00002880;
 }
-
 
 .sect-header1 {
   font-weight: var(--bold);

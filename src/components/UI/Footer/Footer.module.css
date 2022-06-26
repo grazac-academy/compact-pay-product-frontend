@@ -1,76 +1,79 @@
-
-footer{
-    background-color:#00493C;
-    margin-top: 2rem;
+footer {
+  background-color: #00493c;
+  margin-top: 2rem;
 }
 
-.foot{
-    width: 60%;
-    margin-left: 147px;
-    padding-top: 60px;
-    padding-bottom: 100px;
-    display:flex;
+.foot {
+  width: 60%;
+  margin-left: 147px;
+  padding-top: 60px;
+  padding-bottom: 100px;
+  display: flex;
 }
-.footimage{
-    margin-top:20px;
+.footimage {
+  margin-top: 20px;
 }
-.footimage img{
-    margin-right: 10px;
-}
-
-.footer_logo{
-    width: 50%;
-}
-.footer_logo h5{
-    font-size: 1rem;
-    font: weight 600px;
-    color: white;
-    margin-top:10px;
-}
-.footer_logo span{
-    font-size: 0.7rem;
-    font: weight 400px;
-    color: rgba(255, 255, 255, 0.7);
-}
-.footer_info{
-    display:flex;
-    justify-content: space-between;
-    width: 40%;
+.footimage img {
+  margin-right: 10px;
 }
 
-.footer_info p{
-    font-size: 0.7rem;
-    font: weight 400px;
-    color: rgba(255, 255, 255, 0.7);
-    margin-bottom: 10px;
+.footerlogo img {
+  margin-right: 10px;
+  width: 60%;
 }
-.footer_info h3{
-    font-size: 1rem;
-    font: weight 600px;
-    color: white;
-    margin-bottom: 20px;
+
+.footer_logo {
+  width: 50%;
+}
+.footer_logo h5 {
+  font-size: 1rem;
+  font: weight 600px;
+  color: white;
+  margin-top: 10px;
+}
+.footer_logo span {
+  font-size: 0.7rem;
+  font: weight 400px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.footer_info p {
+  font-size: 0.7rem;
+  font: weight 400px;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 10px;
+}
+.footer_info h3 {
+  font-size: 1rem;
+  font: weight 600px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 /* media responsive */
 
-@media (max-width: 850px){
-    .foot{
-        width: 80%;
-    }
- }
+@media (max-width: 850px) {
+  .foot {
+    width: 80%;
+  }
+}
 
- @media (max-width: 650px){
-    .foot{
-       display:block;
-       width:80%;
-       margin:0px auto;
-    }
-    .footer_logo{
-        width:100%;
-    }
-    .footer_info{
-        width: 80%;
-        margin-top: 30px;
-    }
- }
- 
+@media (max-width: 650px) {
+  .foot {
+    display: block;
+    width: 80%;
+    margin: 0px auto;
+  }
+  .footer_logo {
+    width: 100%;
+  }
+  .footer_info {
+    width: 80%;
+    margin-top: 30px;
+  }
+}

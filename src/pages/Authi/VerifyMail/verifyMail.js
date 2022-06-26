@@ -1,14 +1,16 @@
 import AuthLayout from "../../../layout/Auth/Auth";
 import Button from "components/UI/Button/button";
 import style from "../VerifyMail/verifyMail.module.css";
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { verify } from "services/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
-
+import Loading from "components/UI/Loading/loading";
 
 const VerifyMail = () => {
+  const { email } = useParams();
+  const [loading, setLoading] = useState(false);
   const [data, setData] = useState({
     field1: "",
     field2: "",
@@ -44,13 +46,14 @@ const VerifyMail = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
     try {
-      const response = await verify(localStorage.getItem("id"), code);
+      setLoading(true);
+      const response = await verify(code, email);
       console.log(response);
-    navigate('/signin');
+      toast.success(response.data.message);
+      navigate("/signin");
     } catch (error) {
-      console.log(error);
+      setLoading(false);
       toast.error(error.response.data.message);
     }
   };
@@ -62,7 +65,7 @@ const VerifyMail = () => {
       info="Almost there! We sent an email to users@gmail.com containing your OTP. Kindly enter 6-digit OTP here"
     >
       <form>
-      <div className={`${style.grid}`}>
+        <div className={`${style.grid}`}>
           {arr.map((item, index) => (
             <input
               key={index}
@@ -95,7 +98,9 @@ const VerifyMail = () => {
             </p>
           </div>
         </div>
-        <Button type="submit" onClick={handleSubmit}>Verify</Button>
+        <Button type="submit" onClick={handleSubmit}>
+          {loading ? <Loading /> : "Verify"}
+        </Button>
 
         <div className={style.new_account}>
           <p>

@@ -8,6 +8,7 @@ import { AiOutlineEyeInvisible, AiOutlineEye } from "react-icons/ai";
 import { login } from "services/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import Loading from "components/UI/Loading/loading";
 
 const Signin = () => {
   const [showPassword, setShowPassword] = useState(false);
@@ -32,13 +33,13 @@ const Signin = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(data);
     try {
       setLoading(true);
       const response = await login(data);
-      localStorage.setItem("id", response.data._id);
-      console.log(response.data);
-      navigate("/modal");
+      localStorage.setItem("token", response.data.dataInfo.token);
+      toast.success(response.data.dataInfo.message);
+      console.log(response);
+      navigate("/dashboard/home");
     } catch (error) {
       setLoading(false);
       console.log(error);
@@ -83,7 +84,7 @@ const Signin = () => {
         <div className={style.forgot_sect}>
           <div className={style.check}>
             <input type="checkbox" />
-            <label for="keep Me"> Keep me signed in</label>
+            <label htmlFor="keep Me"> Keep me signed in</label>
           </div>
           <div className={style.forgot}>
             <p>
@@ -94,14 +95,14 @@ const Signin = () => {
           </div>
         </div>
         <Button type="submit" onClick={handleSubmit}>
-          Log in
+
+          {loading ? <Loading/> : "Log in"}
         </Button>
 
         <div className={style.new_account}>
           <p>
-            New to Compactpay?{" "}
+            New to Compactpay?
             <Link to="/register">
-              {" "}
               <span>Create Account</span>
             </Link>
           </p>

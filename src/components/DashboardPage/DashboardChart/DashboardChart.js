@@ -26,7 +26,7 @@ import {
       title: {
         display: true,
         text: 'Cash Flow Graph ',
-        color: '#252525'
+        color: '#252525',
       },
     },
   };

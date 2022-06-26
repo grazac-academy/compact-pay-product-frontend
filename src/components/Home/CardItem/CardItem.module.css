@@ -9,12 +9,7 @@
     background-color: var(--white);
     box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
     border-radius: 20px;
-    /* position: relative; */
 }
-/* .cardimage{
-    position: absolute;
-    top: -80px;
-} */
 
 .cardimage img{
     width: 85%;

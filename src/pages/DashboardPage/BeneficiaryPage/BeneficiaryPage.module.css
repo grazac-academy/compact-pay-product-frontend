@@ -42,7 +42,7 @@
 }
 .providus button{
     background:white;
-    width: 45%;
+    width: 55%;
     padding: 0.8rem;
     border-radius: 8px;
     border:none;
@@ -72,7 +72,7 @@
 }
 .saved button{
     background:white;
-    width: 45%;
+    width: 55%;
     padding: 0.8rem;
     border-radius: 8px;
     border:none;
@@ -88,7 +88,7 @@
  }
  .New button{
     background:#AC1D40;
-    width: 50%;
+    width: 55%;
     padding: 0.8rem;
     border-radius: 8px;
     border:none;
@@ -333,3 +333,106 @@ td:nth-of-type(5){
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+
+  @media  (max-width: 1000px) {
+        .BenPage{
+            width: 95%;
+            margin: 0 auto;
+        }
+        .createBen{
+            width: 75%;
+        }
+        .providus button{
+            width: 75%;
+        }
+        .saved button{
+            width: 75%;
+        }
+        .leftview{
+            width: 45%;
+        }
+        .NoBeneficiary button{
+            width: 50%;
+         }
+ 
+  }
+
+  @media (max-width: 768px) {
+    .Personal{
+        display:block;
+    }   
+    .trans h2{
+        font-size: 1.2rem;
+    }
+    .account{
+        width: 100%;
+        margin: 1rem auto;
+    }
+    .New{
+        width: 100%;
+    }
+    .fig{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+    }
+    .leftview{
+        display: block;
+        width: 35%;
+    }
+    .View{
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .filterselect{
+        display: none;
+    }
+    .num{
+        display: none;
+    }
+    .Modal {
+        height: 90%;
+        width: 80%;
+    }
+    .ModalChange {
+        height: 90%;
+        width: 80%;
+      }
+      .ModalAdd {
+        height: 90%;
+        width: 80%;
+      }
+
+  }
+      
+  @media (max-width: 566px){
+    .fig{
+        width: 45%;
+        position: absolute;
+        top: 17%;
+        right: 3%;
+    }
+    .NoBeneficiary button{
+        width: 90%;
+     }
+
+
+     .transaction td:nth-of-type(1),
+     .transaction td:nth-of-type(7){
+     display:block;
+     }
+     .transaction th:nth-of-type(1),
+     .transaction th:nth-of-type(7){
+     display:block; }
+
+     .transaction td:nth-of-type(4){
+        display:none;
+     }
+     
+     .transaction th:nth-of-type(4){
+         display: none;
+     }
+}
+  

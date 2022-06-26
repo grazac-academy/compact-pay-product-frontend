@@ -9,3 +9,8 @@
     user-select: none;
     background-image: none;
 }
+
+.button:disabled {
+    background: var(--grey);
+    cursor: not-allowed;
+}

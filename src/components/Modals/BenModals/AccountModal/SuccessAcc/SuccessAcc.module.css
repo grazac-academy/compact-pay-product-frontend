@@ -26,3 +26,17 @@
     width: 45%;
     margin: 10px auto;
 }
+
+@media  (max-width: 768px) {
+    .Modal {
+        height: 90%;
+        width: 80%;
+    }
+    .Success {
+        margin-top: 3rem;
+    }
+    .Success h2{
+        width: 55%;
+    }
+
+}

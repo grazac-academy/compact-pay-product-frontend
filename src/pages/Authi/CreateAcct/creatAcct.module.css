@@ -3,6 +3,7 @@
   flex-direction: column;
   width: 48%;
 }
+
 .form_cont p {
   color: #AC1D40;
 }
@@ -38,6 +39,32 @@
   box-sizing: border-box;
   border-radius: 8px;
 }
+
+.phoneNumber>div {
+  border: 1px solid var(--grey);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+}
+
+
+.phoneNumber input {
+  width: 100%;
+  /* padding: 15px 15px; */
+  font-size: 16px;
+  background: #ffffff;
+  border: none;
+}
+
+.phoneNumber input:focus {
+  border: none !important;
+  outline: none !important;
+}
+
+
 
 .password {
   display: flex;

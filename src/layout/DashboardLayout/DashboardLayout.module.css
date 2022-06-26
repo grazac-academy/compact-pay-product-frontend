@@ -13,3 +13,12 @@
     width: 80%;
     margin: 1rem auto 0;
 }
+
+@media (max-width: 1000px) {
+    .dashInfo{
+        width: 90%;
+    }
+}
+    
+
+

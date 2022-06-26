@@ -1,8 +1,7 @@
 import classes from "./TransactionPage.module.css";
-// import greaterthan from 'assets/Dashboard/greater_than.svg';
 import Pagination from 'components/UI/Pagination/Pagination';
 import { MdNavigateNext } from 'react-icons/md';
-import search from "assets/Dashboard/search.svg";
+import search from "assets/Dashboard/search_dash.svg";
 import Modal from 'react-modal';
 import { useState} from "react";
 import TransactModals from "components/Modals/TransactModals/TransactModals";
@@ -46,6 +45,8 @@ const TransactionPage = () => {
 
             </div>
         </div>
+
+        
     <table className={classes.transaction}>
         <thead>
             <tr>
@@ -76,79 +77,6 @@ const TransactionPage = () => {
                 })}
         
 
-
-            {/* <tr onClick={()=> setModalIsTransferOpen(true)}>
-                <td  >100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>450.70</td>
-                <td>Fund Transfer</td>
-                <td className={classes.pend}><p>Pending</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr onClick={()=> setModalIsOpen(true)}>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>--</td>
-                <td>Wallet Top-Up</td>
-                <td className={classes.success}><p>Successful</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr onClick={()=> setModalIsP2POpen(true)}>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>--</td>
-                <td>Wallet Top-Up</td>
-                <td className={classes.success}><p>Successful</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>--</td>
-                <td>Wallet Top-Up</td>
-                <td className={classes.pend}><p>Pending</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>450.70</td>
-                <td>Fund Transfer</td>
-                <td className={classes.fail}><p>Failed</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>--</td>
-                <td>Wallet Top-Up</td>
-                <td className={classes.success}><p>Successful</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>450.70</td>
-                <td>Fund Transfer</td>
-                <td className={classes.fail}><p>Failed</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr>
-            <tr>
-                <td>100006758983</td>
-                <td>10 May 2022, 8:45PM</td>
-                <td>₦ 2,400</td>
-                <td>450.70</td>
-                <td>Fund Transfer</td>
-                <td className={classes.pend}><p>Pending</p></td>
-                <td><img src={greaterthan} alt="" /></td>
-            </tr> */}
        
     </table>
 

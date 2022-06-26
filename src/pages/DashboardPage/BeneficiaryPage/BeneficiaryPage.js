@@ -4,7 +4,7 @@ import addfund from 'assets/Dashboard/addfund.svg';
 import NoBeneficiary from 'assets/Dashboard/NoBeneficiary.svg';
 import Edit from 'assets/Dashboard/Edit.svg';
 import beneficiary_fig from 'assets/Dashboard/beneficiary_fig.svg';
-import search from "assets/Dashboard/search.svg";
+import search from "assets/Dashboard/search_dash.svg";
 import Pagination from 'components/UI/Pagination/Pagination';
 import { MdNavigateNext } from 'react-icons/md';
 import { BeneficiaryTable } from "../../../constants/TransactionTable";
@@ -31,7 +31,7 @@ const BeneficiaryPage = () => {
     const handleChangeClick = () => setModalChangeIsOpen(false);
 
   return (
-    <div>
+    <div className={classes.BenPage}>
         <div className={classes.Personal}>
                     <div className={classes.account}>
                                                     <div className={classes.providus}>

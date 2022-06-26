@@ -1,0 +1,47 @@
+.wrapper {
+    margin-left: 1rem;
+}
+
+.wrapperCheckbox {
+    position: relative;  
+}
+.wrapperInput{
+    position: absolute;
+    left: -9999px;         
+     
+    
+}
+
+.wrapperslider{
+    display:flex;
+     cursor:pointer;
+    width:50px;
+   height:25px;
+    border-radius:100px;
+   background-color:var(--second);
+   position: relative;
+   transition: background-color 0.2s;
+  
+}
+.wrapperslider:before{
+content: ""; 
+position: absolute;
+background-color: var(--white);
+width:21px;
+left:2px;
+top:2px;
+height:21px;
+border-radius: 45px;
+transition:  0.5s;
+ }
+
+
+ .wrapperInput:checked + span {
+    background-color: #067826;
+ }
+ .wrapperInput:checked + span:before{
+    left: 27px;
+    background-color: var(--white)
+ } 
+
+ 

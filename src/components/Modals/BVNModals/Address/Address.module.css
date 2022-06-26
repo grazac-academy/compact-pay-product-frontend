@@ -87,3 +87,17 @@
         bottom: 0;
         background-color: rgba(0, 0, 0, 0.1);
       }
+
+      @media (max-width: 768px){
+        .Modal {
+            width: 80%;
+            height: 90%;
+          }
+    
+      }
+    
+      @media (max-width: 566px){
+        .state{
+            display: block;
+        }
+      }

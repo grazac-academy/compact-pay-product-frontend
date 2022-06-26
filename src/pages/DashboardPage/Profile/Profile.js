@@ -7,7 +7,7 @@ import nga from "assets/Dashboard/nga.svg"
 
 const Profile = () => {
   return (
-    <div>
+    <div className={classes.Pro}>
     <div className={classes.profile}>
 
       <div className={classes.rect}>

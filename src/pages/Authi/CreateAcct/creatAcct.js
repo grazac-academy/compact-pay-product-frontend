@@ -9,21 +9,37 @@ import { inputArr } from "constants/index";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+<<<<<<< HEAD
 import Loading from "components/UI/Loading/loading";
 
 const CreateAcct = ({ payload, setPayload }) => {
+=======
+
+const CreateAcct = ({ payload, setPayload }) => {
+  console.log(inputArr);
+>>>>>>> main
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
+<<<<<<< HEAD
+=======
+    console.log(payload);
+>>>>>>> main
 
     try {
       setLoading(true);
       const response = await createAccount(payload);
+<<<<<<< HEAD
       localStorage.setItem("otp", response.data.otp);
       navigate(`/verify-email/${payload.email}`);
       console.log(response.data.otp);
+=======
+      localStorage.setItem("id", response.data._id);
+      navigate("/verifyMail");
+      console.log(response.data._id);
+>>>>>>> main
     } catch (error) {
       setLoading(false);
       toast.error(error.response.data.message);
@@ -99,7 +115,11 @@ const CreateAcct = ({ payload, setPayload }) => {
           payload.password !== payload.confirmPassword
         }
       >
+<<<<<<< HEAD
         {loading ? <Loading /> : "Create Account"}
+=======
+        {loading ? "is Loading" : "Create Account"}
+>>>>>>> main
       </Button>
 
       <div className={style.new_account}>

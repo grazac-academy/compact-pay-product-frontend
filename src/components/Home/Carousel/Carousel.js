@@ -169,7 +169,7 @@ export default class AsNavFor extends Component {
           </div>
           <div className={classes.textField}>
             <div className={classes.textFielda}>
-              <img src={Logo9} alt="nigeria flag" />
+              <img src={Logo9} alt="nigeria flag"  className={classes.nigeria}/>
               <p className={classes.week}> 3days ago</p>
             </div>
             <p className={classes.carotext}>
@@ -179,7 +179,7 @@ export default class AsNavFor extends Component {
           </div>
           <div className={classes.textField}>
             <div className={classes.textFielda}>
-              <img src={Logo9} alt="germany flag" />
+              <img src={Logo9} alt="germany flag" className={classes.nigeria} />
               <p className={classes.weeek}> 1 weeek ago</p>
             </div>
             <p className={classes.carotext}>

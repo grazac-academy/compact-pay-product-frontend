@@ -5,7 +5,10 @@ import { cardCont } from "constants";
 import Card from "components/Home/Card/Card";
 import Globe from "components/Home/Globe/Globe";
 import Carousel from "components/Home/Carousel/Carousel";
+<<<<<<< HEAD
 import { AnimationOnScroll } from "react-animation-on-scroll";
+=======
+>>>>>>> main
 
 const Home = () => {
   return (

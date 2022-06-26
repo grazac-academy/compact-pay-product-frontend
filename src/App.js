@@ -30,9 +30,15 @@ const App = () => {
         <Route path="/signin" element={<Signin />} />
         <Route path="/register" element={<Register />} />
         <Route path="/forgotpassword" element={<ForgotPassword />} />
+<<<<<<< HEAD
         <Route path="/verify-email/:email" element={<VerifyMail />} />
         <Route path="/modal" element={<Modal />} />
         <Route path="/create-acct" element={<CreateAcct />} />
+=======
+        <Route path="/verifyMail" element={<VerifyMail />} />
+        <Route path="/modal" element={<Modal />} />
+        <Route path="/createAcct" element={<CreateAcct />} />
+>>>>>>> main
         <Route path="/dashboard" element={<DashboardLayout />}>
           <Route path="home" element={<Dashboard />} />
           <Route path="transaction" element={<TransactionPage />} />

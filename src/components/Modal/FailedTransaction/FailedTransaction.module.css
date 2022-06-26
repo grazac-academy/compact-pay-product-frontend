@@ -1,0 +1,209 @@
+.ReceiversDetails{
+    width:100%;
+}
+.RD{
+    background-color: #AC1D1D;
+    ;
+    height:7rem;
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+   align-items: center;
+   border-radius:5px 5px 0px 0px
+}
+.Rdetails{
+    margin:auto auto;
+    border-radius: 5px ;
+   
+} 
+.Rdetails h2{
+    color:var(--white);
+    
+ }
+.leftarrow{
+    margin-left:0.9rem ;
+}
+.TransactionType {
+     width: 60%;
+      background-color:#EAEAEA; 
+     margin:9rem auto 1rem;
+     padding:0.9rem; 
+     border-radius:20px;
+     position: relative;
+   
+   
+}
+.TransactionBox{
+    display:flex;
+    
+    justify-content: space-between; 
+} 
+
+.TransactionBox1{
+    text-align:left;
+} 
+
+.TransactionBox2{
+    text-align:right; 
+}  
+.TransactionBox1 p{
+    font-size:0.7rem;
+    color: #828282;
+    ;
+}
+.TransactionBox1 h6{
+    font-size:0.7rem;
+    color:#333333;
+    
+}
+.TransactionBox2 p{
+    font-size:0.7rem;
+    color: #828282;
+    
+}
+.TransactionBox2 h6{
+    font-size:0.7rem;
+    color: #333333;
+
+}
+.button{
+    margin:0 25%;
+    width: 49%;
+    background-color:  rgba(0, 73, 60, 1); ;
+    height: 3rem;
+    text-align: center;
+    color: #fff;
+    border:none;
+    border-radius: 5px;
+    font-size: 1.3rem;
+   margin-bottom: 3rem;
+}
+
+.buttonF{
+    margin-top:5rem;
+}
+.Text{
+    margin-bottom: 0.9rem;
+    
+}
+
+
+
+
+.pathgood{
+  margin: 4rem auto 0;
+  width: 70%;
+  text-align: center;
+         
+} 
+.pathgood h3{
+    color: #AC1D1D;
+
+}
+.pathgood p{
+    color: #808093;
+
+}
+
+.thankyou {
+   
+   margin: auto auto;
+   width: 100%;
+   position: absolute;
+   left: 35%;
+   top: 25%;
+   z-index: 2;
+ } 
+
+.line{
+    margin: 1rem auto;
+    width: 90%;
+    border:  1px dashed #C5C4C4;
+}
+
+
+.thank img{
+    right: 95%;
+    top: 35%;
+    position: absolute;
+}
+
+.eggRight{
+    left: 95%;
+    top: 35%;
+    position: absolute;
+}
+@media (max-width: 1024px){
+    .thankyou {
+        left: 32%;
+       
+      } 
+}
+@media (max-width: 968px){
+    .thankyou {
+        left: 30%;
+       
+      } 
+    
+}
+@media (max-width: 900px){
+    .thankyou {
+        left: 27%;
+       
+      } 
+     
+}
+@media (max-width: 660px){
+    .thankyou img {
+        width: 35%;
+       
+      } 
+     
+      .thankyou {
+        left: 32%;
+        top: 28%;
+      } 
+}
+@media (max-width: 584px){
+    .ttext {
+        margin: 1rem 0 0 5rem;
+      }
+      .thankyou {
+        left: 32%;
+        top: 26%;
+      } 
+      
+}   
+@media (max-width: 568px){
+    .thankyou {
+      top: 29%;
+      
+    } 
+    .TransactionType {
+        margin:7rem auto 1rem;
+      
+   }
+}     
+@media (max-width: 516px){
+      .thankyou {
+        top: 24%;
+      } 
+      
+} 
+@media (max-width: 458px){
+    .thankyou {
+      top: 22%;
+    } 
+    
+}     
+@media (max-width: 375px){
+    .thankyou {
+      top: 36%;
+    } 
+    .TransactionType {
+        width: 80%;
+        
+      
+      
+   }
+}   

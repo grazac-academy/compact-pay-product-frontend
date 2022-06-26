@@ -52,3 +52,18 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.2);
   }
+
+  
+  @media (max-width: 768px){
+    .Modal {
+        width: 80%;
+        height: 90%;
+      }
+      .Success p{
+        width: 85%;
+    }
+    .Success {
+        margin-top: 3rem;
+    }
+    
+  }

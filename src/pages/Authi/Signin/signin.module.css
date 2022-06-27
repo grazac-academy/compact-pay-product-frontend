@@ -83,10 +83,9 @@ form Button {
   border-radius: 8px;
 }
 
-form button a{
+form button a {
   text-decoration: none;
 }
-
 
 @media screen and (max-width: 768px) {
   .forgot_sect {

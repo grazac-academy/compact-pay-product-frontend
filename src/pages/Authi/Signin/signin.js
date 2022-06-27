@@ -18,7 +18,7 @@ const Signin = () => {
   });
 
   const [loading, setLoading] = useState(false);
-  
+
   const navigate = useNavigate();
 
   const toggleBtn = () => {
@@ -95,8 +95,7 @@ const Signin = () => {
           </div>
         </div>
         <Button type="submit" onClick={handleSubmit}>
-
-          {loading ? <Loading/> : "Log in"}
+          {loading ? <Loading /> : "Log in"}
         </Button>
 
         <div className={style.new_account}>
@@ -108,7 +107,6 @@ const Signin = () => {
           </p>
         </div>
       </form>
-
     </AuthLayout>
   );
 };

@@ -15,7 +15,7 @@ const Home = () => {
       </section>
 
       <div className={classes.section2}>
-        <AnimationOnScroll animateIn="animate__fadeInUp" animateDelay="800ms">
+        <AnimationOnScroll animateIn="animate__fadeInUp" animateOut="animate__fadeInDown" animateDelay="800ms">
           <div className={classes.header}>
             <h1 className="sect-header2 set_header">Why Choose Compactpay?</h1>
           </div>

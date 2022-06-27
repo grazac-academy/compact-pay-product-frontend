@@ -59,8 +59,12 @@ const Dashboard = ( ) => {
               <img src={sendmoney} alt="" />
               <h3>Send Money</h3>
               <p>Access seamless crossborder payment</p>
-              <MdNavigateNext className={classes.MdNavigateNext} />
-            </div>
+
+              
+                <MdNavigateNext onClick={() => setModalSendIsOpen(true)}
+                className={classes.MdNavigateNext} />
+             
+          </div>
           </div>
         </div>
         <div className={classes.graph}>
@@ -71,6 +75,8 @@ const Dashboard = ( ) => {
         <Transaction />
       </div>
 
+      
+    
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => {

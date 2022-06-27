@@ -16,7 +16,7 @@ const Signup = ({ payload, setPayload, setActive }) => {
             }))
           }
         >
-          <option value="Choose your country" disabled>
+          <option value="Choose your country" hidden selected disabled>
             Choose your country:
           </option>
           <option value="Nigeria">Nigeria</option>

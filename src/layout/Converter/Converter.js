@@ -1,11 +1,9 @@
-import CurrencyRow from 'components/Home/CurrencyRow/CurrencyRow';
-import { useState, useEffect } from 'react';
-import classes from './Converter.module.css';
+import CurrencyRow from "components/Home/CurrencyRow/CurrencyRow";
+import { useState, useEffect } from "react";
+import classes from "./Converter.module.css";
 
 const BASE_URL =
-  'https://v6.exchangerate-api.com/v6/71d8ca75e23a07bd222123aa/latest/USD';
-// const BASE_URL = 'https://api.fastforex.io/fetch-all?api_key=90b14a5cd9-7a1ba6e414-rbzfwj'
-// const BASE_URL = 'https://api.currencyapi.com/v3/latest?apikey=EbKzznJWZaD4yJaGkSKf8J1cJkEu232Ib6KoJCeY'
+  "https://v6.exchangerate-api.com/v6/71d8ca75e23a07bd222123aa/latest/USD";
 
 const Converter = () => {
   const [currencyOptions, setCurrencyOptions] = useState([]);
@@ -63,7 +61,7 @@ const Converter = () => {
   }, [fromCurrency, toCurrency]);
 
   const handleAmountChange = (e, type) => {
-    if (type === 'from') {
+    if (type === "from") {
       setAmountFromCurrency(true);
       setAmount(e.target.value);
     } else {
@@ -74,7 +72,7 @@ const Converter = () => {
 
   const handleChangeCurrency = (e, type) => {
     console.log(currencyOptions);
-    if (type === 'from') {
+    if (type === "from") {
       const amount = currencyOptions.find(
         (item) => item.key === e.target.value
       ).value;
@@ -90,39 +88,41 @@ const Converter = () => {
   };
 
   return (
-    <div className={classes.convertbox}>
-      <div className={classes.sendtext}>
-        <h2>Send Money Now</h2>
-      </div>
-      <p>You Send</p>
-      <CurrencyRow
-        currencyOptions={currencyOptions}
-        selectCurrency={fromCurrency}
-        onChangeCurrency={(e) => handleChangeCurrency(e, 'from')}
-        onChangeAmount={(e) => handleAmountChange(e, 'from')}
-        amount={fromAmount}
-      />
-      <p>Receiver Get</p>
-      <CurrencyRow
-        currencyOptions={currencyOptions}
-        selectCurrency={toCurrency}
-        onChangeCurrency={(e) => handleChangeCurrency(e, 'to')}
-        onChangeAmount={(e) => handleAmountChange(e, 'to')}
-        amount={toAmount}
-      />
-      <div className={classes.transaction}>
-        <div className={classes.exchange}>
-          <h4>Exchange Details</h4>
-          <p>1 USD =414.50 NGN</p>
-          <p>1 NGN =0.0024 USD</p>
+    <div class="animate__animated animate__fadeInRight animate__delay-800ms">
+      <div className={classes.convertbox}>
+        <div className={classes.sendtext}>
+          <h2>Send Money Now</h2>
         </div>
-        <div className={classes.fee}>
-          <h4>Transaction Fee</h4>
-          <p>USD 0.10 - NGN 0.50</p>
+        <p>You Send</p>
+        <CurrencyRow
+          currencyOptions={currencyOptions}
+          selectCurrency={fromCurrency}
+          // onChangeCurrency={(e) => handleChangeCurrency(e, "from")}
+          onChangeAmount={(e) => handleAmountChange(e, "from")}
+          amount={fromAmount}
+        />
+        <p>Receiver Get</p>
+        <CurrencyRow
+          currencyOptions={currencyOptions}
+          selectCurrency={toCurrency}
+          onChangeCurrency={(e) => handleChangeCurrency(e, "to")}
+          onChangeAmount={(e) => handleAmountChange(e, "to")}
+          amount={toAmount}
+        />
+        <div className={classes.transaction}>
+          <div className={classes.exchange}>
+            <h4>Exchange Details</h4>
+            <p>1 USD =414.50 NGN</p>
+            <p>1 NGN =0.0024 USD</p>
+          </div>
+          <div className={classes.fee}>
+            <h4>Transaction Fee</h4>
+            <p>USD 0.10 - NGN 0.50</p>
+          </div>
         </div>
-      </div>
 
-      <button>Send Money</button>
+        <button>Send Money</button>
+      </div>
     </div>
   );
 };

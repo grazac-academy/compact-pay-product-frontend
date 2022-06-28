@@ -1,4 +1,3 @@
-import AuthLayout from "layout/Auth/Auth";
 import Button from "components/UI/Button/button";
 import FormGroup from "components/UI/FormGroup/formgroup";
 import style from "./creatAcct.module.css";
@@ -10,22 +9,21 @@ import { inputArr } from "constants/index";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
+import Loading from "components/UI/Loading/loading";
 
 const CreateAcct = ({ payload, setPayload }) => {
-  console.log(inputArr);
   const navigate = useNavigate();
 
   const [loading, setLoading] = useState(false);
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(payload);
 
     try {
       setLoading(true);
       const response = await createAccount(payload);
-      localStorage.setItem("id", response.data._id);
-      navigate("/verifyMail");
-      console.log(response.data._id);
+      localStorage.setItem("otp", response.data.otp);
+      navigate(`/verify-email/${payload.email}`);
+      console.log(response.data.otp);
     } catch (error) {
       setLoading(false);
       toast.error(error.response.data.message);
@@ -101,7 +99,7 @@ const CreateAcct = ({ payload, setPayload }) => {
           payload.password !== payload.confirmPassword
         }
       >
-        {loading ? "is Loading" : "Create Account"}
+        {loading ? <Loading /> : "Create Account"}
       </Button>
 
       <div className={style.new_account}>

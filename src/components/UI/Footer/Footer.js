@@ -11,7 +11,7 @@ const Footer = () => {
     <footer>
       <div className={classes.foot}>
         <div className={classes.footer_logo}>
-          <div>
+          <div className={classes.footerlogo}>
             <img src={compactLogo} alt="compactLogo" />
           </div>
           <h5>

@@ -1,50 +1,49 @@
-
-.CardItem{
-    width: 32%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: var(--white);
-    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
-    border-radius: 20px;
+.CardItem {
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--white);
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  border-radius: 20px;
 }
 
-.cardimage img{
-    width: 85%;
-    margin-top: -80px;
+.cardimage img {
+  width: 85%;
+  margin-top: -80px;
 }
 
-.CardItem h3{
-    font-size: 1.5rem;
-    margin-top: -20px;
-    color: var(--text);
-    font-weight: var(--light);
+.CardItem h3 {
+  font-size: 1.5rem;
+  margin-top: -20px;
+  color: var(--text);
+  font-weight: var(--light);
 }
-.CardItem p{
-    font-size: 1rem;
-    width: 98%;
-    padding:30px 20px;
-    color: var(--grey);
-}
-
-        /* media responsive */
-
-@media (max-width: 1000px){
-    .CardItem h3{
-        font-size: 1.2rem;
-    }
+.CardItem p {
+  font-size: 1rem;
+  width: 98%;
+  padding: 30px 20px;
+  color: var(--grey);
 }
 
-@media (max-width: 830px){
-    .CardItem{
-        width: 100%;
-    }
+/* media responsive */
+
+@media (max-width: 1000px) {
+  .CardItem h3 {
+    font-size: 1.2rem;
+  }
 }
-@media (max-width: 550px){
-    .CardItem{
-        width: 90%;
-        margin: 0px auto;
-    }
+
+@media (max-width: 830px) {
+  .CardItem {
+    width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  .CardItem {
+    width: 90%;
+    margin: 0px auto;
+  }
 }

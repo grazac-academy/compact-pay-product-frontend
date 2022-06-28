@@ -1,6 +1,7 @@
 import React from "react";
 import classes from "./Globe.module.css";
 import Logo from "assets/Landing/world.png";
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 function Globe() {
   return (
@@ -8,6 +9,7 @@ function Globe() {
       <div className={classes.container}>
         <h4>Millions of international transactions around the globe </h4>
         <div className={classes.section5}>
+        <AnimationOnScroll animateIn="animate__fadeInLeft"  animateDelay="800ms">
           <div className={classes.section5a}>
             <div className={classes.section5a1}>
               <div className={classes.section5a3}>
@@ -29,8 +31,9 @@ function Globe() {
               </div>
             </div>
           </div>
+          </AnimationOnScroll>
           <div className={classes.world}>
-            <img src={Logo} alt="world"></img>
+            <img src={Logo} alt="world" />
           </div>
         </div>
       </div>

@@ -1,10 +1,8 @@
-
 import classes from "./FailedTransaction.module.css";
 import failed from "assets/Dashboard/failedx.svg";
 import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
-import  egg from "assets/Dashboard/egg.svg";
+import egg from "assets/Dashboard/egg.svg";
 import { Link } from "react-router-dom";
-
 
 const FailedTransaction = ({ onClick }) => {
   return (
@@ -17,21 +15,20 @@ const FailedTransaction = ({ onClick }) => {
           <h2>Transaction Failed</h2>
         </div>
       </div>
-        <div className={classes.thankyou}>
-          <img src={failed} alt="pathgood" />
-
-        </div>
-      <div className={classes.TransactionType}>
-      <div className={classes.thank}>
-        <div className={classes.pathgood}>
-          <h3>Failed</h3>
-          <p>Oops! Seems something went wrong</p>
-        </div>
-
-        <hr className={classes.line}></hr>
-        <img src={egg} alt="firstegg" />
-      <img className={classes.eggRight} src={egg} alt="firstegg" />
+      <div className={classes.thankyou}>
+        <img src={failed} alt="pathgood" />
       </div>
+      <div className={classes.TransactionType}>
+        <div className={classes.thank}>
+          <div className={classes.pathgood}>
+            <h3>Failed</h3>
+            <p>Oops! Seems something went wrong</p>
+          </div>
+
+          <hr className={classes.line}></hr>
+          <img src={egg} alt="firstegg" />
+          <img className={classes.eggRight} src={egg} alt="firstegg" />
+        </div>
         <div className={classes.TransactionBox}>
           <div className={classes.TransactionBox1}>
             <div className={classes.Text}>
@@ -65,19 +62,16 @@ const FailedTransaction = ({ onClick }) => {
               <h6>₵7085.62</h6>
             </div>
           </div>
-       
         </div>
       </div>
-       
-      
-      
+
       <div className={classes.buttonF}>
-        <Link to="/dashboard">
-        <button className={classes.button}>Okay</button>
+        <Link to="/dashboard/transaction">
+          <button className={classes.button}>Okay</button>
         </Link>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default FailedTransaction
+export default FailedTransaction;

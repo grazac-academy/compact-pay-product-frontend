@@ -3,14 +3,18 @@ import Leftarrow from "assets/Dashboard/Arrow - Left.svg";
 import Modal from "react-modal";
 import React, { useState } from "react";
 import TransactionSuccessful from "components/Modal/TransactionSuccessful/TransactionSuccessful";
-
+import OtpInput from "react-otp-input";
 
 const ConfirmTransaction = ({ onClick }) => {
+  const [otp, setOtp] = useState("");
+  const handleChange = (otp) => {
+    setOtp(otp);
+  };
 
-  const [isOpenConfirmTransaction, setIsOpenConfirmTransaction] = useState(false);
+  const [isOpenConfirmTransaction, setIsOpenConfirmTransaction] =
+    useState(false);
 
-  const handleClick = () => setIsOpenConfirmTransaction (false);
-
+  const handleClick = () => setIsOpenConfirmTransaction(false);
 
   return (
     <div className={classes.ReceiversDetails}>
@@ -24,8 +28,8 @@ const ConfirmTransaction = ({ onClick }) => {
         </div>
       </div>
       <div className={classes.TransactionType}>
-        <div  className={classes.TransactionBox}>
-          <div  className={classes.TransactionBox1}>
+        <div className={classes.TransactionBox}>
+          <div className={classes.TransactionBox1}>
             <div className={classes.Text}>
               <p>Transaction Type</p>
               <h6>Fund Transfer</h6>
@@ -67,25 +71,34 @@ const ConfirmTransaction = ({ onClick }) => {
           </div>
         </div>
       </div>
-      <div  className={classes.transactionpin } >
-      <div className={classes.ttext }><p>Enter Transaction PIN</p></div>
-      <div className={classes.Pin }>
-          <input  maxLength="1"></input>
-          <input  maxLength="1"></input>
-          <input maxLength="1" ></input>
-          <input  maxLength="1"></input>
-          <input maxLength="1" ></input>
-          <input  maxLength="1"></input>
-      </div>
+      <div className={classes.transactionpin}>
+        <div className={classes.ttext}>
+          <p>Enter Transaction PIN</p>
+        </div>
+        <div className={classes.Pin}>
+          <OtpInput
+            value={otp}
+            name="otp"
+            onChange={handleChange}
+            numInputs={6}
+            containerStyle={classes.grid}
+            inputStyle={classes.Input_cont}
+          />
+        </div>
       </div>
       <div className={classes.buttonF}>
-        <button onClick={() => setIsOpenConfirmTransaction(true)} className={classes.button}>Proceed</button>
+        <button
+          onClick={() => setIsOpenConfirmTransaction(true)}
+          className={classes.button}
+        >
+          Proceed
+        </button>
         <Modal
           isOpen={isOpenConfirmTransaction}
           className={classes.ModalP}
           overlayClassName={classes.OverlayP}
         >
-        <TransactionSuccessful onClick={handleClick}/>
+          <TransactionSuccessful onClick={handleClick} />
         </Modal>
       </div>
     </div>

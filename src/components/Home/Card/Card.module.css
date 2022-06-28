@@ -1,104 +1,123 @@
+.mobile {
+  max-width: 80%;
+  margin: 100px auto 0px;
+  display: flex;
+  justify-content: space-between;
+}
 
-.mobile{
-    max-width: 80%;
-    margin: 100px auto 0px;
-    display: flex;
-    justify-content: space-between;
+.iphone {
+  width: 50%;
 }
-.iphone{
-    width: 40%;
+
+.iphone img {
+  width: 80%;
 }
-.iphone img{
-    width: 80%;
+
+.H2text {
+  display: none;
 }
-.H2text{
-    display: none;
+
+.transfer {
+  width: 60%;
+  margin-left: 50px;
 }
-.transfer{
-    width: 60%;
-    margin-left: 50px;
+
+.transfer h2 {
+  width: 80%;
+  font-weight: var(--bold);
+  font-size: 30px;
+  line-height: 50px;
+  margin-top: 40px;
+  color: var(--text);
 }
-.transfer h2{
-    width: 80%;
-    font-weight: var(--bold);
-    font-size: 30px;
-    line-height: 50px;
-    margin-top: 40px;
-    color: var(--text);
+
+.transfer p {
+  width: 85%;
+  font-size: 1rem;
+  margin-top: 20px;
+  color: var(--grey);
 }
-.transfer p{
-    width: 85%;
-    font-size: 1rem;
-    margin-top: 20px;
-    color: var(--grey);
+
+.applications {
+  display: flex;
+  margin-top: 30px;
 }
-.applications{
-    display: flex;
-    margin-top: 20px;
+
+.applications img {
+  width: 30%;
+  margin-right: 20px;
 }
-.applications img{
-    width: 30%;
-    margin-right: 20px;
-}
-.work{
-    display: flex;
-    justify-content: space-between;
-    width: 85%;
-    margin: 10rem auto 0px auto;
+
+.work {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 10rem auto 0px auto;
 }
 
 .work_container {
-    width: 100%;
-    box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
+  width: 100%;
+  box-shadow: 0px 10px 60px rgba(38, 45, 118, 0.08);
 }
 
-.how{
-    text-align: center;
-    border: solid white 1px;
-    background-color: white;
-    margin-top: -130px;
-    position: relative;
-    margin-bottom: 80px;
-}
-.how h2{
-    margin-top: 60px;
-    font-size: 2rem;
-    font-weight: var(--bold);
-    color: var(--second);
-}
-.how p{
-    width: 45%;
-    margin: 10px auto 50px auto;
-    color: var(--grey);
+.how {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border: solid white 1px;
+  background-color: white;
+  margin-top: -130px;
+  position: relative;
+  margin-bottom: 80px;
+  height: 50rem;
 }
 
+.how h2 {
+  margin-top: 60px;
+  font-size: 2rem;
+  font-weight: var(--bold);
+  color: var(--black);
+}
+
+.how p {
+  width: 45%;
+  margin: 10px auto 50px auto;
+  color: var(--grey);
+}
 
 /* media responsive */
 
-@media (max-width: 1200px){
-   .how{
-        margin-top: -70px;
-   }
-   .transfer h2{
-       margin-top: 0px;
-       width: 100%;
-   }
-   .mobile{
-    margin: 50px auto 0px;
-    }
-    .work{
-        width: 90%;
-    }
+@media (max-width: 1200px) {
+  .how {
+    margin-top: -70px;
+  }
+
+  .transfer h2 {
+    margin-top: 0px;
+    width: 100%;
+  }
+
+  .mobile {
+    margin: 70px auto 0px;
+  }
+
+  .work {
+    width: 90%;
+    margin: 8rem auto 0px auto;
+  }
 }
 
-@media (max-width: 1000px){
-    .transfer p{
-        width: 95%;
-    }
-    .how{
-        margin-top: 0px;
-   }
-   .transfer{
+@media (max-width: 1000px) {
+  .transfer p {
+    width: 95%;
+  }
+
+  .how {
+    margin-top: 0px;
+  }
+
+  .transfer {
     margin-left: 0px;
     }
 }
@@ -133,51 +152,115 @@
     }
 }
 
-@media (max-width: 550px){
-    .transfer h2{
-        font-size: 2rem;
-    }
-    .mobile{
-        width: 100%;
-    }
-    .transfer p{
-        width: 100%;
-        font-size: 0.9rem;
-    }
-    .applications{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .applications img{
-        width: 60%;
-        margin-bottom: 20px;
-        margin-right: 0px;
-    }
-    .work{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .how p{
-            width: 70%;
-            margin: 10px auto 27px auto;
-            color: var(--grey);
-        }
-    }
+@media (max-width: 830px) {
+  .work {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    grid-row-gap: 150px;
+  }
+}
 
-@media (max-width: 450px){
-    .transfer h2{
-        display:none;
-    }
-    .H2text{
-        font-size: 1.7rem;
-        line-height: 30px;
-        display: block;
-        font-weight: 800;
-        margin-top: 40px;
-        margin-bottom: 20px;
-        color: var(--text);
-    }
-    
+@media (max-width: 768px) {
+  .mobile {
+    display: block;
+    text-align: center;
+    height: 58rem;
+  }
+
+  .iphone {
+    width: 100%;
+  }
+
+  .iphone img {
+    width: 50%;
+    margin: auto;
+    display: flex;
+    justify-self: center;
+  }
+
+  .transfer {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .applications {
+    justify-content: center;
+  }
+
+  .how {
+    margin-top: 0px;
+    height: 75rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .iphone {
+    width: 100%;
+  }
+
+  .iphone img {
+    width: 80%;
+    padding: 0px -10px 0px 0px;
+  }
+
+  .transfer h2 {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+
+  .mobile {
+    width: 100%;
+    height: 53rem;
+  }
+
+  .transfer p {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .applications {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+  }
+
+  .applications img {
+    width: 45%;
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+
+  .work {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .how {
+    height: 100rem;
+  }
+
+  .how p {
+    width: 70%;
+    margin: 10px auto 27px auto;
+    color: var(--grey);
+  }
+}
+
+@media (max-width: 450px) {
+  .transfer h2 {
+    display: none;
+  }
+
+  .H2text {
+    font-size: 1.7rem;
+    line-height: 30px;
+    display: block;
+    font-weight: 800;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: var(--text);
+  }
 }

@@ -1,7 +1,13 @@
-export const baseLink = "https://compact-pay-product.herokuapp.com/api/v1";
-  // process.env.NODE_ENV === "development"
-  //   ? "https://compact-pay-product.herokuapp.com/api/v1"
-  //   : "https://compact-pay-product.herokuapp.com";
+import axios from 'axios';
 
-    
-    
+export const url = 'https://compact-pay-product.herokuapp.com/api/v1';
+
+export const baseUrl = axios.create({
+  baseURL: `${url}/auth`,
+});
+
+baseUrl.interceptors.request.use((request) => {
+  const token = localStorage.getItem('token');
+  request.headers.Authorization = `Bearer ${token ? token : ''}`;
+  return request;
+});

@@ -88,8 +88,9 @@
 }
 
 .file input{
-    display: none;
+    /* display: none; */
     /* color: transparent; */
+    width: 40%;
 }
 .file{
     background-color: #AC1D40;
@@ -98,7 +99,7 @@
     width: 30%;
     border-radius: 5px;
     color: white;
-    display: inline-block;
+    /* display: inline-block; */
 }
 
 

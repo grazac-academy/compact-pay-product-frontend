@@ -97,7 +97,7 @@ const Converter = () => {
         <CurrencyRow
           currencyOptions={currencyOptions}
           selectCurrency={fromCurrency}
-          onChangeCurrency={(e) => handleChangeCurrency(e, "from")}
+          // onChangeCurrency={(e) => handleChangeCurrency(e, "from")}
           onChangeAmount={(e) => handleAmountChange(e, "from")}
           amount={fromAmount}
         />

@@ -1,54 +1,28 @@
-import AuthLayout from "../../../layout/Auth/Auth";
+import AuthLayout from "layout/Auth/Auth";
 import Button from "components/UI/Button/button";
-import style from "../VerifyMail/verifyMail.module.css";
+import style from "pages/Authi/VerifyMail/verifyMail.module.css";
 import { Link, useParams } from "react-router-dom";
 import { useState } from "react";
 import { verify } from "services/auth";
 import { useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import Loading from "components/UI/Loading/loading";
+import OtpInput from "react-otp-input";
 
 const VerifyMail = () => {
   const { email } = useParams();
   const [loading, setLoading] = useState(false);
-  const [data, setData] = useState({
-    field1: "",
-    field2: "",
-    field3: "",
-    field4: "",
-    field5: "",
-    field6: "",
-  });
-
   const navigate = useNavigate();
+  const [otp, setOtp] = useState("");
 
-  const code = `${data.field1}${data.field2}${data.field3}${data.field4}${data.field5}${data.field6}`;
-
-  const arr = [
-    { name: "field1" },
-    { name: "field2" },
-    { name: "field3" },
-    { name: "field4" },
-    { name: "field5" },
-    { name: "field6" },
-  ];
-
-  let tabChange = (num) => {
-    let nodeList = document.querySelectorAll("input");
-    if (nodeList[num].value !== "") {
-      if (num < 5) nodeList[num + 1].focus();
-    } else if (nodeList[num].value === "") {
-      if (num > 0) {
-        nodeList[num - 1].focus();
-      }
-    }
+  const handleChange = (otp) => {
+    setOtp(otp);
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
       setLoading(true);
-      const response = await verify(code, email);
+      const response = await verify(otp, email);
       console.log(response);
       toast.success(response.data.message);
       navigate("/signin");
@@ -65,24 +39,14 @@ const VerifyMail = () => {
       info="Almost there! We sent an email to users@gmail.com containing your OTP. Kindly enter 6-digit OTP here"
     >
       <form>
-        <div className={`${style.grid}`}>
-          {arr.map((item, index) => (
-            <input
-              key={index}
-              type="text"
-              className="t-16"
-              maxLength="1"
-              value={data[item.name]}
-              onKeyUp={() => tabChange(index)}
-              onChange={(e) =>
-                setData((prevState) => ({
-                  ...prevState,
-                  [item.name]: e.target.value,
-                }))
-              }
-            />
-          ))}
-        </div>
+        <OtpInput
+          value={otp}
+          name="otp"
+          onChange={handleChange}
+          numInputs={6}
+          containerStyle={style.grid}
+          inputStyle={style.Input_cont}
+        />
 
         <div className={style.forgot_sect}>
           <div className={style.forgot}>

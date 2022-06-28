@@ -2,7 +2,7 @@ import { sideNavbar } from "../../../constants/index";
 import classes from "./Sidebar.module.css";
 import signout from "assets/Dashboard/signout_icon.svg";
 import menu from "assets/Dashboard/Menu.svg";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { useState } from "react";
 import { FaTimes } from "react-icons/fa";
 
@@ -40,10 +40,12 @@ const Sidebar = () => {
             </NavLink>
           ))}
         </div>
-        <button className={classes.signout}>
-          <img src={signout} alt="" />
-          <span>Signout</span>
-        </button>
+        <Link to="/signin">
+          <button className={classes.signout}>
+            <img src={signout} alt="" />
+            <span>Signout</span>
+          </button>
+        </Link>
       </div>
     </div>
   );

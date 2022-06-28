@@ -34,6 +34,7 @@ const App = () => {
         <Route path="/modal" element={<Modal />} />
         <Route path="/create-acct" element={<CreateAcct />} />
         <Route path="/dashboard" element={<DashboardLayout />}>
+          <Route index element={<Dashboard />} />
           <Route path="home" element={<Dashboard />} />
           <Route path="transaction" element={<TransactionPage />} />
           <Route path="beneficiary" element={<BeneficiaryPage />} />

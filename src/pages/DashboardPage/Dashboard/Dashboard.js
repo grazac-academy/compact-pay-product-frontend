@@ -13,28 +13,22 @@ import FundWallet from "components/Modals/FundModal/FundWallet";
 
 Modal.setAppElement("#root");
 
-const Dashboard = ( ) => {
-  
-   const [modalSendIsOpen, setModalSendIsOpen] = useState(false);
+const Dashboard = () => {
+  const [modalSendIsOpen, setModalSendIsOpen] = useState(false);
 
-   const [modalIsOpen, setModalIsOpen] = useState(false);
-   const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
- 
-   const handleClick = () => setModalFundIsOpen(false);
-   const handleSendClick = () => setModalSendIsOpen(false);
- 
-   useEffect(() => {
-     if (Dashboard) {
-       setModalIsOpen(true);
-     }
-   }, []);
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalFundIsOpen, setModalFundIsOpen] = useState(false);
 
-  
+  const handleClick = () => setModalFundIsOpen(false);
+  const handleSendClick = () => setModalSendIsOpen(false);
 
+  useEffect(() => {
+    if (Dashboard) {
+      setModalIsOpen(true);
+    }
+  }, []);
 
   return (
-
-    
     <div className={classes.dashInfo}>
       <div className={classes.wallet}>
         <div className={classes.wallet_contain}>
@@ -49,10 +43,13 @@ const Dashboard = ( ) => {
                 <img src={addfund} alt="" />
                 <span>Fund Wallet</span>
               </Button>
-      
-              <div onClick={() => setModalSendIsOpen(true)} className={classes.miniSend} >
-              <img src={sendmoney} alt="" />
-              <p>Send Money</p>
+
+              <div
+                onClick={() => setModalSendIsOpen(true)}
+                className={classes.miniSend}
+              >
+                <img src={sendmoney} alt="" />
+                <p>Send Money</p>
               </div>
             </div>
             <div className={classes.Send}>
@@ -60,11 +57,11 @@ const Dashboard = ( ) => {
               <h3>Send Money</h3>
               <p>Access seamless crossborder payment</p>
 
-              
-                <MdNavigateNext onClick={() => setModalSendIsOpen(true)}
-                className={classes.MdNavigateNext} />
-             
-          </div>
+              <MdNavigateNext
+                onClick={() => setModalSendIsOpen(true)}
+                className={classes.MdNavigateNext}
+              />
+            </div>
           </div>
         </div>
         <div className={classes.graph}>
@@ -75,8 +72,6 @@ const Dashboard = ( ) => {
         <Transaction />
       </div>
 
-      
-    
       <Modal
         isOpen={modalIsOpen}
         onRequestClose={() => {
@@ -99,15 +94,13 @@ const Dashboard = ( ) => {
         <FundWallet onClick={handleClick} />
       </Modal>
 
-        <Modal
-           isOpen={modalSendIsOpen}
-            className={classes.ModalSend}
-             overlayClassName={classes.OverlaySend}
-             >
-              <SendMoney onClick={handleSendClick} />
-         </Modal>
-
-
+      <Modal
+        isOpen={modalSendIsOpen}
+        className={classes.ModalSend}
+        overlayClassName={classes.OverlaySend}
+      >
+        <SendMoney onClick={handleSendClick} />
+      </Modal>
     </div>
   );
 };

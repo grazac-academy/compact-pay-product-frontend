@@ -81,7 +81,7 @@ const ID = ({onClick}) => {
                     <p>OR</p>
                     <label className={classes.file}>
                     <input type="file"/>
-                    Browse File
+                    {/* Browse File */}
                     </label>
                 </form>
                 <Button  onClick={()=> setModalIsAddressOpen(true)} >Proceed</Button>

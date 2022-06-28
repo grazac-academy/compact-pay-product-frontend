@@ -1,7 +1,7 @@
 import { baseUrl } from '../axios/base';
 
 export const createAccount = async (payload) => {
-  const response = await baseUrl.post("/register", payload);
+  const response = baseUrl.post("/register", payload);
   return response;
 };
 
@@ -15,6 +15,11 @@ export const verify = async (otp, email) => {
       },
     }
   );
+  return response;
+};
+
+export const forgotPassword = async (payload) => {
+  const response = baseUrl.post("/forgotpassword", payload);
   return response;
 };
 

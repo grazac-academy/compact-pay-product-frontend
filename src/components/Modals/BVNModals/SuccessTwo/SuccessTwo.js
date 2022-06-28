@@ -13,7 +13,7 @@ const SuccessTwo = () => {
         <img src={successBVN} alt="successBVN" />
         </div>
         <h2>Great, information submitted</h2>
-        <Link to="/dashboard">
+        <Link to="/dashboard/transaction">
         <Button >Go Back Home</Button>
         </Link>
 

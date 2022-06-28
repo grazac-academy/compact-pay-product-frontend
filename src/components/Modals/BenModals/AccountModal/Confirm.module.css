@@ -1,90 +1,137 @@
-.Verification{
-    background-color: var(--second);
-    text-align: center;
-    padding: 1.2rem;
-    color: white;
-    position: relative;
+.Verification {
+  background-color: var(--second);
+  text-align: center;
+  padding: 1.2rem;
+  color: white;
+  position: relative;
 }
-.Verification img{
-    position: absolute;
-    top: 45%;
-    left: 2%;
-}
-
-.Verification p{
-    font-size: 0.8rem;
-    color: #808093;
+.Verification img {
+  position: absolute;
+  top: 45%;
+  left: 2%;
 }
 
-.Confirm{
-    width: 60%;
-    margin: 70px auto;
-    text-align: center;
-}
-.Confirm h5{
-    color: #6D6D6D;
-
+.Verification p {
+  font-size: 0.8rem;
+  color: #808093;
 }
 
-.Confirm button{
-    width: 90%;
-    margin: 50px auto 35px;
-    background-color: var(--second);
-    color: white;
-    font-size: 1.2rem;
-    font-weight: 700;
-    border-radius: 5px ;
-    text-align: center;
-    padding: 0.7rem;
-    border: 1px solid var(--second);
-    display: flex;
-    justify-content: center;
-
+.Confirm {
+  width: 80%;
+  margin: 70px auto;
+  text-align: center;
+}
+.Confirm h5 {
+  color: #6d6d6d;
 }
 
-.confirmInput{
-    display: flex;
-    justify-content: space-between;
+.Confirm button {
+  width: 65%;
+  margin: 50px auto 35px;
+  background-color: var(--second);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 5px;
+  text-align: center;
+  padding: 0.7rem;
+  border: 1px solid var(--second);
+  display: flex;
+  justify-content: center;
 }
 
-.confirmInput input{
-    width: 15%;
-    border-radius: 10px 10px 0 0;
-    background-color: rgba(0, 0, 0, 0.05);
-    padding: 1.2rem 0.8rem;
-    outline: none;
-    border: 1px solid #C5C4C4;
-    border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
-    margin-top: 10px;
+.confirmInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmInput input {
+  width: 15%;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 1.2rem 0.8rem;
+  outline: none;
+  border: 1px solid #c5c4c4;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .Modal {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 50%;
-    margin: auto auto;
-    background-color: white;
-    height: 80%;
-  }
-  
-  .Overlay {
-    position: fixed;
-    z-index: 11111;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  @media  (max-width: 768px) {
-    .Modal {
-        height: 90%;
-        width: 80%;
-    }
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 50%;
+  margin: auto auto;
+  background-color: white;
+  height: 80%;
+}
 
+.Overlay {
+  position: fixed;
+  z-index: 11111;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.grid {
+  display: flex;
+  width: 70%;
+  height: 5rem;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.Input_cont {
+  width: 3rem !important;
+  height: 3rem;
+  font-size: 1.8rem;
+  border: 1px solid #c8c5c5;
+  border-radius: 4px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3) !important;
+}
+.grid input:focus {
+  border: 1px solid #000000;
+  outline: 1px solid #000000;
+}
+
+@media (max-width: 768px) {
+  .Modal {
+    height: 90%;
+    width: 80%;
+  }
+
+  .Confirm {
+    width: 85%;
+    margin: 70px auto;
+    text-align: center;
+  }
+
+  .Confirm button {
+    width: 80%;
+  }
+  .grid {
+    display: flex;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .Input_cont {
+    width: 2.3rem !important;
+    height: 3rem;
+    border: 1px solid #c8c5c5;
+    border-radius: 4px;
+    text-align: center;
+  }
 }
